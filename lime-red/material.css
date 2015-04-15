@@ -1967,19 +1967,19 @@ Palettes (10 colors) 50 - 900 possible
 .mdl-color--accent-contrast {
   background-color: white !important; }
 
-.mdl-color-text--primary {
+.mdl-color-text--primary, a.mdl-color-text--primary {
   color: #cddc39 !important; }
 
-.mdl-color-text--primary-contrast {
+.mdl-color-text--primary-contrast, a.mdl-color-text--primary-contrast {
   color: white !important; }
 
-.mdl-color-text--primary-dark {
+.mdl-color-text--primary-dark, a.mdl-color-text--primary-dark {
   color: #afb42b !important; }
 
-.mdl-color-text--accent {
+.mdl-color-text--accent, a.mdl-color-text--accent {
   color: #ff5252 !important; }
 
-.mdl-color-text--accent-contrast {
+.mdl-color-text--accent-contrast, a.mdl-color-text--accent-contrast {
   color: white !important; }
 
 @font-face {
