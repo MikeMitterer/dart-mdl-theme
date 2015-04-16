@@ -41,7 +41,11 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-audio, canvas, img, svg, video {
+audio,
+canvas,
+img,
+svg,
+video {
   vertical-align: middle; }
 
 /*
@@ -97,7 +101,8 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -122,7 +127,8 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: " ";
   /* 1 */
   display: table;
@@ -136,48 +142,71 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */ }
+@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request: h5bp.com/r
    ========================================================================== */
 @media print {
-  *, *:before, *:after {
+  *,
+  *:before,
+  *:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
-  a, a:visited {
+
+  a,
+  a:visited {
     text-decoration: underline; }
+
   a[href]:after {
     content: " (" attr(href) ")"; }
+
   abbr[title]:after {
     content: " (" attr(title) ")"; }
+
   /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-  a[href^="#"]:after, a[href^="javascript:"]:after {
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
     content: ""; }
-  pre, blockquote {
+
+  pre,
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
+
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
-  tr, img {
+
+  tr,
+  img {
     page-break-inside: avoid; }
+
   img {
     max-width: 100% !important; }
-  p, h2, h3 {
+
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3; }
-  h2, h3 {
-    page-break-after: avoid; } }
 
+  h2,
+  h3 {
+    page-break-after: avoid; } }
 /* Remove the unwanted box around FAB buttons */
 /* More info: http://goo.gl/IPwKi */
-a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu, .mdl-icon-toggle, .mdl-item, .mdl-radio, .mdl-slider, .mdl-switch, .mdl-tabs__tab {
+a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
+.mdl-icon-toggle, .mdl-item, .mdl-radio, .mdl-slider, .mdl-switch, .mdl-tabs__tab {
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
@@ -1985,10 +2014,9 @@ Palettes (10 colors) 50 - 900 possible
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
   src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?v=1.1.1");
-  src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format('embedded-opentype'), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format('woff'), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format('truetype');
+  src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format("embedded-opentype"), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format("woff"), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 /* ==========  TYPOGRAPHY  ========== */
 /* We're splitting fonts into "preferred" and "performance" in order to optimize
    page loading. For important text, such as the body, we want it to load
@@ -2098,7 +2126,7 @@ Palettes (10 colors) 50 - 900 possible
 /* ANIMATION */
 /* PROGRESS */
 html, body {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px; }
@@ -2111,7 +2139,7 @@ h1, h2, h3, h4, h5, h6, p {
  * Styles for HTML elements
  */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
@@ -2120,40 +2148,40 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 0.6em; }
 
 h1 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.02em; }
 
 h2 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 45px;
   font-weight: 400;
   line-height: 48px; }
 
 h3 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 40px; }
 
 h4 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   -moz-osx-font-smoothing: grayscale; }
 
 h5 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em; }
 
 h6 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2170,7 +2198,7 @@ a {
   font-weight: bold; }
 
 blockquote {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 300;
   font-style: italic;
@@ -2193,14 +2221,14 @@ dt {
  * Class Name Styles
  */
 .mdl-typography--display-4 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 112px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.04em; }
 
 .mdl-typography--display-4-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 112px;
   font-weight: 300;
   line-height: 1;
@@ -2208,14 +2236,14 @@ dt {
   opacity: 0.54; }
 
 .mdl-typography--display-3 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.02em; }
 
 .mdl-typography--display-3-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
@@ -2223,40 +2251,40 @@ dt {
   opacity: 0.54; }
 
 .mdl-typography--display-2 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 45px;
   font-weight: 400;
   line-height: 48px; }
 
 .mdl-typography--display-2-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 45px;
   font-weight: 400;
   line-height: 48px;
   opacity: 0.54; }
 
 .mdl-typography--display-1 {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 40px; }
 
 .mdl-typography--display-1-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 40px;
   opacity: 0.54; }
 
 .mdl-typography--headline {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   -moz-osx-font-smoothing: grayscale; }
 
 .mdl-typography--headline-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -2264,14 +2292,14 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--title {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em; }
 
 .mdl-typography--title-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
@@ -2279,14 +2307,14 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--subhead {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em; }
 
 .mdl-typography--subhead-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2320,14 +2348,14 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--body-2-force-preferred-font {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.04em; }
 
 .mdl-typography--body-2-force-preferred-font-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -2335,14 +2363,14 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--body-1-force-preferred-font {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em; }
 
 .mdl-typography--body-1-force-preferred-font-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -2356,7 +2384,7 @@ dt {
   letter-spacing: 0.08em; }
 
 .mdl-typography--caption-force-preferred-font {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
@@ -2370,7 +2398,7 @@ dt {
   opacity: 0.54; }
 
 .mdl-typography--caption-force-preferred-font-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
@@ -2378,14 +2406,14 @@ dt {
   opacity: 0.54; }
 
 .mdl-typography--menu {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.04em; }
 
 .mdl-typography--menu-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
@@ -2393,7 +2421,7 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--button {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2401,7 +2429,7 @@ dt {
   letter-spacing: 0.04em; }
 
 .mdl-typography--button-color-contrast {
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2433,10 +2461,12 @@ dt {
 .mdl-typography--text-capitalize {
   text-transform: capitalize; }
 
-.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td, .mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
+.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td,
+.mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9; }
 
-.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td, .mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
+.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td,
+.mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9; }
 
 .mdl-typography--font-thin {
@@ -2915,7 +2945,7 @@ Palettes (10 colors) 50 - 900 possible
   padding: 0 8px;
   margin: 0 4px;
   display: inline-block;
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2994,7 +3024,7 @@ Palettes (10 colors) 50 - 900 possible
         -ms-transform: translate(-12px, -12px);
             transform: translate(-12px, -12px);
     /*top: ($button-fab-size - $button-fab-font-size) / 2;
-      left: ($button-fab-size - $button-fab-font-size) / 2;*/
+    left: ($button-fab-size - $button-fab-font-size) / 2;*/
     line-height: 24px;
     width: 24px; }
   .mdl-button--fab.mdl-button--mini-fab {
@@ -3500,9 +3530,9 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-mask: initial;
           mask: initial; }
   .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
-    background: #9e9e9e url('data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E'); }
+    background: #9e9e9e url("data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E"); }
   .mdl-checkbox.is-checked.is-disabled .mdl-checkbox__tick-outline {
-    background: rgba(0, 0, 0, 0.26) url('data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E'); }
+    background: rgba(0, 0, 0, 0.26) url("data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E"); }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -3769,1101 +3799,1100 @@ Palettes (10 colors) 50 - 900 possible
 /* PROGRESS */
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
-  src: url('../fonts/Material-Design-Iconic-Font.eot?v=1.1.1');
-  src: url('../fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1') format('embedded-opentype'), url('../fonts/Material-Design-Iconic-Font.woff?v=1.1.1') format('woff'), url('../fonts/Material-Design-Iconic-Font.ttf?v=1.1.1') format('truetype');
+  src: url("../fonts/Material-Design-Iconic-Font.eot?v=1.1.1");
+  src: url("../fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format("embedded-opentype"), url("../fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format("woff"), url("../fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 .mdl-icon {
   font-family: 'Material-Design-Iconic-Font';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 .mdl-icon--3d-rotation:before {
-  content: "\f000"; }
+  content: ""; }
 
 .mdl-icon--accessibility:before {
-  content: "\f001"; }
+  content: ""; }
 
 .mdl-icon--account-balance:before {
-  content: "\f002"; }
+  content: ""; }
 
 .mdl-icon--account-balance-wallet:before {
-  content: "\f003"; }
+  content: ""; }
 
 .mdl-icon--account-box:before {
-  content: "\f004"; }
+  content: ""; }
 
 .mdl-icon--account-child:before {
-  content: "\f005"; }
+  content: ""; }
 
 .mdl-icon--account-circle:before {
-  content: "\f006"; }
+  content: ""; }
 
 .mdl-icon--add-shopping-cart:before {
-  content: "\f007"; }
+  content: ""; }
 
 .mdl-icon--alarm:before {
-  content: "\f008"; }
+  content: ""; }
 
 .mdl-icon--alarm-add:before {
-  content: "\f009"; }
+  content: ""; }
 
 .mdl-icon--alarm-off:before {
-  content: "\f00a"; }
+  content: ""; }
 
 .mdl-icon--alarm-on:before {
-  content: "\f00b"; }
+  content: ""; }
 
 .mdl-icon--android:before {
-  content: "\f00c"; }
+  content: ""; }
 
 .mdl-icon--announcement:before {
-  content: "\f00d"; }
+  content: ""; }
 
 .mdl-icon--aspect-ratio:before {
-  content: "\f00e"; }
+  content: ""; }
 
 .mdl-icon--assessment:before {
-  content: "\f00f"; }
+  content: ""; }
 
 .mdl-icon--assignment:before {
-  content: "\f010"; }
+  content: ""; }
 
 .mdl-icon--assignment-ind:before {
-  content: "\f011"; }
+  content: ""; }
 
 .mdl-icon--assignment-late:before {
-  content: "\f012"; }
+  content: ""; }
 
 .mdl-icon--assignment-return:before {
-  content: "\f013"; }
+  content: ""; }
 
 .mdl-icon--assignment-returned:before {
-  content: "\f014"; }
+  content: ""; }
 
 .mdl-icon--assignment-turned-in:before {
-  content: "\f015"; }
+  content: ""; }
 
 .mdl-icon--autorenew:before {
-  content: "\f016"; }
+  content: ""; }
 
 .mdl-icon--backup:before {
-  content: "\f017"; }
+  content: ""; }
 
 .mdl-icon--book:before {
-  content: "\f018"; }
+  content: ""; }
 
 .mdl-icon--bookmark:before {
-  content: "\f019"; }
+  content: ""; }
 
 .mdl-icon--bookmark-outline:before {
-  content: "\f01a"; }
+  content: ""; }
 
 .mdl-icon--bug-report:before {
-  content: "\f01b"; }
+  content: ""; }
 
 .mdl-icon--cached:before {
-  content: "\f01c"; }
+  content: ""; }
 
 .mdl-icon--class:before {
-  content: "\f01d"; }
+  content: ""; }
 
 .mdl-icon--credit-card:before {
-  content: "\f01e"; }
+  content: ""; }
 
 .mdl-icon--dashboard:before {
-  content: "\f01f"; }
+  content: ""; }
 
 .mdl-icon--delete:before {
-  content: "\f020"; }
+  content: ""; }
 
 .mdl-icon--description:before {
-  content: "\f021"; }
+  content: ""; }
 
 .mdl-icon--dns:before {
-  content: "\f022"; }
+  content: ""; }
 
 .mdl-icon--done:before {
-  content: "\f023"; }
+  content: ""; }
 
 .mdl-icon--done-all:before {
-  content: "\f024"; }
+  content: ""; }
 
 .mdl-icon--event:before {
-  content: "\f025"; }
+  content: ""; }
 
 .mdl-icon--exit-to-app:before {
-  content: "\f026"; }
+  content: ""; }
 
 .mdl-icon--explore:before {
-  content: "\f027"; }
+  content: ""; }
 
 .mdl-icon--extension:before {
-  content: "\f028"; }
+  content: ""; }
 
 .mdl-icon--face-unlock:before {
-  content: "\f029"; }
+  content: ""; }
 
 .mdl-icon--favorite:before {
-  content: "\f02a"; }
+  content: ""; }
 
 .mdl-icon--favorite-outline:before {
-  content: "\f02b"; }
+  content: ""; }
 
 .mdl-icon--find-in-page:before {
-  content: "\f02c"; }
+  content: ""; }
 
 .mdl-icon--find-replace:before {
-  content: "\f02d"; }
+  content: ""; }
 
 .mdl-icon--flip-to-back:before {
-  content: "\f02e"; }
+  content: ""; }
 
 .mdl-icon--flip-to-front:before {
-  content: "\f02f"; }
+  content: ""; }
 
 .mdl-icon--get-app:before {
-  content: "\f030"; }
+  content: ""; }
 
 .mdl-icon--grade:before {
-  content: "\f031"; }
+  content: ""; }
 
 .mdl-icon--group-work:before {
-  content: "\f032"; }
+  content: ""; }
 
 .mdl-icon--help:before {
-  content: "\f033"; }
+  content: ""; }
 
 .mdl-icon--highlight-remove:before {
-  content: "\f034"; }
+  content: ""; }
 
 .mdl-icon--history:before {
-  content: "\f035"; }
+  content: ""; }
 
 .mdl-icon--home:before {
-  content: "\f036"; }
+  content: ""; }
 
 .mdl-icon--https:before {
-  content: "\f037"; }
+  content: ""; }
 
 .mdl-icon--info:before {
-  content: "\f038"; }
+  content: ""; }
 
 .mdl-icon--info-outline:before {
-  content: "\f039"; }
+  content: ""; }
 
 .mdl-icon--input:before {
-  content: "\f03a"; }
+  content: ""; }
 
 .mdl-icon--invert-colors:before {
-  content: "\f03b"; }
+  content: ""; }
 
 .mdl-icon--label:before {
-  content: "\f03c"; }
+  content: ""; }
 
 .mdl-icon--label-outline:before {
-  content: "\f03d"; }
+  content: ""; }
 
 .mdl-icon--language:before {
-  content: "\f03e"; }
+  content: ""; }
 
 .mdl-icon--launch:before {
-  content: "\f03f"; }
+  content: ""; }
 
 .mdl-icon--list:before {
-  content: "\f040"; }
+  content: ""; }
 
 .mdl-icon--lock:before {
-  content: "\f041"; }
+  content: ""; }
 
 .mdl-icon--lock-open:before {
-  content: "\f042"; }
+  content: ""; }
 
 .mdl-icon--lock-outline:before {
-  content: "\f043"; }
+  content: ""; }
 
 .mdl-icon--loyalty:before {
-  content: "\f044"; }
+  content: ""; }
 
 .mdl-icon--markunread-mailbox:before {
-  content: "\f045"; }
+  content: ""; }
 
 .mdl-icon--note-add:before {
-  content: "\f046"; }
+  content: ""; }
 
 .mdl-icon--open-in-browser:before {
-  content: "\f047"; }
+  content: ""; }
 
 .mdl-icon--open-in-new:before {
-  content: "\f048"; }
+  content: ""; }
 
 .mdl-icon--open-with:before {
-  content: "\f049"; }
+  content: ""; }
 
 .mdl-icon--pageview:before {
-  content: "\f04a"; }
+  content: ""; }
 
 .mdl-icon--payment:before {
-  content: "\f04b"; }
+  content: ""; }
 
 .mdl-icon--perm-camera-mic:before {
-  content: "\f04c"; }
+  content: ""; }
 
 .mdl-icon--perm-contact-cal:before {
-  content: "\f04d"; }
+  content: ""; }
 
 .mdl-icon--perm-data-setting:before {
-  content: "\f04e"; }
+  content: ""; }
 
 .mdl-icon--perm-device-info:before {
-  content: "\f04f"; }
+  content: ""; }
 
 .mdl-icon--perm-identity:before {
-  content: "\f050"; }
+  content: ""; }
 
 .mdl-icon--perm-media:before {
-  content: "\f051"; }
+  content: ""; }
 
 .mdl-icon--perm-phone-msg:before {
-  content: "\f052"; }
+  content: ""; }
 
 .mdl-icon--perm-scan-wifi:before {
-  content: "\f053"; }
+  content: ""; }
 
 .mdl-icon--picture-in-picture:before {
-  content: "\f054"; }
+  content: ""; }
 
 .mdl-icon--polymer:before {
-  content: "\f055"; }
+  content: ""; }
 
 .mdl-icon--print:before {
-  content: "\f056"; }
+  content: ""; }
 
 .mdl-icon--query-builder:before {
-  content: "\f057"; }
+  content: ""; }
 
 .mdl-icon--question-answer:before {
-  content: "\f058"; }
+  content: ""; }
 
 .mdl-icon--receipt:before {
-  content: "\f059"; }
+  content: ""; }
 
 .mdl-icon--redeem:before {
-  content: "\f05a"; }
+  content: ""; }
 
 .mdl-icon--reorder:before {
-  content: "\f094"; }
+  content: ""; }
 
 .mdl-icon--report-problem:before {
-  content: "\f05b"; }
+  content: ""; }
 
 .mdl-icon--restore:before {
-  content: "\f05c"; }
+  content: ""; }
 
 .mdl-icon--room:before {
-  content: "\f05d"; }
+  content: ""; }
 
 .mdl-icon--schedule:before {
-  content: "\f05e"; }
+  content: ""; }
 
 .mdl-icon--search:before {
-  content: "\f05f"; }
+  content: ""; }
 
 .mdl-icon--settings:before {
-  content: "\f060"; }
+  content: ""; }
 
 .mdl-icon--settings-applications:before {
-  content: "\f061"; }
+  content: ""; }
 
 .mdl-icon--settings-backup-restore:before {
-  content: "\f062"; }
+  content: ""; }
 
 .mdl-icon--settings-bluetooth:before {
-  content: "\f063"; }
+  content: ""; }
 
 .mdl-icon--settings-cell:before {
-  content: "\f064"; }
+  content: ""; }
 
 .mdl-icon--settings-display:before {
-  content: "\f065"; }
+  content: ""; }
 
 .mdl-icon--settings-ethernet:before {
-  content: "\f066"; }
+  content: ""; }
 
 .mdl-icon--settings-input-antenna:before {
-  content: "\f067"; }
+  content: ""; }
 
 .mdl-icon--settings-input-component:before {
-  content: "\f068"; }
+  content: ""; }
 
 .mdl-icon--settings-input-composite:before {
-  content: "\f069"; }
+  content: ""; }
 
 .mdl-icon--settings-input-hdmi:before {
-  content: "\f06a"; }
+  content: ""; }
 
 .mdl-icon--settings-input-svideo:before {
-  content: "\f06b"; }
+  content: ""; }
 
 .mdl-icon--settings-overscan:before {
-  content: "\f06c"; }
+  content: ""; }
 
 .mdl-icon--settings-phone:before {
-  content: "\f06d"; }
+  content: ""; }
 
 .mdl-icon--settings-power:before {
-  content: "\f06e"; }
+  content: ""; }
 
 .mdl-icon--settings-remote:before {
-  content: "\f06f"; }
+  content: ""; }
 
 .mdl-icon--settings-voice:before {
-  content: "\f070"; }
+  content: ""; }
 
 .mdl-icon--shop:before {
-  content: "\f071"; }
+  content: ""; }
 
 .mdl-icon--shopping-basket:before {
-  content: "\f072"; }
+  content: ""; }
 
 .mdl-icon--shopping-cart:before {
-  content: "\f073"; }
+  content: ""; }
 
 .mdl-icon--shop-two:before {
-  content: "\f074"; }
+  content: ""; }
 
 .mdl-icon--speaker-notes:before {
-  content: "\f075"; }
+  content: ""; }
 
 .mdl-icon--spellcheck:before {
-  content: "\f076"; }
+  content: ""; }
 
 .mdl-icon--star-rate:before {
-  content: "\f077"; }
+  content: ""; }
 
 .mdl-icon--stars:before {
-  content: "\f078"; }
+  content: ""; }
 
 .mdl-icon--store:before {
-  content: "\f079"; }
+  content: ""; }
 
 .mdl-icon--subject:before {
-  content: "\f07a"; }
+  content: ""; }
 
 .mdl-icon--supervisor-account:before {
   content: ""; }
 
 .mdl-icon--swap-horiz:before {
-  content: "\f07b"; }
+  content: ""; }
 
 .mdl-icon--swap-vert:before {
-  content: "\f07c"; }
+  content: ""; }
 
 .mdl-icon--swap-vert-circle:before {
-  content: "\f07d"; }
+  content: ""; }
 
 .mdl-icon--system-update-tv:before {
-  content: "\f07e"; }
+  content: ""; }
 
 .mdl-icon--tab:before {
-  content: "\f07f"; }
+  content: ""; }
 
 .mdl-icon--tab-unselected:before {
-  content: "\f080"; }
+  content: ""; }
 
 .mdl-icon--theaters:before {
-  content: "\f081"; }
+  content: ""; }
 
 .mdl-icon--thumb-down:before {
-  content: "\f082"; }
+  content: ""; }
 
 .mdl-icon--thumbs-up-down:before {
-  content: "\f083"; }
+  content: ""; }
 
 .mdl-icon--thumb-up:before {
-  content: "\f084"; }
+  content: ""; }
 
 .mdl-icon--toc:before {
-  content: "\f085"; }
+  content: ""; }
 
 .mdl-icon--today:before {
-  content: "\f086"; }
+  content: ""; }
 
 .mdl-icon--track-changes:before {
-  content: "\f087"; }
+  content: ""; }
 
 .mdl-icon--translate:before {
-  content: "\f088"; }
+  content: ""; }
 
 .mdl-icon--trending-down:before {
-  content: "\f089"; }
+  content: ""; }
 
 .mdl-icon--trending-neutral:before {
-  content: "\f08a"; }
+  content: ""; }
 
 .mdl-icon--trending-up:before {
-  content: "\f08b"; }
+  content: ""; }
 
 .mdl-icon--turned-in:before {
-  content: "\f08c"; }
+  content: ""; }
 
 .mdl-icon--turned-in-not:before {
-  content: "\f08d"; }
+  content: ""; }
 
 .mdl-icon--verified-user:before {
-  content: "\f08e"; }
+  content: ""; }
 
 .mdl-icon--view-agenda:before {
-  content: "\f08f"; }
+  content: ""; }
 
 .mdl-icon--view-array:before {
-  content: "\f090"; }
+  content: ""; }
 
 .mdl-icon--view-carousel:before {
-  content: "\f091"; }
+  content: ""; }
 
 .mdl-icon--view-column:before {
-  content: "\f092"; }
+  content: ""; }
 
 .mdl-icon--view-day:before {
-  content: "\f093"; }
+  content: ""; }
 
 .mdl-icon--view-headline:before {
-  content: "\f094"; }
+  content: ""; }
 
 .mdl-icon--view-list:before {
-  content: "\f095"; }
+  content: ""; }
 
 .mdl-icon--view-module:before {
-  content: "\f096"; }
+  content: ""; }
 
 .mdl-icon--view-quilt:before {
-  content: "\f097"; }
+  content: ""; }
 
 .mdl-icon--view-stream:before {
-  content: "\f098"; }
+  content: ""; }
 
 .mdl-icon--view-week:before {
-  content: "\f099"; }
+  content: ""; }
 
 .mdl-icon--visibility:before {
-  content: "\f09a"; }
+  content: ""; }
 
 .mdl-icon--visibility-off:before {
-  content: "\f09b"; }
+  content: ""; }
 
 .mdl-icon--wallet-giftcard:before {
-  content: "\f09c"; }
+  content: ""; }
 
 .mdl-icon--wallet-membership:before {
-  content: "\f09d"; }
+  content: ""; }
 
 .mdl-icon--wallet-travel:before {
-  content: "\f09e"; }
+  content: ""; }
 
 .mdl-icon--work:before {
-  content: "\f09f"; }
+  content: ""; }
 
 .mdl-icon--error:before {
-  content: "\f0a0"; }
+  content: ""; }
 
 .mdl-icon--warning:before {
-  content: "\f0a1"; }
+  content: ""; }
 
 .mdl-icon--album:before {
-  content: "\f0a2"; }
+  content: ""; }
 
 .mdl-icon--av-timer:before {
-  content: "\f0a3"; }
+  content: ""; }
 
 .mdl-icon--closed-caption:before {
-  content: "\f0a4"; }
+  content: ""; }
 
 .mdl-icon--equalizer:before {
-  content: "\f0a5"; }
+  content: ""; }
 
 .mdl-icon--explicit:before {
-  content: "\f0a6"; }
+  content: ""; }
 
 .mdl-icon--fast-forward:before {
-  content: "\f0a7"; }
+  content: ""; }
 
 .mdl-icon--fast-rewind:before {
-  content: "\f0a8"; }
+  content: ""; }
 
 .mdl-icon--games:before {
-  content: "\f0a9"; }
+  content: ""; }
 
 .mdl-icon--hearing:before {
-  content: "\f0aa"; }
+  content: ""; }
 
 .mdl-icon--high-quality:before {
-  content: "\f0ab"; }
+  content: ""; }
 
 .mdl-icon--loop:before {
-  content: "\f0ac"; }
+  content: ""; }
 
 .mdl-icon--mic:before {
-  content: "\f0ad"; }
+  content: ""; }
 
 .mdl-icon--mic-none:before {
-  content: "\f0ae"; }
+  content: ""; }
 
 .mdl-icon--mic-off:before {
-  content: "\f0af"; }
+  content: ""; }
 
 .mdl-icon--movie:before {
-  content: "\f0b0"; }
+  content: ""; }
 
 .mdl-icon--my-library-add:before {
-  content: "\f0b1"; }
+  content: ""; }
 
 .mdl-icon--my-library-books:before {
-  content: "\f0b2"; }
+  content: ""; }
 
 .mdl-icon--my-library-music:before {
-  content: "\f0b3"; }
+  content: ""; }
 
 .mdl-icon--new-releases:before {
-  content: "\f0b4"; }
+  content: ""; }
 
 .mdl-icon--not-interested:before {
-  content: "\f0b5"; }
+  content: ""; }
 
 .mdl-icon--pause:before {
-  content: "\f0b6"; }
+  content: ""; }
 
 .mdl-icon--pause-circle-fill:before {
-  content: "\f0b7"; }
+  content: ""; }
 
 .mdl-icon--pause-circle-outline:before {
-  content: "\f0b8"; }
+  content: ""; }
 
 .mdl-icon--play-arrow:before {
-  content: "\f0b9"; }
+  content: ""; }
 
 .mdl-icon--play-circle-fill:before {
-  content: "\f0ba"; }
+  content: ""; }
 
 .mdl-icon--play-circle-outline:before {
-  content: "\f0bb"; }
+  content: ""; }
 
 .mdl-icon--playlist-add:before {
-  content: "\f0bc"; }
+  content: ""; }
 
 .mdl-icon--play-shopping-bag:before {
-  content: "\f0bd"; }
+  content: ""; }
 
 .mdl-icon--queue:before {
-  content: "\f0be"; }
+  content: ""; }
 
 .mdl-icon--queue-music:before {
-  content: "\f0bf"; }
+  content: ""; }
 
 .mdl-icon--radio:before {
-  content: "\f0c0"; }
+  content: ""; }
 
 .mdl-icon--recent-actors:before {
-  content: "\f0c1"; }
+  content: ""; }
 
 .mdl-icon--repeat:before {
-  content: "\f0c2"; }
+  content: ""; }
 
 .mdl-icon--repeat-one:before {
-  content: "\f0c3"; }
+  content: ""; }
 
 .mdl-icon--replay:before {
-  content: "\f0c4"; }
+  content: ""; }
 
 .mdl-icon--shuffle:before {
-  content: "\f0c5"; }
+  content: ""; }
 
 .mdl-icon--skip-next:before {
-  content: "\f0c6"; }
+  content: ""; }
 
 .mdl-icon--skip-previous:before {
-  content: "\f0c7"; }
+  content: ""; }
 
 .mdl-icon--snooze:before {
-  content: "\f0c8"; }
+  content: ""; }
 
 .mdl-icon--stop:before {
-  content: "\f0c9"; }
+  content: ""; }
 
 .mdl-icon--subtitles:before {
-  content: "\f0ca"; }
+  content: ""; }
 
 .mdl-icon--surround-sound:before {
-  content: "\f0cb"; }
+  content: ""; }
 
 .mdl-icon--videocam:before {
-  content: "\f0cc"; }
+  content: ""; }
 
 .mdl-icon--videocam-off:before {
-  content: "\f0cd"; }
+  content: ""; }
 
 .mdl-icon--video-collection:before {
-  content: "\f0ce"; }
+  content: ""; }
 
 .mdl-icon--volume-down:before {
-  content: "\f0cf"; }
+  content: ""; }
 
 .mdl-icon--volume-mute:before {
-  content: "\f0d0"; }
+  content: ""; }
 
 .mdl-icon--volume-off:before {
-  content: "\f0d1"; }
+  content: ""; }
 
 .mdl-icon--volume-up:before {
-  content: "\f0d2"; }
+  content: ""; }
 
 .mdl-icon--web:before {
-  content: "\f0d3"; }
+  content: ""; }
 
 .mdl-icon--business:before {
-  content: "\f0d4"; }
+  content: ""; }
 
 .mdl-icon--call:before {
-  content: "\f0d5"; }
+  content: ""; }
 
 .mdl-icon--call-end:before {
-  content: "\f0d6"; }
+  content: ""; }
 
 .mdl-icon--call-made:before {
-  content: "\f0d7"; }
+  content: ""; }
 
 .mdl-icon--call-merge:before {
-  content: "\f0d8"; }
+  content: ""; }
 
 .mdl-icon--call-missed:before {
-  content: "\f0d9"; }
+  content: ""; }
 
 .mdl-icon--call-received:before {
-  content: "\f0da"; }
+  content: ""; }
 
 .mdl-icon--call-split:before {
-  content: "\f0db"; }
+  content: ""; }
 
 .mdl-icon--chat:before {
-  content: "\f0dc"; }
+  content: ""; }
 
 .mdl-icon--clear-all:before {
-  content: "\f0dd"; }
+  content: ""; }
 
 .mdl-icon--comment:before {
-  content: "\f0de"; }
+  content: ""; }
 
 .mdl-icon--contacts:before {
-  content: "\f0df"; }
+  content: ""; }
 
 .mdl-icon--dialer-sip:before {
-  content: "\f0e0"; }
+  content: ""; }
 
 .mdl-icon--dialpad:before {
-  content: "\f0e1"; }
+  content: ""; }
 
 .mdl-icon--dnd-on:before {
-  content: "\f0e2"; }
+  content: ""; }
 
 .mdl-icon--email:before {
-  content: "\f0e3"; }
+  content: ""; }
 
 .mdl-icon--forum:before {
-  content: "\f0e4"; }
+  content: ""; }
 
 .mdl-icon--import-export:before {
-  content: "\f0e5"; }
+  content: ""; }
 
 .mdl-icon--invert-colors-off:before {
-  content: "\f0e6"; }
+  content: ""; }
 
 .mdl-icon--invert-colors-on:before {
-  content: "\f0e7"; }
+  content: ""; }
 
 .mdl-icon--live-help:before {
-  content: "\f0e8"; }
+  content: ""; }
 
 .mdl-icon--location-off:before {
-  content: "\f0e9"; }
+  content: ""; }
 
 .mdl-icon--location-on:before {
-  content: "\f0ea"; }
+  content: ""; }
 
 .mdl-icon--message:before {
-  content: "\f0eb"; }
+  content: ""; }
 
 .mdl-icon--messenger:before {
-  content: "\f0ec"; }
+  content: ""; }
 
 .mdl-icon--no-sim:before {
-  content: "\f0ed"; }
+  content: ""; }
 
 .mdl-icon--phone:before {
-  content: "\f0ee"; }
+  content: ""; }
 
 .mdl-icon--portable-wifi-off:before {
-  content: "\f0ef"; }
+  content: ""; }
 
 .mdl-icon--quick-contacts-dialer:before {
-  content: "\f0f0"; }
+  content: ""; }
 
 .mdl-icon--quick-contacts-mail:before {
-  content: "\f0f1"; }
+  content: ""; }
 
 .mdl-icon--ring-volume:before {
-  content: "\f0f2"; }
+  content: ""; }
 
 .mdl-icon--stay-current-landscape:before {
-  content: "\f0f3"; }
+  content: ""; }
 
 .mdl-icon--stay-current-portrait:before {
-  content: "\f0f4"; }
+  content: ""; }
 
 .mdl-icon--stay-primary-landscape:before {
-  content: "\f0f5"; }
+  content: ""; }
 
 .mdl-icon--stay-primary-portrait:before {
-  content: "\f0f6"; }
+  content: ""; }
 
 .mdl-icon--swap-calls:before {
-  content: "\f0f7"; }
+  content: ""; }
 
 .mdl-icon--textsms:before {
-  content: "\f0f8"; }
+  content: ""; }
 
 .mdl-icon--voicemail:before {
-  content: "\f0f9"; }
+  content: ""; }
 
 .mdl-icon--vpn-key:before {
-  content: "\f0fa"; }
+  content: ""; }
 
 .mdl-icon--add:before {
-  content: "\f0fb"; }
+  content: ""; }
 
 .mdl-icon--add-box:before {
-  content: "\f0fc"; }
+  content: ""; }
 
 .mdl-icon--add-circle:before {
-  content: "\f0fd"; }
+  content: ""; }
 
 .mdl-icon--add-circle-outline:before {
-  content: "\f0fe"; }
+  content: ""; }
 
 .mdl-icon--archive:before {
-  content: "\f0ff"; }
+  content: ""; }
 
 .mdl-icon--backspace:before {
-  content: "\f100"; }
+  content: ""; }
 
 .mdl-icon--block:before {
-  content: "\f101"; }
+  content: ""; }
 
 .mdl-icon--clear:before {
-  content: "\f102"; }
+  content: ""; }
 
 .mdl-icon--content-copy:before {
-  content: "\f103"; }
+  content: ""; }
 
 .mdl-icon--content-cut:before {
-  content: "\f104"; }
+  content: ""; }
 
 .mdl-icon--content-paste:before {
-  content: "\f105"; }
+  content: ""; }
 
 .mdl-icon--create:before {
-  content: "\f106"; }
+  content: ""; }
 
 .mdl-icon--drafts:before {
-  content: "\f107"; }
+  content: ""; }
 
 .mdl-icon--filter-list:before {
-  content: "\f108"; }
+  content: ""; }
 
 .mdl-icon--flag:before {
-  content: "\f109"; }
+  content: ""; }
 
 .mdl-icon--forward:before {
-  content: "\f10a"; }
+  content: ""; }
 
 .mdl-icon--gesture:before {
-  content: "\f10b"; }
+  content: ""; }
 
 .mdl-icon--inbox:before {
-  content: "\f10c"; }
+  content: ""; }
 
 .mdl-icon--link:before {
-  content: "\f10d"; }
+  content: ""; }
 
 .mdl-icon--mail:before {
-  content: "\f10e"; }
+  content: ""; }
 
 .mdl-icon--markunread:before {
-  content: "\f10f"; }
+  content: ""; }
 
 .mdl-icon--redo:before {
-  content: "\f110"; }
+  content: ""; }
 
 .mdl-icon--remove:before {
-  content: "\f111"; }
+  content: ""; }
 
 .mdl-icon--remove-circle:before {
-  content: "\f112"; }
+  content: ""; }
 
 .mdl-icon--remove-circle-outline:before {
-  content: "\f113"; }
+  content: ""; }
 
 .mdl-icon--reply:before {
-  content: "\f114"; }
+  content: ""; }
 
 .mdl-icon--reply-all:before {
-  content: "\f115"; }
+  content: ""; }
 
 .mdl-icon--report:before {
-  content: "\f116"; }
+  content: ""; }
 
 .mdl-icon--save:before {
-  content: "\f117"; }
+  content: ""; }
 
 .mdl-icon--select-all:before {
-  content: "\f118"; }
+  content: ""; }
 
 .mdl-icon--send:before {
-  content: "\f119"; }
+  content: ""; }
 
 .mdl-icon--sort:before {
-  content: "\f11a"; }
+  content: ""; }
 
 .mdl-icon--text-format:before {
-  content: "\f11b"; }
+  content: ""; }
 
 .mdl-icon--undo:before {
-  content: "\f11c"; }
+  content: ""; }
 
 .mdl-icon--access-alarm:before {
-  content: "\f11d"; }
+  content: ""; }
 
 .mdl-icon--access-alarms:before {
-  content: "\f11e"; }
+  content: ""; }
 
 .mdl-icon--access-time:before {
-  content: "\f11f"; }
+  content: ""; }
 
 .mdl-icon--add-alarm:before {
-  content: "\f120"; }
+  content: ""; }
 
 .mdl-icon--airplanemode-off:before {
-  content: "\f121"; }
+  content: ""; }
 
 .mdl-icon--airplanemode-on:before {
-  content: "\f122"; }
+  content: ""; }
 
 .mdl-icon--battery-20:before {
-  content: "\f123"; }
+  content: ""; }
 
 .mdl-icon--battery-30:before {
-  content: "\f124"; }
+  content: ""; }
 
 .mdl-icon--battery-50:before {
-  content: "\f125"; }
+  content: ""; }
 
 .mdl-icon--battery-60:before {
-  content: "\f126"; }
+  content: ""; }
 
 .mdl-icon--battery-80:before {
-  content: "\f127"; }
+  content: ""; }
 
 .mdl-icon--battery-90:before {
-  content: "\f128"; }
+  content: ""; }
 
 .mdl-icon--battery-alert:before {
-  content: "\f129"; }
+  content: ""; }
 
 .mdl-icon--battery-charging-20:before {
-  content: "\f12a"; }
+  content: ""; }
 
 .mdl-icon--battery-charging-30:before {
-  content: "\f12b"; }
+  content: ""; }
 
 .mdl-icon--battery-charging-50:before {
-  content: "\f12c"; }
+  content: ""; }
 
 .mdl-icon--battery-charging-60:before {
-  content: "\f12d"; }
+  content: ""; }
 
 .mdl-icon--battery-charging-80:before {
-  content: "\f12e"; }
+  content: ""; }
 
 .mdl-icon--battery-charging-90:before {
-  content: "\f12f"; }
+  content: ""; }
 
 .mdl-icon--battery-charging-full:before {
-  content: "\f130"; }
+  content: ""; }
 
 .mdl-icon--battery-full:before {
-  content: "\f131"; }
+  content: ""; }
 
 .mdl-icon--battery-std:before {
-  content: "\f132"; }
+  content: ""; }
 
 .mdl-icon--battery-unknown:before {
-  content: "\f133"; }
+  content: ""; }
 
 .mdl-icon--bluetooth:before {
-  content: "\f134"; }
+  content: ""; }
 
 .mdl-icon--bluetooth-connected:before {
-  content: "\f135"; }
+  content: ""; }
 
 .mdl-icon--bluetooth-disabled:before {
-  content: "\f136"; }
+  content: ""; }
 
 .mdl-icon--bluetooth-searching:before {
-  content: "\f137"; }
+  content: ""; }
 
 .mdl-icon--brightness-auto:before {
-  content: "\f138"; }
+  content: ""; }
 
 .mdl-icon--brightness-high:before {
-  content: "\f139"; }
+  content: ""; }
 
 .mdl-icon--brightness-low:before {
-  content: "\f13a"; }
+  content: ""; }
 
 .mdl-icon--brightness-medium:before {
-  content: "\f13b"; }
+  content: ""; }
 
 .mdl-icon--data-usage:before {
-  content: "\f13c"; }
+  content: ""; }
 
 .mdl-icon--developer-mode:before {
-  content: "\f13d"; }
+  content: ""; }
 
 .mdl-icon--devices:before {
-  content: "\f13e"; }
+  content: ""; }
 
 .mdl-icon--dvr:before {
-  content: "\f13f"; }
+  content: ""; }
 
 .mdl-icon--gps-fixed:before {
-  content: "\f140"; }
+  content: ""; }
 
 .mdl-icon--gps-not-fixed:before {
-  content: "\f141"; }
+  content: ""; }
 
 .mdl-icon--gps-off:before {
-  content: "\f142"; }
+  content: ""; }
 
 .mdl-icon--location-disabled:before {
-  content: "\f143"; }
+  content: ""; }
 
 .mdl-icon--location-searching:before {
-  content: "\f144"; }
+  content: ""; }
 
 .mdl-icon--multitrack-audio:before {
-  content: "\f145"; }
+  content: ""; }
 
 .mdl-icon--network-cell:before {
-  content: "\f146"; }
+  content: ""; }
 
 .mdl-icon--network-wifi:before {
-  content: "\f147"; }
+  content: ""; }
 
 .mdl-icon--nfc:before {
-  content: "\f148"; }
+  content: ""; }
 
 .mdl-icon--now-wallpaper:before {
-  content: "\f149"; }
+  content: ""; }
 
 .mdl-icon--now-widgets:before {
-  content: "\f14a"; }
+  content: ""; }
 
 .mdl-icon--screen-lock-landscape:before {
-  content: "\f14b"; }
+  content: ""; }
 
 .mdl-icon--screen-lock-portrait:before {
-  content: "\f14c"; }
+  content: ""; }
 
 .mdl-icon--screen-lock-rotation:before {
-  content: "\f14d"; }
+  content: ""; }
 
 .mdl-icon--screen-rotation:before {
-  content: "\f14e"; }
+  content: ""; }
 
 .mdl-icon--sd-storage:before {
-  content: "\f14f"; }
+  content: ""; }
 
 .mdl-icon--settings-system-daydream:before {
-  content: "\f150"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-0-bar:before {
-  content: "\f151"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-1-bar:before {
-  content: "\f152"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-2-bar:before {
-  content: "\f153"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-3-bar:before {
-  content: "\f154"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-4-bar:before {
-  content: "\f155"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-connected-no-internet-0-bar:before {
-  content: "\f156"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-connected-no-internet-1-bar:before {
-  content: "\f157"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-connected-no-internet-2-bar:before {
-  content: "\f158"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-connected-no-internet-3-bar:before {
-  content: "\f159"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-connected-no-internet-4-bar:before {
-  content: "\f15a"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-no-sim:before {
-  content: "\f15b"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-null:before {
-  content: "\f15c"; }
+  content: ""; }
 
 .mdl-icon--signal-cellular-off:before {
-  content: "\f15d"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-0-bar:before {
-  content: "\f15e"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-1-bar:before {
-  content: "\f15f"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-2-bar:before {
-  content: "\f160"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-3-bar:before {
-  content: "\f161"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-4-bar:before {
-  content: "\f162"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-off:before {
-  content: "\f163"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-statusbar-1-bar:before {
-  content: "\f15f"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-statusbar-2-bar:before {
-  content: "\f160"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-statusbar-3-bar:before {
-  content: "\f161"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-statusbar-4-bar:before {
-  content: "\f162"; }
+  content: ""; }
 
 .mdl-icon--signal-wifi-statusbar-connected-no-internet:before {
   content: ""; }
@@ -4887,1182 +4916,1181 @@ Palettes (10 colors) 50 - 900 possible
   content: ""; }
 
 .mdl-icon--storage:before {
-  content: "\f164"; }
+  content: ""; }
 
 .mdl-icon--usb:before {
-  content: "\f165"; }
+  content: ""; }
 
 .mdl-icon--wifi-lock:before {
-  content: "\f166"; }
+  content: ""; }
 
 .mdl-icon--wifi-tethering:before {
-  content: "\f167"; }
+  content: ""; }
 
 .mdl-icon--attach-file:before {
-  content: "\f168"; }
+  content: ""; }
 
 .mdl-icon--attach-money:before {
-  content: "\f169"; }
+  content: ""; }
 
 .mdl-icon--border-all:before {
-  content: "\f16a"; }
+  content: ""; }
 
 .mdl-icon--border-bottom:before {
-  content: "\f16b"; }
+  content: ""; }
 
 .mdl-icon--border-clear:before {
-  content: "\f16c"; }
+  content: ""; }
 
 .mdl-icon--border-color:before {
-  content: "\f16d"; }
+  content: ""; }
 
 .mdl-icon--border-horizontal:before {
-  content: "\f16e"; }
+  content: ""; }
 
 .mdl-icon--border-inner:before {
-  content: "\f16f"; }
+  content: ""; }
 
 .mdl-icon--border-left:before {
-  content: "\f170"; }
+  content: ""; }
 
 .mdl-icon--border-outer:before {
-  content: "\f171"; }
+  content: ""; }
 
 .mdl-icon--border-right:before {
-  content: "\f172"; }
+  content: ""; }
 
 .mdl-icon--border-style:before {
-  content: "\f173"; }
+  content: ""; }
 
 .mdl-icon--border-top:before {
-  content: "\f174"; }
+  content: ""; }
 
 .mdl-icon--border-vertical:before {
-  content: "\f175"; }
+  content: ""; }
 
 .mdl-icon--format-align-center:before {
-  content: "\f176"; }
+  content: ""; }
 
 .mdl-icon--format-align-justify:before {
-  content: "\f177"; }
+  content: ""; }
 
 .mdl-icon--format-align-left:before {
-  content: "\f178"; }
+  content: ""; }
 
 .mdl-icon--format-align-right:before {
-  content: "\f179"; }
+  content: ""; }
 
 .mdl-icon--format-bold:before {
-  content: "\f17a"; }
+  content: ""; }
 
 .mdl-icon--format-clear:before {
-  content: "\f17b"; }
+  content: ""; }
 
 .mdl-icon--format-color-fill:before {
-  content: "\f17c"; }
+  content: ""; }
 
 .mdl-icon--format-color-reset:before {
-  content: "\f17d"; }
+  content: ""; }
 
 .mdl-icon--format-color-text:before {
-  content: "\f17e"; }
+  content: ""; }
 
 .mdl-icon--format-indent-decrease:before {
-  content: "\f17f"; }
+  content: ""; }
 
 .mdl-icon--format-indent-increase:before {
-  content: "\f180"; }
+  content: ""; }
 
 .mdl-icon--format-italic:before {
-  content: "\f181"; }
+  content: ""; }
 
 .mdl-icon--format-line-spacing:before {
-  content: "\f182"; }
+  content: ""; }
 
 .mdl-icon--format-list-bulleted:before {
-  content: "\f183"; }
+  content: ""; }
 
 .mdl-icon--format-list-numbered:before {
-  content: "\f184"; }
+  content: ""; }
 
 .mdl-icon--format-paint:before {
-  content: "\f185"; }
+  content: ""; }
 
 .mdl-icon--format-quote:before {
-  content: "\f186"; }
+  content: ""; }
 
 .mdl-icon--format-size:before {
-  content: "\f187"; }
+  content: ""; }
 
 .mdl-icon--format-strikethrough:before {
-  content: "\f188"; }
+  content: ""; }
 
 .mdl-icon--format-textdirection-l-to-r:before {
-  content: "\f189"; }
+  content: ""; }
 
 .mdl-icon--format-textdirection-r-to-l:before {
-  content: "\f18a"; }
+  content: ""; }
 
 .mdl-icon--format-underline:before {
-  content: "\f18b"; }
+  content: ""; }
 
 .mdl-icon--functions:before {
-  content: "\f18c"; }
+  content: ""; }
 
 .mdl-icon--insert-chart:before {
-  content: "\f18d"; }
+  content: ""; }
 
 .mdl-icon--insert-comment:before {
-  content: "\f18e"; }
+  content: ""; }
 
 .mdl-icon--insert-drive-file:before {
-  content: "\f18f"; }
+  content: ""; }
 
 .mdl-icon--insert-emoticon:before {
-  content: "\f190"; }
+  content: ""; }
 
 .mdl-icon--insert-invitation:before {
-  content: "\f191"; }
+  content: ""; }
 
 .mdl-icon--insert-link:before {
-  content: "\f192"; }
+  content: ""; }
 
 .mdl-icon--insert-photo:before {
-  content: "\f193"; }
+  content: ""; }
 
 .mdl-icon--merge-type:before {
-  content: "\f194"; }
+  content: ""; }
 
 .mdl-icon--mode-comment:before {
-  content: "\f195"; }
+  content: ""; }
 
 .mdl-icon--mode-edit:before {
-  content: "\f196"; }
+  content: ""; }
 
 .mdl-icon--publish:before {
-  content: "\f197"; }
+  content: ""; }
 
 .mdl-icon--vertical-align-bottom:before {
-  content: "\f198"; }
+  content: ""; }
 
 .mdl-icon--vertical-align-center:before {
-  content: "\f199"; }
+  content: ""; }
 
 .mdl-icon--vertical-align-top:before {
-  content: "\f19a"; }
+  content: ""; }
 
 .mdl-icon--wrap-text:before {
-  content: "\f19b"; }
+  content: ""; }
 
 .mdl-icon--attachment:before {
-  content: "\f19c"; }
+  content: ""; }
 
 .mdl-icon--cloud:before {
-  content: "\f19d"; }
+  content: ""; }
 
 .mdl-icon--cloud-circle:before {
-  content: "\f19e"; }
+  content: ""; }
 
 .mdl-icon--cloud-done:before {
-  content: "\f19f"; }
+  content: ""; }
 
 .mdl-icon--cloud-download:before {
-  content: "\f1a0"; }
+  content: ""; }
 
 .mdl-icon--cloud-off:before {
-  content: "\f1a1"; }
+  content: ""; }
 
 .mdl-icon--cloud-queue:before {
-  content: "\f1a2"; }
+  content: ""; }
 
 .mdl-icon--cloud-upload:before {
-  content: "\f1a3"; }
+  content: ""; }
 
 .mdl-icon--file-download:before {
-  content: "\f1a4"; }
+  content: ""; }
 
 .mdl-icon--file-upload:before {
-  content: "\f1a5"; }
+  content: ""; }
 
 .mdl-icon--folder:before {
-  content: "\f1a6"; }
+  content: ""; }
 
 .mdl-icon--folder-open:before {
-  content: "\f1a7"; }
+  content: ""; }
 
 .mdl-icon--folder-shared:before {
-  content: "\f1a8"; }
+  content: ""; }
 
 .mdl-icon--cast:before {
-  content: "\f1a9"; }
+  content: ""; }
 
 .mdl-icon--cast-connected:before {
-  content: "\f1aa"; }
+  content: ""; }
 
 .mdl-icon--computer:before {
-  content: "\f1ab"; }
+  content: ""; }
 
 .mdl-icon--desktop-mac:before {
-  content: "\f1ac"; }
+  content: ""; }
 
 .mdl-icon--desktop-windows:before {
-  content: "\f1ad"; }
+  content: ""; }
 
 .mdl-icon--dock:before {
-  content: "\f1ae"; }
+  content: ""; }
 
 .mdl-icon--gamepad:before {
-  content: "\f1af"; }
+  content: ""; }
 
 .mdl-icon--headset:before {
-  content: "\f1b0"; }
+  content: ""; }
 
 .mdl-icon--headset-mic:before {
-  content: "\f1b1"; }
+  content: ""; }
 
 .mdl-icon--keyboard:before {
-  content: "\f1b2"; }
+  content: ""; }
 
 .mdl-icon--keyboard-alt:before {
-  content: "\f1b3"; }
+  content: ""; }
 
 .mdl-icon--keyboard-arrow-down:before {
-  content: "\f1b4"; }
+  content: ""; }
 
 .mdl-icon--keyboard-arrow-left:before {
-  content: "\f1b5"; }
+  content: ""; }
 
 .mdl-icon--keyboard-arrow-right:before {
-  content: "\f1b6"; }
+  content: ""; }
 
 .mdl-icon--keyboard-arrow-up:before {
-  content: "\f1b7"; }
+  content: ""; }
 
 .mdl-icon--keyboard-backspace:before {
-  content: "\f1b8"; }
+  content: ""; }
 
 .mdl-icon--keyboard-capslock:before {
-  content: "\f1b9"; }
+  content: ""; }
 
 .mdl-icon--keyboard-control:before {
-  content: "\f1ba"; }
+  content: ""; }
 
 .mdl-icon--keyboard-hide:before {
-  content: "\f1bb"; }
+  content: ""; }
 
 .mdl-icon--keyboard-return:before {
-  content: "\f1bc"; }
+  content: ""; }
 
 .mdl-icon--keyboard-tab:before {
-  content: "\f1bd"; }
+  content: ""; }
 
 .mdl-icon--keyboard-voice:before {
-  content: "\f1be"; }
+  content: ""; }
 
 .mdl-icon--laptop:before {
-  content: "\f1bf"; }
+  content: ""; }
 
 .mdl-icon--laptop-chromebook:before {
-  content: "\f1c0"; }
+  content: ""; }
 
 .mdl-icon--laptop-mac:before {
-  content: "\f1c1"; }
+  content: ""; }
 
 .mdl-icon--laptop-windows:before {
-  content: "\f1c2"; }
+  content: ""; }
 
 .mdl-icon--memory:before {
-  content: "\f1c3"; }
+  content: ""; }
 
 .mdl-icon--mouse:before {
-  content: "\f1c4"; }
+  content: ""; }
 
 .mdl-icon--phone-android:before {
-  content: "\f1c5"; }
+  content: ""; }
 
 .mdl-icon--phone-iphone:before {
-  content: "\f1c6"; }
+  content: ""; }
 
 .mdl-icon--phonelink:before {
-  content: "\f1c7"; }
+  content: ""; }
 
 .mdl-icon--phonelink-off:before {
-  content: "\f1c8"; }
+  content: ""; }
 
 .mdl-icon--security:before {
-  content: "\f1c9"; }
+  content: ""; }
 
 .mdl-icon--sim-card:before {
-  content: "\f1ca"; }
+  content: ""; }
 
 .mdl-icon--smartphone:before {
-  content: "\f1cb"; }
+  content: ""; }
 
 .mdl-icon--speaker:before {
-  content: "\f1cc"; }
+  content: ""; }
 
 .mdl-icon--tablet:before {
-  content: "\f1cd"; }
+  content: ""; }
 
 .mdl-icon--tablet-android:before {
-  content: "\f1ce"; }
+  content: ""; }
 
 .mdl-icon--tablet-mac:before {
-  content: "\f1cf"; }
+  content: ""; }
 
 .mdl-icon--tv:before {
-  content: "\f1d0"; }
+  content: ""; }
 
 .mdl-icon--watch:before {
-  content: "\f1d1"; }
+  content: ""; }
 
 .mdl-icon--add-to-photos:before {
-  content: "\f1d2"; }
+  content: ""; }
 
 .mdl-icon--adjust:before {
-  content: "\f1d3"; }
+  content: ""; }
 
 .mdl-icon--assistant-photo:before {
-  content: "\f1d4"; }
+  content: ""; }
 
 .mdl-icon--audiotrack:before {
-  content: "\f1d5"; }
+  content: ""; }
 
 .mdl-icon--blur-circular:before {
-  content: "\f1d6"; }
+  content: ""; }
 
 .mdl-icon--blur-linear:before {
-  content: "\f1d7"; }
+  content: ""; }
 
 .mdl-icon--blur-off:before {
-  content: "\f1d8"; }
+  content: ""; }
 
 .mdl-icon--blur-on:before {
-  content: "\f1d9"; }
+  content: ""; }
 
 .mdl-icon--brightness-1:before {
-  content: "\f1da"; }
+  content: ""; }
 
 .mdl-icon--brightness-2:before {
-  content: "\f1db"; }
+  content: ""; }
 
 .mdl-icon--brightness-3:before {
-  content: "\f1dc"; }
+  content: ""; }
 
 .mdl-icon--brightness-4:before {
-  content: "\f1dd"; }
+  content: ""; }
 
 .mdl-icon--brightness-5:before {
-  content: "\f1de"; }
+  content: ""; }
 
 .mdl-icon--brightness-6:before {
-  content: "\f1df"; }
+  content: ""; }
 
 .mdl-icon--brightness-7:before {
-  content: "\f1e0"; }
+  content: ""; }
 
 .mdl-icon--brush:before {
-  content: "\f1e1"; }
+  content: ""; }
 
 .mdl-icon--camera:before {
-  content: "\f1e2"; }
+  content: ""; }
 
 .mdl-icon--camera-alt:before {
-  content: "\f1e3"; }
+  content: ""; }
 
 .mdl-icon--camera-front:before {
-  content: "\f1e4"; }
+  content: ""; }
 
 .mdl-icon--camera-rear:before {
-  content: "\f1e5"; }
+  content: ""; }
 
 .mdl-icon--camera-roll:before {
-  content: "\f1e6"; }
+  content: ""; }
 
 .mdl-icon--center-focus-strong:before {
-  content: "\f1e7"; }
+  content: ""; }
 
 .mdl-icon--center-focus-weak:before {
-  content: "\f1e8"; }
+  content: ""; }
 
 .mdl-icon--collections:before {
-  content: "\f1e9"; }
+  content: ""; }
 
 .mdl-icon--colorize:before {
-  content: "\f1ea"; }
+  content: ""; }
 
 .mdl-icon--color-lens:before {
-  content: "\f1eb"; }
+  content: ""; }
 
 .mdl-icon--compare:before {
-  content: "\f1ec"; }
+  content: ""; }
 
 .mdl-icon--control-point:before {
-  content: "\f1ed"; }
+  content: ""; }
 
 .mdl-icon--control-point-duplicate:before {
-  content: "\f1ee"; }
+  content: ""; }
 
 .mdl-icon--crop:before {
-  content: "\f1ef"; }
+  content: ""; }
 
 .mdl-icon--crop-3-2:before {
-  content: "\f1f0"; }
+  content: ""; }
 
 .mdl-icon--crop-5-4:before {
-  content: "\f1f1"; }
+  content: ""; }
 
 .mdl-icon--crop-7-5:before {
-  content: "\f1f2"; }
+  content: ""; }
 
 .mdl-icon--crop-16-9:before {
-  content: "\f1f3"; }
+  content: ""; }
 
 .mdl-icon--crop-din:before {
-  content: "\f1f4"; }
+  content: ""; }
 
 .mdl-icon--crop-free:before {
-  content: "\f1f5"; }
+  content: ""; }
 
 .mdl-icon--crop-landscape:before {
-  content: "\f1f6"; }
+  content: ""; }
 
 .mdl-icon--crop-original:before {
-  content: "\f1f7"; }
+  content: ""; }
 
 .mdl-icon--crop-portrait:before {
-  content: "\f1f8"; }
+  content: ""; }
 
 .mdl-icon--crop-square:before {
-  content: "\f1f9"; }
+  content: ""; }
 
 .mdl-icon--dehaze:before {
-  content: "\f1fa"; }
+  content: ""; }
 
 .mdl-icon--details:before {
-  content: "\f1fb"; }
+  content: ""; }
 
 .mdl-icon--edit:before {
-  content: "\f1fc"; }
+  content: ""; }
 
 .mdl-icon--exposure:before {
-  content: "\f1fd"; }
+  content: ""; }
 
 .mdl-icon--exposure-minus-1:before {
-  content: "\f1fe"; }
+  content: ""; }
 
 .mdl-icon--exposure-minus-2:before {
-  content: "\f1ff"; }
+  content: ""; }
 
 .mdl-icon--exposure-zero:before {
-  content: "\f200"; }
+  content: ""; }
 
 .mdl-icon--exposure-plus-1:before {
-  content: "\f201"; }
+  content: ""; }
 
 .mdl-icon--exposure-plus-2:before {
-  content: "\f202"; }
+  content: ""; }
 
 .mdl-icon--filter:before {
-  content: "\f203"; }
+  content: ""; }
 
 .mdl-icon--filter-1:before {
-  content: "\f204"; }
+  content: ""; }
 
 .mdl-icon--filter-2:before {
-  content: "\f205"; }
+  content: ""; }
 
 .mdl-icon--filter-3:before {
-  content: "\f206"; }
+  content: ""; }
 
 .mdl-icon--filter-4:before {
-  content: "\f207"; }
+  content: ""; }
 
 .mdl-icon--filter-5:before {
-  content: "\f208"; }
+  content: ""; }
 
 .mdl-icon--filter-6:before {
-  content: "\f209"; }
+  content: ""; }
 
 .mdl-icon--filter-7:before {
-  content: "\f20a"; }
+  content: ""; }
 
 .mdl-icon--filter-8:before {
-  content: "\f20b"; }
+  content: ""; }
 
 .mdl-icon--filter-9:before {
-  content: "\f20c"; }
+  content: ""; }
 
 .mdl-icon--filter-9-plus:before {
-  content: "\f20d"; }
+  content: ""; }
 
 .mdl-icon--filter-b-and-w:before {
-  content: "\f20e"; }
+  content: ""; }
 
 .mdl-icon--filter-center-focus:before {
-  content: "\f20f"; }
+  content: ""; }
 
 .mdl-icon--filter-drama:before {
-  content: "\f210"; }
+  content: ""; }
 
 .mdl-icon--filter-frames:before {
-  content: "\f211"; }
+  content: ""; }
 
 .mdl-icon--filter-hdr:before {
-  content: "\f212"; }
+  content: ""; }
 
 .mdl-icon--filter-none:before {
-  content: "\f213"; }
+  content: ""; }
 
 .mdl-icon--filter-tilt-shift:before {
-  content: "\f214"; }
+  content: ""; }
 
 .mdl-icon--filter-vintage:before {
-  content: "\f215"; }
+  content: ""; }
 
 .mdl-icon--flare:before {
-  content: "\f216"; }
+  content: ""; }
 
 .mdl-icon--flash-auto:before {
-  content: "\f217"; }
+  content: ""; }
 
 .mdl-icon--flash-off:before {
-  content: "\f218"; }
+  content: ""; }
 
 .mdl-icon--flash-on:before {
-  content: "\f219"; }
+  content: ""; }
 
 .mdl-icon--flip:before {
-  content: "\f21a"; }
+  content: ""; }
 
 .mdl-icon--gradient:before {
-  content: "\f21b"; }
+  content: ""; }
 
 .mdl-icon--grain:before {
-  content: "\f21c"; }
+  content: ""; }
 
 .mdl-icon--grid-off:before {
-  content: "\f21d"; }
+  content: ""; }
 
 .mdl-icon--grid-on:before {
-  content: "\f21e"; }
+  content: ""; }
 
 .mdl-icon--hdr-off:before {
-  content: "\f21f"; }
+  content: ""; }
 
 .mdl-icon--hdr-on:before {
-  content: "\f220"; }
+  content: ""; }
 
 .mdl-icon--hdr-strong:before {
-  content: "\f221"; }
+  content: ""; }
 
 .mdl-icon--hdr-weak:before {
-  content: "\f222"; }
+  content: ""; }
 
 .mdl-icon--healing:before {
-  content: "\f223"; }
+  content: ""; }
 
 .mdl-icon--image:before {
-  content: "\f224"; }
+  content: ""; }
 
 .mdl-icon--image-aspect-ratio:before {
-  content: "\f225"; }
+  content: ""; }
 
 .mdl-icon--iso:before {
-  content: "\f226"; }
+  content: ""; }
 
 .mdl-icon--landscape:before {
-  content: "\f227"; }
+  content: ""; }
 
 .mdl-icon--leak-add:before {
-  content: "\f228"; }
+  content: ""; }
 
 .mdl-icon--leak-remove:before {
-  content: "\f229"; }
+  content: ""; }
 
 .mdl-icon--lens:before {
-  content: "\f22a"; }
+  content: ""; }
 
 .mdl-icon--looks:before {
-  content: "\f22b"; }
+  content: ""; }
 
 .mdl-icon--looks-1:before {
-  content: "\f22c"; }
+  content: ""; }
 
 .mdl-icon--looks-2:before {
-  content: "\f22d"; }
+  content: ""; }
 
 .mdl-icon--looks-3:before {
-  content: "\f22e"; }
+  content: ""; }
 
 .mdl-icon--looks-4:before {
-  content: "\f22f"; }
+  content: ""; }
 
 .mdl-icon--looks-5:before {
-  content: "\f230"; }
+  content: ""; }
 
 .mdl-icon--looks-6:before {
-  content: "\f231"; }
+  content: ""; }
 
 .mdl-icon--looks-one:before {
-  content: "\f22c"; }
+  content: ""; }
 
 .mdl-icon--looks-two:before {
-  content: "\f22d"; }
+  content: ""; }
 
 .mdl-icon--loupe:before {
-  content: "\f232"; }
+  content: ""; }
 
 .mdl-icon--movie-creation:before {
-  content: "\f233"; }
+  content: ""; }
 
 .mdl-icon--nature:before {
-  content: "\f234"; }
+  content: ""; }
 
 .mdl-icon--nature-people:before {
-  content: "\f235"; }
+  content: ""; }
 
 .mdl-icon--navigate-before:before {
-  content: "\f236"; }
+  content: ""; }
 
 .mdl-icon--navigate-next:before {
-  content: "\f237"; }
+  content: ""; }
 
 .mdl-icon--palette:before {
-  content: "\f238"; }
+  content: ""; }
 
 .mdl-icon--panorama:before {
-  content: "\f239"; }
+  content: ""; }
 
 .mdl-icon--panorama-fisheye:before {
-  content: "\f23a"; }
+  content: ""; }
 
 .mdl-icon--panorama-horizontal:before {
-  content: "\f23b"; }
+  content: ""; }
 
 .mdl-icon--panorama-vertical:before {
-  content: "\f23c"; }
+  content: ""; }
 
 .mdl-icon--panorama-wide-angle:before {
-  content: "\f23d"; }
+  content: ""; }
 
 .mdl-icon--photo:before {
-  content: "\f23e"; }
+  content: ""; }
 
 .mdl-icon--photo-album:before {
-  content: "\f23f"; }
+  content: ""; }
 
 .mdl-icon--photo-camera:before {
-  content: "\f240"; }
+  content: ""; }
 
 .mdl-icon--photo-library:before {
-  content: "\f241"; }
+  content: ""; }
 
 .mdl-icon--portrait:before {
-  content: "\f242"; }
+  content: ""; }
 
 .mdl-icon--remove-red-eye:before {
-  content: "\f243"; }
+  content: ""; }
 
 .mdl-icon--rotate-left:before {
-  content: "\f244"; }
+  content: ""; }
 
 .mdl-icon--rotate-right:before {
-  content: "\f245"; }
+  content: ""; }
 
 .mdl-icon--slideshow:before {
-  content: "\f246"; }
+  content: ""; }
 
 .mdl-icon--straighten:before {
-  content: "\f247"; }
+  content: ""; }
 
 .mdl-icon--style:before {
-  content: "\f248"; }
+  content: ""; }
 
 .mdl-icon--switch-camera:before {
-  content: "\f249"; }
+  content: ""; }
 
 .mdl-icon--switch-video:before {
-  content: "\f24a"; }
+  content: ""; }
 
 .mdl-icon--tag-faces:before {
-  content: "\f24b"; }
+  content: ""; }
 
 .mdl-icon--texture:before {
-  content: "\f24c"; }
+  content: ""; }
 
 .mdl-icon--timelapse:before {
-  content: "\f24d"; }
+  content: ""; }
 
 .mdl-icon--timer:before {
-  content: "\f24e"; }
+  content: ""; }
 
 .mdl-icon--timer-3:before {
-  content: "\f24f"; }
+  content: ""; }
 
 .mdl-icon--timer-10:before {
-  content: "\f250"; }
+  content: ""; }
 
 .mdl-icon--timer-auto:before {
-  content: "\f251"; }
+  content: ""; }
 
 .mdl-icon--timer-off:before {
-  content: "\f252"; }
+  content: ""; }
 
 .mdl-icon--tonality:before {
-  content: "\f253"; }
+  content: ""; }
 
 .mdl-icon--transform:before {
-  content: "\f254"; }
+  content: ""; }
 
 .mdl-icon--tune:before {
-  content: "\f255"; }
+  content: ""; }
 
 .mdl-icon--wb-auto:before {
-  content: "\f256"; }
+  content: ""; }
 
 .mdl-icon--wb-cloudy:before {
-  content: "\f257"; }
+  content: ""; }
 
 .mdl-icon--wb-incandescent:before {
-  content: "\f258"; }
+  content: ""; }
 
 .mdl-icon--wb-irradescent:before {
-  content: "\f259"; }
+  content: ""; }
 
 .mdl-icon--wb-sunny:before {
-  content: "\f25a"; }
+  content: ""; }
 
 .mdl-icon--beenhere:before {
-  content: "\f25b"; }
+  content: ""; }
 
 .mdl-icon--directions:before {
-  content: "\f25c"; }
+  content: ""; }
 
 .mdl-icon--directions-bike:before {
-  content: "\f25d"; }
+  content: ""; }
 
 .mdl-icon--directions-bus:before {
-  content: "\f25e"; }
+  content: ""; }
 
 .mdl-icon--directions-car:before {
-  content: "\f25f"; }
+  content: ""; }
 
 .mdl-icon--directions-ferry:before {
-  content: "\f260"; }
+  content: ""; }
 
 .mdl-icon--directions-subway:before {
-  content: "\f261"; }
+  content: ""; }
 
 .mdl-icon--directions-train:before {
-  content: "\f262"; }
+  content: ""; }
 
 .mdl-icon--directions-transit:before {
-  content: "\f263"; }
+  content: ""; }
 
 .mdl-icon--directions-walk:before {
-  content: "\f264"; }
+  content: ""; }
 
 .mdl-icon--flight:before {
-  content: "\f265"; }
+  content: ""; }
 
 .mdl-icon--hotel:before {
-  content: "\f266"; }
+  content: ""; }
 
 .mdl-icon--layers:before {
-  content: "\f267"; }
+  content: ""; }
 
 .mdl-icon--layers-clear:before {
-  content: "\f268"; }
+  content: ""; }
 
 .mdl-icon--local-airport:before {
-  content: "\f269"; }
+  content: ""; }
 
 .mdl-icon--local-atm:before {
-  content: "\f26a"; }
+  content: ""; }
 
 .mdl-icon--local-attraction:before {
-  content: "\f26b"; }
+  content: ""; }
 
 .mdl-icon--local-bar:before {
-  content: "\f26c"; }
+  content: ""; }
 
 .mdl-icon--local-cafe:before {
-  content: "\f26d"; }
+  content: ""; }
 
 .mdl-icon--local-car-wash:before {
-  content: "\f26e"; }
+  content: ""; }
 
 .mdl-icon--local-convenience-store:before {
-  content: "\f26f"; }
+  content: ""; }
 
 .mdl-icon--local-drink:before {
-  content: "\f270"; }
+  content: ""; }
 
 .mdl-icon--local-florist:before {
-  content: "\f271"; }
+  content: ""; }
 
 .mdl-icon--local-gas-station:before {
-  content: "\f272"; }
+  content: ""; }
 
 .mdl-icon--local-grocery-store:before {
-  content: "\f273"; }
+  content: ""; }
 
 .mdl-icon--local-hospital:before {
-  content: "\f274"; }
+  content: ""; }
 
 .mdl-icon--local-hotel:before {
-  content: "\f275"; }
+  content: ""; }
 
 .mdl-icon--local-laundry-service:before {
-  content: "\f276"; }
+  content: ""; }
 
 .mdl-icon--local-library:before {
-  content: "\f277"; }
+  content: ""; }
 
 .mdl-icon--local-mall:before {
-  content: "\f278"; }
+  content: ""; }
 
 .mdl-icon--local-movies:before {
-  content: "\f279"; }
+  content: ""; }
 
 .mdl-icon--local-offer:before {
-  content: "\f27a"; }
+  content: ""; }
 
 .mdl-icon--local-parking:before {
-  content: "\f27b"; }
+  content: ""; }
 
 .mdl-icon--local-pharmacy:before {
-  content: "\f27c"; }
+  content: ""; }
 
 .mdl-icon--local-phone:before {
-  content: "\f27d"; }
+  content: ""; }
 
 .mdl-icon--local-pizza:before {
-  content: "\f27e"; }
+  content: ""; }
 
 .mdl-icon--local-play:before {
-  content: "\f27f"; }
+  content: ""; }
 
 .mdl-icon--local-post-office:before {
-  content: "\f280"; }
+  content: ""; }
 
 .mdl-icon--local-print-shop:before {
-  content: "\f281"; }
+  content: ""; }
 
 .mdl-icon--local-restaurant:before {
-  content: "\f282"; }
+  content: ""; }
 
 .mdl-icon--local-see:before {
-  content: "\f283"; }
+  content: ""; }
 
 .mdl-icon--local-shipping:before {
-  content: "\f284"; }
+  content: ""; }
 
 .mdl-icon--local-taxi:before {
-  content: "\f285"; }
+  content: ""; }
 
 .mdl-icon--location-history:before {
-  content: "\f286"; }
+  content: ""; }
 
 .mdl-icon--map:before {
-  content: "\f287"; }
+  content: ""; }
 
 .mdl-icon--my-location:before {
-  content: "\f288"; }
+  content: ""; }
 
 .mdl-icon--navigation:before {
-  content: "\f289"; }
+  content: ""; }
 
 .mdl-icon--pin-drop:before {
-  content: "\f28a"; }
+  content: ""; }
 
 .mdl-icon--place:before {
-  content: "\f28b"; }
+  content: ""; }
 
 .mdl-icon--rate-review:before {
-  content: "\f28c"; }
+  content: ""; }
 
 .mdl-icon--restaurant-menu:before {
-  content: "\f28d"; }
+  content: ""; }
 
 .mdl-icon--satellite:before {
-  content: "\f28e"; }
+  content: ""; }
 
 .mdl-icon--store-mall-directory:before {
-  content: "\f28f"; }
+  content: ""; }
 
 .mdl-icon--terrain:before {
-  content: "\f290"; }
+  content: ""; }
 
 .mdl-icon--traffic:before {
-  content: "\f291"; }
+  content: ""; }
 
 .mdl-icon--apps:before {
-  content: "\f292"; }
+  content: ""; }
 
 .mdl-icon--cancel:before {
-  content: "\f293"; }
+  content: ""; }
 
 .mdl-icon--arrow-drop-down-circle:before {
-  content: "\f294"; }
+  content: ""; }
 
 .mdl-icon--arrow-drop-down:before {
-  content: "\f295"; }
+  content: ""; }
 
 .mdl-icon--arrow-drop-up:before {
-  content: "\f296"; }
+  content: ""; }
 
 .mdl-icon--arrow-back:before {
-  content: "\f297"; }
+  content: ""; }
 
 .mdl-icon--arrow-forward:before {
-  content: "\f298"; }
+  content: ""; }
 
 .mdl-icon--check:before {
-  content: "\f299"; }
+  content: ""; }
 
 .mdl-icon--close:before {
-  content: "\f29a"; }
+  content: ""; }
 
 .mdl-icon--chevron-left:before {
-  content: "\f29b"; }
+  content: ""; }
 
 .mdl-icon--chevron-right:before {
-  content: "\f29c"; }
+  content: ""; }
 
 .mdl-icon--expand-less:before {
-  content: "\f29d"; }
+  content: ""; }
 
 .mdl-icon--expand-more:before {
-  content: "\f29e"; }
+  content: ""; }
 
 .mdl-icon--fullscreen:before {
-  content: "\f29f"; }
+  content: ""; }
 
 .mdl-icon--fullscreen-exit:before {
-  content: "\f2a0"; }
+  content: ""; }
 
 .mdl-icon--menu:before {
-  content: "\f2a1"; }
+  content: ""; }
 
 .mdl-icon--more-horiz:before {
-  content: "\f2a2"; }
+  content: ""; }
 
 .mdl-icon--more-vert:before {
-  content: "\f2a3"; }
+  content: ""; }
 
 .mdl-icon--refresh:before {
-  content: "\f2a4"; }
+  content: ""; }
 
 .mdl-icon--unfold-less:before {
-  content: "\f2a5"; }
+  content: ""; }
 
 .mdl-icon--unfold-more:before {
-  content: "\f2a6"; }
+  content: ""; }
 
 .mdl-icon--adb:before {
-  content: "\f2a7"; }
+  content: ""; }
 
 .mdl-icon--bluetooth-audio:before {
-  content: "\f2a8"; }
+  content: ""; }
 
 .mdl-icon--disc-full:before {
-  content: "\f2a9"; }
+  content: ""; }
 
 .mdl-icon--dnd-forwardslash:before {
-  content: "\f2aa"; }
+  content: ""; }
 
 .mdl-icon--do-not-disturb:before {
-  content: "\f2ab"; }
+  content: ""; }
 
 .mdl-icon--drive-eta:before {
-  content: "\f2ac"; }
+  content: ""; }
 
 .mdl-icon--event-available:before {
-  content: "\f2ad"; }
+  content: ""; }
 
 .mdl-icon--event-busy:before {
-  content: "\f2ae"; }
+  content: ""; }
 
 .mdl-icon--event-note:before {
-  content: "\f2af"; }
+  content: ""; }
 
 .mdl-icon--folder-special:before {
-  content: "\f2b0"; }
+  content: ""; }
 
 .mdl-icon--mms:before {
-  content: "\f2b1"; }
+  content: ""; }
 
 .mdl-icon--more:before {
-  content: "\f2b2"; }
+  content: ""; }
 
 .mdl-icon--network-locked:before {
-  content: "\f2b3"; }
+  content: ""; }
 
 .mdl-icon--phone-bluetooth-speaker:before {
-  content: "\f2b4"; }
+  content: ""; }
 
 .mdl-icon--phone-forwarded:before {
-  content: "\f2b5"; }
+  content: ""; }
 
 .mdl-icon--phone-in-talk:before {
-  content: "\f2b6"; }
+  content: ""; }
 
 .mdl-icon--phone-locked:before {
-  content: "\f2b7"; }
+  content: ""; }
 
 .mdl-icon--phone-missed:before {
-  content: "\f2b8"; }
+  content: ""; }
 
 .mdl-icon--phone-paused:before {
-  content: "\f2b9"; }
+  content: ""; }
 
 .mdl-icon--play-download:before {
-  content: "\f2ba"; }
+  content: ""; }
 
 .mdl-icon--play-install:before {
-  content: "\f2bb"; }
+  content: ""; }
 
 .mdl-icon--sd-card:before {
-  content: "\f2bc"; }
+  content: ""; }
 
 .mdl-icon--sim-card-alert:before {
-  content: "\f2bd"; }
+  content: ""; }
 
 .mdl-icon--sms:before {
-  content: "\f2be"; }
+  content: ""; }
 
 .mdl-icon--sms-failed:before {
-  content: "\f2bf"; }
+  content: ""; }
 
 .mdl-icon--sync:before {
-  content: "\f2c0"; }
+  content: ""; }
 
 .mdl-icon--sync-disabled:before {
-  content: "\f2c1"; }
+  content: ""; }
 
 .mdl-icon--sync-problem:before {
-  content: "\f2c2"; }
+  content: ""; }
 
 .mdl-icon--system-update:before {
-  content: "\f2c3"; }
+  content: ""; }
 
 .mdl-icon--tap-and-play:before {
-  content: "\f2c4"; }
+  content: ""; }
 
 .mdl-icon--time-to-leave:before {
-  content: "\f2c5"; }
+  content: ""; }
 
 .mdl-icon--vibration:before {
-  content: "\f2c6"; }
+  content: ""; }
 
 .mdl-icon--voice-chat:before {
-  content: "\f2c7"; }
+  content: ""; }
 
 .mdl-icon--vpn-lock:before {
-  content: "\f2c8"; }
+  content: ""; }
 
 .mdl-icon--cake:before {
-  content: "\f2c9"; }
+  content: ""; }
 
 .mdl-icon--domain:before {
-  content: "\f2ca"; }
+  content: ""; }
 
 .mdl-icon--location-city:before {
-  content: "\f2cb"; }
+  content: ""; }
 
 .mdl-icon--mood:before {
-  content: "\f2cc"; }
+  content: ""; }
 
 .mdl-icon--notifications-none:before {
-  content: "\f2cd"; }
+  content: ""; }
 
 .mdl-icon--notifications:before {
-  content: "\f2ce"; }
+  content: ""; }
 
 .mdl-icon--notifications-off:before {
-  content: "\f2cf"; }
+  content: ""; }
 
 .mdl-icon--notifications-on:before {
-  content: "\f2d0"; }
+  content: ""; }
 
 .mdl-icon--notifications-paused:before {
-  content: "\f2d1"; }
+  content: ""; }
 
 .mdl-icon--pages:before {
-  content: "\f2d2"; }
+  content: ""; }
 
 .mdl-icon--party-mode:before {
-  content: "\f2d3"; }
+  content: ""; }
 
 .mdl-icon--group:before {
-  content: "\f2d4"; }
+  content: ""; }
 
 .mdl-icon--group-add:before {
-  content: "\f2d5"; }
+  content: ""; }
 
 .mdl-icon--people:before {
-  content: "\f2d6"; }
+  content: ""; }
 
 .mdl-icon--people-outline:before {
-  content: "\f2d7"; }
+  content: ""; }
 
 .mdl-icon--person:before {
-  content: "\f2d8"; }
+  content: ""; }
 
 .mdl-icon--person-add:before {
-  content: "\f2d9"; }
+  content: ""; }
 
 .mdl-icon--person-outline:before {
-  content: "\f2da"; }
+  content: ""; }
 
 .mdl-icon--plus-one:before {
-  content: "\f2db"; }
+  content: ""; }
 
 .mdl-icon--poll:before {
-  content: "\f2dc"; }
+  content: ""; }
 
 .mdl-icon--public:before {
-  content: "\f2dd"; }
+  content: ""; }
 
 .mdl-icon--school:before {
-  content: "\f2de"; }
+  content: ""; }
 
 .mdl-icon--share:before {
-  content: "\f2df"; }
+  content: ""; }
 
 .mdl-icon--whatshot:before {
-  content: "\f2e0"; }
+  content: ""; }
 
 .mdl-icon--check-box:before {
-  content: "\f2e1"; }
+  content: ""; }
 
 .mdl-icon--check-box-outline-blank:before {
-  content: "\f2e2"; }
+  content: ""; }
 
 .mdl-icon--radio-button-off:before {
-  content: "\f2e3"; }
+  content: ""; }
 
 .mdl-icon--radio-button-on:before {
-  content: "\f2e4"; }
+  content: ""; }
 
 .mdl-icon--star:before {
-  content: "\f2e5"; }
+  content: ""; }
 
 .mdl-icon--star-half:before {
-  content: "\f2e6"; }
+  content: ""; }
 
 .mdl-icon--star-outline:before {
-  content: "\f2e7"; }
+  content: ""; }
 
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
   src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?v=1.1.1");
-  src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format('embedded-opentype'), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format('woff'), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format('truetype');
+  src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format("embedded-opentype"), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format("woff"), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format("truetype");
   font-weight: normal;
   font-style: normal; }
-
 /* ==========  TYPOGRAPHY  ========== */
 /* We're splitting fonts into "preferred" and "performance" in order to optimize
    page loading. For important text, such as the body, we want it to load
@@ -6362,14 +6390,15 @@ Palettes (10 colors) 50 - 900 possible
 @media screen and (min-width: 760px) {
   .mdl-mega-footer--left-section {
     float: left; }
+
   .mdl-mega-footer--right-section {
     float: right; }
+
   .mdl-mega-footer--right-section a {
     display: inline-block;
     margin-left: 16px;
     line-height: 36px;
     vertical-align: middle; } }
-
 .mdl-mega-footer--social-btn {
   width: 36px;
   height: 36px;
@@ -6385,24 +6414,29 @@ Palettes (10 colors) 50 - 900 possible
 @media screen and (min-width: 760px) {
   .mdl-mega-footer--drop-down-section {
     width: 33%; }
-  .mdl-mega-footer--drop-down-section:nth-child(1), .mdl-mega-footer--drop-down-section:nth-child(2) {
+
+  .mdl-mega-footer--drop-down-section:nth-child(1),
+  .mdl-mega-footer--drop-down-section:nth-child(2) {
     float: left; }
+
   .mdl-mega-footer--drop-down-section:nth-child(3) {
     float: right; }
     .mdl-mega-footer--drop-down-section:nth-child(3):after {
       clear: right; }
+
   .mdl-mega-footer--drop-down-section:nth-child(4) {
     float: right; }
+
   .mdl-mega-footer--middle-section:after {
     content: '';
     display: block;
     clear: both; } }
-
 @media screen and (min-width: 1024px) {
-  .mdl-mega-footer--drop-down-section, .mdl-mega-footer--drop-down-section:nth-child(3), .mdl-mega-footer--drop-down-section:nth-child(4) {
+  .mdl-mega-footer--drop-down-section,
+  .mdl-mega-footer--drop-down-section:nth-child(3),
+  .mdl-mega-footer--drop-down-section:nth-child(4) {
     width: 24%;
     float: left; } }
-
 .mdl-mega-footer--heading-checkbox {
   position: absolute;
   width: 100%;
@@ -6417,7 +6451,7 @@ Palettes (10 colors) 50 - 900 possible
     font-family: 'Material-Design-Iconic-Font';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "\f29d"; }
+    content: ""; }
 
 .mdl-mega-footer--heading-checkbox:checked ~ ul {
   display: none; }
@@ -6425,7 +6459,7 @@ Palettes (10 colors) 50 - 900 possible
   font-family: 'Material-Design-Iconic-Font';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: "\f29e"; }
+  content: ""; }
 
 .mdl-mega-footer--heading {
   position: relative;
@@ -6469,11 +6503,11 @@ Palettes (10 colors) 50 - 900 possible
     display: none; }
     .mdl-mega-footer--heading-checkbox ~ .mdl-mega-footer--heading:after {
       background-image: none; }
+
   .mdl-mega-footer--heading-checkbox:checked ~ ul {
     display: block; }
   .mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer--heading:after {
     content: ''; } }
-
 .mdl-mega-footer--bottom-section {
   margin-bottom: 16px; }
 
@@ -6496,7 +6530,6 @@ Palettes (10 colors) 50 - 900 possible
     float: left;
     margin-bottom: 0;
     margin-right: 16px; } }
-
 /* ==========  Color Palettes  ========== */
 /*
 Palettes (14 colors)  50 - 900 + A100 - A700 possible
@@ -7007,9 +7040,8 @@ Palettes (10 colors) 50 - 900 possible
   .mdl-js-progress:not(.mdl-progress__indeterminate) > .auxbar {
     background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #9e9e9e, #9e9e9e);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #9e9e9e, #9e9e9e);
-    -webkit-mask: url('../images/buffer.svg');
-            mask: url('../images/buffer.svg'); } }
-
+    -webkit-mask: url("../images/buffer.svg");
+            mask: url("../images/buffer.svg"); } }
 .mdl-js-progress:not(.mdl-progress__indeterminate) > .auxbar {
   background-color: rgba(0, 0, 0, 0.26); }
 
@@ -7051,15 +7083,12 @@ Palettes (10 colors) 50 - 900 possible
   0% {
     left: 0%;
     width: 0%; }
-
   50% {
     left: 25%;
     width: 75%; }
-
   75% {
     left: 100%;
     width: 0%; } }
-
 @-webkit-keyframes indeterminate2{
   0%{
     left: 0%;
@@ -7073,24 +7102,19 @@ Palettes (10 colors) 50 - 900 possible
   100%{
     left: 100%;
     width: 0%; } }
-
 @keyframes indeterminate2 {
   0% {
     left: 0%;
     width: 0%; }
-
   50% {
     left: 0%;
     width: 0%; }
-
   75% {
     left: 0%;
     width: 25%; }
-
   100% {
     left: 100%;
     width: 0%; } }
-
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -7230,7 +7254,7 @@ Palettes (10 colors) 50 - 900 possible
 .mdl-layout-title {
   display: block;
   position: relative;
-  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
@@ -7342,7 +7366,7 @@ Palettes (10 colors) 50 - 900 possible
     font-family: 'Material-Design-Iconic-Font';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "\f2a1"; }
+    content: ""; }
   .mdl-layout__header .mdl-layout__drawer-button {
     position: absolute;
     color: white;
@@ -7602,8 +7626,7 @@ Palettes (10 colors) 50 - 900 possible
   position: absolute;
   top: 0;
   height: 96px;
-  width: calc(100% -
-        96px);
+  width: calc(100% - 96px);
   padding: 0 0 0 72px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7616,8 +7639,7 @@ Palettes (10 colors) 50 - 900 possible
     display: none; }
   @media screen and (max-width: 850px) {
     .mdl-layout__tab-bar {
-      width: calc(100% -
-          44px);
+      width: calc(100% - 44px);
       padding: 0 0 0 56px; } }
   .mdl-layout--fixed-tabs .mdl-layout__tab-bar {
     padding: 0;
@@ -7678,7 +7700,7 @@ Palettes (10 colors) 50 - 900 possible
     font-family: 'Material-Design-Iconic-Font';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "\f29b"; }
+    content: ""; }
 
 .mdl-layout__tab-bar-right-button {
   right: 0; }
@@ -7687,7 +7709,7 @@ Palettes (10 colors) 50 - 900 possible
     font-family: 'Material-Design-Iconic-Font';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "\f29c"; }
+    content: ""; }
 
 .mdl-layout__tab {
   margin: 0;
@@ -8296,7 +8318,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-slider.is-upgraded.is-lowest-value::-moz-range-thumb {
       border: 2px solid rgba(0, 0, 0, 0.26);
       background: transparent; }
-    .mdl-slider.is-upgraded.is-lowest-value ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded.is-lowest-value ~
+    .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-webkit-slider-thumb {
       border: 1.8px solid rgba(0, 0, 0, 0.26);
@@ -8307,13 +8330,15 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       border: 1.8px solid rgba(0, 0, 0, 0.26);
       transform: scale(1.33);
       box-shadow: none; }
-    .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active) ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active) ~
+    .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 8px; }
     .mdl-slider.is-upgraded.is-lowest-value:active::-webkit-slider-thumb {
       border: 1.5px solid rgba(0, 0, 0, 0.26);
       -webkit-transform: scale(1.5);
               transform: scale(1.5); }
-    .mdl-slider.is-upgraded.is-lowest-value:active ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded.is-lowest-value:active ~
+    .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 9px; }
     .mdl-slider.is-upgraded.is-lowest-value:active::-moz-range-thumb {
       border: 1.5px solid rgba(0, 0, 0, 0.26);
@@ -8343,10 +8368,12 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-slider.is-upgraded:disabled:focus::-moz-range-thumb, .mdl-slider.is-upgraded:disabled:active::-moz-range-thumb, .mdl-slider.is-upgraded:disabled::-moz-range-thumb {
       transform: scale(0.667);
       background: rgba(0, 0, 0, 0.26); }
-    .mdl-slider.is-upgraded:disabled ~ .mdl-slider__background-flex > .mdl-slider__background-lower {
+    .mdl-slider.is-upgraded:disabled ~
+    .mdl-slider__background-flex > .mdl-slider__background-lower {
       background-color: rgba(0, 0, 0, 0.26);
       left: -6px; }
-    .mdl-slider.is-upgraded:disabled ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded:disabled ~
+    .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded.is-lowest-value:disabled:focus::-webkit-slider-thumb, .mdl-slider.is-upgraded.is-lowest-value:disabled:active::-webkit-slider-thumb, .mdl-slider.is-upgraded.is-lowest-value:disabled::-webkit-slider-thumb {
       border: 3px solid rgba(0, 0, 0, 0.26);
@@ -8357,7 +8384,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       border: 3px solid rgba(0, 0, 0, 0.26);
       background: transparent;
       transform: scale(0.667); }
-    .mdl-slider.is-upgraded.is-lowest-value:disabled:active ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded.is-lowest-value:disabled:active ~
+    .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded:disabled:focus::-ms-thumb, .mdl-slider.is-upgraded:disabled:active::-ms-thumb, .mdl-slider.is-upgraded:disabled::-ms-thumb {
       -ms-transform: scale(0.25);
@@ -8557,7 +8585,6 @@ Palettes (10 colors) 50 - 900 possible
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
-
 .mdl-spinner__layer {
   position: absolute;
   width: 100%;
@@ -8626,35 +8653,27 @@ Palettes (10 colors) 50 - 900 possible
   12.5% {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); }
-
   25% {
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg); }
-
   37.5% {
     -webkit-transform: rotate(405deg);
             transform: rotate(405deg); }
-
   50% {
     -webkit-transform: rotate(540deg);
             transform: rotate(540deg); }
-
   62.5% {
     -webkit-transform: rotate(675deg);
             transform: rotate(675deg); }
-
   75% {
     -webkit-transform: rotate(810deg);
             transform: rotate(810deg); }
-
   87.5% {
     -webkit-transform: rotate(945deg);
             transform: rotate(945deg); }
-
   to {
     -webkit-transform: rotate(1080deg);
             transform: rotate(1080deg); } }
-
 /**
 * HACK: Even though the intention is to have the current .mdl-spinner__layer-N
 * at `opacity: 1`, we set it to `opacity: 0.99` instead since this forces Chrome
@@ -8680,22 +8699,16 @@ Palettes (10 colors) 50 - 900 possible
 @keyframes mdl-spinner__layer-1-fade-in-out {
   from {
     opacity: 0.99; }
-
   25% {
     opacity: 0.99; }
-
   26% {
     opacity: 0; }
-
   89% {
     opacity: 0; }
-
   90% {
     opacity: 0.99; }
-
   100% {
     opacity: 0.99; } }
-
 @-webkit-keyframes mdl-spinner__layer-2-fade-in-out{
   from{
     opacity: 0; }
@@ -8707,23 +8720,17 @@ Palettes (10 colors) 50 - 900 possible
     opacity: 0.99; }
   51%{
     opacity: 0; } }
-
 @keyframes mdl-spinner__layer-2-fade-in-out {
   from {
     opacity: 0; }
-
   15% {
     opacity: 0; }
-
   25% {
     opacity: 0.99; }
-
   50% {
     opacity: 0.99; }
-
   51% {
     opacity: 0; } }
-
 @-webkit-keyframes mdl-spinner__layer-3-fade-in-out{
   from{
     opacity: 0; }
@@ -8735,23 +8742,17 @@ Palettes (10 colors) 50 - 900 possible
     opacity: 0.99; }
   76%{
     opacity: 0; } }
-
 @keyframes mdl-spinner__layer-3-fade-in-out {
   from {
     opacity: 0; }
-
   40% {
     opacity: 0; }
-
   50% {
     opacity: 0.99; }
-
   75% {
     opacity: 0.99; }
-
   76% {
     opacity: 0; } }
-
 @-webkit-keyframes mdl-spinner__layer-4-fade-in-out{
   from{
     opacity: 0; }
@@ -8763,23 +8764,17 @@ Palettes (10 colors) 50 - 900 possible
     opacity: 0.99; }
   100%{
     opacity: 0; } }
-
 @keyframes mdl-spinner__layer-4-fade-in-out {
   from {
     opacity: 0; }
-
   65% {
     opacity: 0; }
-
   75% {
     opacity: 0.99; }
-
   90% {
     opacity: 0.99; }
-
   100% {
     opacity: 0; } }
-
 /**
 * Patch the gap that appear between the two adjacent
 * div.mdl-spinner__circle-clipper while the spinner is rotating
@@ -8859,15 +8854,12 @@ Palettes (10 colors) 50 - 900 possible
   from {
     -webkit-transform: rotate(130deg);
             transform: rotate(130deg); }
-
   50% {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); }
-
   to {
     -webkit-transform: rotate(130deg);
             transform: rotate(130deg); } }
-
 @-webkit-keyframes mdl-spinner__right-spin{
   from{
     -webkit-transform: rotate(-130deg);
@@ -8878,20 +8870,16 @@ Palettes (10 colors) 50 - 900 possible
   to{
     -webkit-transform: rotate(-130deg);
             transform: rotate(-130deg); } }
-
 @keyframes mdl-spinner__right-spin {
   from {
     -webkit-transform: rotate(-130deg);
             transform: rotate(-130deg); }
-
   50% {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg); }
-
   to {
     -webkit-transform: rotate(-130deg);
             transform: rotate(-130deg); } }
-
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -9104,8 +9092,8 @@ Palettes (10 colors) 50 - 900 possible
   cursor: pointer;
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-  -webkit-transition-duration: 0.4s;
-          transition-duration: 0.4s;
+  -webkit-transition-duration: 0.40s;
+          transition-duration: 0.40s;
   -webkit-transition-timing-function: step-end;
           transition-timing-function: step-end;
   -webkit-transition-property: left;
@@ -9304,11 +9292,9 @@ Palettes (10 colors) 50 - 900 possible
   0% {
     opacity: 0;
     width: 0; }
-
   100% {
     opacity: 1;
     width: 100%; } }
-
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -9645,17 +9631,14 @@ Palettes (10 colors) 50 - 900 possible
     -webkit-transform: scale(0);
             transform: scale(0);
     opacity: 0; }
-
   50% {
     -webkit-transform: scale(0.99);
             transform: scale(0.99); }
-
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
     visibility: visible; } }
-
 /* ==========  Color Palettes  ========== */
 /*
 Palettes (14 colors)  50 - 900 + A100 - A700 possible
@@ -10639,3 +10622,5 @@ Palettes (10 colors) 50 - 900 possible
       padding: 8px 16px;
       color: rgba(0, 0, 0, 0.87);
       background-color: white; }
+
+/*# sourceMappingURL=material.css.map */
