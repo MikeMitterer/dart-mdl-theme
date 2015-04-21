@@ -2038,6 +2038,48 @@ Palettes (10 colors) 50 - 900 possible
 .mdl-color--A700 {
   background-color: #00b8d4 !important; }
 
+.mdl-color--accent-50 {
+  background-color: #f1f8e9 !important; }
+
+.mdl-color--accent-100 {
+  background-color: #dcedc8 !important; }
+
+.mdl-color--accent-200 {
+  background-color: #c5e1a5 !important; }
+
+.mdl-color--accent-300 {
+  background-color: #aed581 !important; }
+
+.mdl-color--accent-400 {
+  background-color: #9ccc65 !important; }
+
+.mdl-color--accent-500 {
+  background-color: #8bc34a !important; }
+
+.mdl-color--accent-600 {
+  background-color: #7cb342 !important; }
+
+.mdl-color--accent-700 {
+  background-color: #689f38 !important; }
+
+.mdl-color--accent-800 {
+  background-color: #558b2f !important; }
+
+.mdl-color--accent-900 {
+  background-color: #33691e !important; }
+
+.mdl-color--accent-A100 {
+  background-color: #ccff90 !important; }
+
+.mdl-color--accent-A200 {
+  background-color: #b2ff59 !important; }
+
+.mdl-color--accent-A400 {
+  background-color: #76ff03 !important; }
+
+.mdl-color--accent-A700 {
+  background-color: #64dd17 !important; }
+
 .mdl-color-text--primary, a.mdl-color-text--primary {
   color: #00bcd4 !important; }
 
@@ -2094,6 +2136,48 @@ Palettes (10 colors) 50 - 900 possible
 
 .mdl-color-text--A700 {
   color: #00b8d4 !important; }
+
+.mdl-color-text--accent-50 {
+  color: #f1f8e9 !important; }
+
+.mdl-color-text--accent-100 {
+  color: #dcedc8 !important; }
+
+.mdl-color-text--accent-200 {
+  color: #c5e1a5 !important; }
+
+.mdl-color-text--accent-300 {
+  color: #aed581 !important; }
+
+.mdl-color-text--accent-400 {
+  color: #9ccc65 !important; }
+
+.mdl-color-text--accent-500 {
+  color: #8bc34a !important; }
+
+.mdl-color-text--accent-600 {
+  color: #7cb342 !important; }
+
+.mdl-color-text--accent-700 {
+  color: #689f38 !important; }
+
+.mdl-color-text--accent-800 {
+  color: #558b2f !important; }
+
+.mdl-color-text--accent-900 {
+  color: #33691e !important; }
+
+.mdl-color-text--accent-A100 {
+  color: #ccff90 !important; }
+
+.mdl-color-text--accent-A200 {
+  color: #b2ff59 !important; }
+
+.mdl-color-text--accent-A400 {
+  color: #76ff03 !important; }
+
+.mdl-color-text--accent-A700 {
+  color: #64dd17 !important; }
 
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
