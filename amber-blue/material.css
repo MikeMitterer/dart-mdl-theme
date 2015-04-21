@@ -2054,46 +2054,46 @@ Palettes (10 colors) 50 - 900 possible
   color: white !important; }
 
 .mdl-color-text--50 {
-  background-color: #fff8e1 !important; }
+  color: #fff8e1 !important; }
 
 .mdl-color-text--100 {
-  background-color: #ffecb3 !important; }
+  color: #ffecb3 !important; }
 
 .mdl-color-text--200 {
-  background-color: #ffe082 !important; }
+  color: #ffe082 !important; }
 
 .mdl-color-text--300 {
-  background-color: #ffd54f !important; }
+  color: #ffd54f !important; }
 
 .mdl-color-text--400 {
-  background-color: #ffca28 !important; }
+  color: #ffca28 !important; }
 
 .mdl-color-text--500 {
-  background-color: #ffc107 !important; }
+  color: #ffc107 !important; }
 
 .mdl-color-text--600 {
-  background-color: #ffb300 !important; }
+  color: #ffb300 !important; }
 
 .mdl-color-text--700 {
-  background-color: #ffa000 !important; }
+  color: #ffa000 !important; }
 
 .mdl-color-text--800 {
-  background-color: #ff8f00 !important; }
+  color: #ff8f00 !important; }
 
 .mdl-color-text--900 {
-  background-color: #ff6f00 !important; }
+  color: #ff6f00 !important; }
 
 .mdl-color-text--A100 {
-  background-color: #ffe57f !important; }
+  color: #ffe57f !important; }
 
 .mdl-color-text--A200 {
-  background-color: #ffd740 !important; }
+  color: #ffd740 !important; }
 
 .mdl-color-text--A400 {
-  background-color: #ffc400 !important; }
+  color: #ffc400 !important; }
 
 .mdl-color-text--A700 {
-  background-color: #ffab00 !important; }
+  color: #ffab00 !important; }
 
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
@@ -6955,6 +6955,7 @@ Palettes (10 colors) 50 - 900 possible
   text-decoration: none;
   cursor: pointer;
   height: 48px;
+  width: 100%;
   line-height: 48px;
   white-space: nowrap;
   opacity: 0;
@@ -7393,8 +7394,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-transition-property: -webkit-transform;
           transition-property: transform;
   color: #424242;
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: visible;
   z-index: 5; }
   .mdl-layout__drawer.is-visible {
     -webkit-transform: translateX(0);
@@ -7504,7 +7504,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-transition-property: min-height, box-shadow;
           transition-property: min-height, box-shadow;
   padding-left: 24px;
-  overflow: hidden; }
+  overflow: visible; }
   .mdl-layout.has-drawer .mdl-layout__header {
     padding-left: 72px; }
   @media screen and (max-width: 850px) {
@@ -9500,6 +9500,7 @@ Palettes (10 colors) 50 - 900 possible
 
 .mdl-textfield--expandable {
   min-width: 32px;
+  width: auto;
   min-height: 32px; }
 
 .mdl-textfield__input {
