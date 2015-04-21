@@ -41,11 +41,7 @@ hr {
  * Remove the gap between images, videos, audio and canvas and the bottom of
  * their containers: h5bp.com/i/440
  */
-audio,
-canvas,
-img,
-svg,
-video {
+audio, canvas, img, svg, video {
   vertical-align: middle; }
 
 /*
@@ -101,8 +97,7 @@ textarea {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
  */
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -127,8 +122,7 @@ textarea {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
  */
-.clearfix:before,
-.clearfix:after {
+.clearfix:before, .clearfix:after {
   content: " ";
   /* 1 */
   display: table;
@@ -142,71 +136,48 @@ textarea {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
-@media print, (-o-min-device-pixel-ratio: 5 / 4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request: h5bp.com/r
    ========================================================================== */
 @media print {
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
-
-  a,
-  a:visited {
+  a, a:visited {
     text-decoration: underline; }
-
   a[href]:after {
     content: " (" attr(href) ")"; }
-
   abbr[title]:after {
     content: " (" attr(title) ")"; }
-
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+  a[href^="#"]:after, a[href^="javascript:"]:after {
     content: ""; }
-
-  pre,
-  blockquote {
+  pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
-
-  tr,
-  img {
+  tr, img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; }
-
-  p,
-  h2,
-  h3 {
+  p, h2, h3 {
     orphans: 3;
     widows: 3; }
-
-  h2,
-  h3 {
+  h2, h3 {
     page-break-after: avoid; } }
+
 /* Remove the unwanted box around FAB buttons */
 /* More info: http://goo.gl/IPwKi */
-a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu,
-.mdl-icon-toggle, .mdl-item, .mdl-radio, .mdl-slider, .mdl-switch, .mdl-tabs__tab {
+a, .mdl-accordion, .mdl-button, .mdl-card, .mdl-checkbox, .mdl-dropdown-menu, .mdl-icon-toggle, .mdl-item, .mdl-radio, .mdl-slider, .mdl-switch, .mdl-tabs__tab {
   -webkit-tap-highlight-color: transparent;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
 
@@ -2182,9 +2153,10 @@ Palettes (10 colors) 50 - 900 possible
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
   src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?v=1.1.1");
-  src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format("embedded-opentype"), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format("woff"), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format("truetype");
+  src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format('embedded-opentype'), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format('woff'), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format('truetype');
   font-weight: normal;
   font-style: normal; }
+
 /* ==========  TYPOGRAPHY  ========== */
 /* We're splitting fonts into "preferred" and "performance" in order to optimize
    page loading. For important text, such as the body, we want it to load
@@ -2294,7 +2266,7 @@ Palettes (10 colors) 50 - 900 possible
 /* ANIMATION */
 /* PROGRESS */
 html, body {
-  font-family: "Helvetica", "Arial", sans-serif;
+  font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px; }
@@ -2307,7 +2279,7 @@ h1, h2, h3, h4, h5, h6, p {
  * Styles for HTML elements
  */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
@@ -2316,40 +2288,40 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 0.6em; }
 
 h1 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.02em; }
 
 h2 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 45px;
   font-weight: 400;
   line-height: 48px; }
 
 h3 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 40px; }
 
 h4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   -moz-osx-font-smoothing: grayscale; }
 
 h5 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em; }
 
 h6 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2366,7 +2338,7 @@ a {
   font-weight: bold; }
 
 blockquote {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 24px;
   font-weight: 300;
   font-style: italic;
@@ -2389,14 +2361,14 @@ dt {
  * Class Name Styles
  */
 .mdl-typography--display-4 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 112px;
   font-weight: 300;
   line-height: 1;
   letter-spacing: -0.04em; }
 
 .mdl-typography--display-4-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 112px;
   font-weight: 300;
   line-height: 1;
@@ -2404,14 +2376,14 @@ dt {
   opacity: 0.54; }
 
 .mdl-typography--display-3 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
   letter-spacing: -0.02em; }
 
 .mdl-typography--display-3-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 56px;
   font-weight: 400;
   line-height: 1;
@@ -2419,40 +2391,40 @@ dt {
   opacity: 0.54; }
 
 .mdl-typography--display-2 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 45px;
   font-weight: 400;
   line-height: 48px; }
 
 .mdl-typography--display-2-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 45px;
   font-weight: 400;
   line-height: 48px;
   opacity: 0.54; }
 
 .mdl-typography--display-1 {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 40px; }
 
 .mdl-typography--display-1-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 34px;
   font-weight: 400;
   line-height: 40px;
   opacity: 0.54; }
 
 .mdl-typography--headline {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   -moz-osx-font-smoothing: grayscale; }
 
 .mdl-typography--headline-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
@@ -2460,14 +2432,14 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--title {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.02em; }
 
 .mdl-typography--title-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
@@ -2475,14 +2447,14 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--subhead {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em; }
 
 .mdl-typography--subhead-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -2516,14 +2488,14 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--body-2-force-preferred-font {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.04em; }
 
 .mdl-typography--body-2-force-preferred-font-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
@@ -2531,14 +2503,14 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--body-1-force-preferred-font {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.04em; }
 
 .mdl-typography--body-1-force-preferred-font-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -2552,7 +2524,7 @@ dt {
   letter-spacing: 0.08em; }
 
 .mdl-typography--caption-force-preferred-font {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
@@ -2566,7 +2538,7 @@ dt {
   opacity: 0.54; }
 
 .mdl-typography--caption-force-preferred-font-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
@@ -2574,14 +2546,14 @@ dt {
   opacity: 0.54; }
 
 .mdl-typography--menu {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.04em; }
 
 .mdl-typography--menu-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
@@ -2589,7 +2561,7 @@ dt {
   opacity: 0.87; }
 
 .mdl-typography--button {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2597,7 +2569,7 @@ dt {
   letter-spacing: 0.04em; }
 
 .mdl-typography--button-color-contrast {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -2629,12 +2601,10 @@ dt {
 .mdl-typography--text-capitalize {
   text-transform: capitalize; }
 
-.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td,
-.mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
+.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td, .mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9; }
 
-.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td,
-.mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
+.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td, .mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #f9f9f9; }
 
 .mdl-typography--font-thin {
@@ -3113,7 +3083,7 @@ Palettes (10 colors) 50 - 900 possible
   padding: 0 8px;
   margin: 0 4px;
   display: inline-block;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -3192,7 +3162,7 @@ Palettes (10 colors) 50 - 900 possible
         -ms-transform: translate(-12px, -12px);
             transform: translate(-12px, -12px);
     /*top: ($button-fab-size - $button-fab-font-size) / 2;
-    left: ($button-fab-size - $button-fab-font-size) / 2;*/
+      left: ($button-fab-size - $button-fab-font-size) / 2;*/
     line-height: 24px;
     width: 24px; }
   .mdl-button--fab.mdl-button--mini-fab {
@@ -3695,12 +3665,12 @@ Palettes (10 colors) 50 - 900 possible
     background: transparent; }
 
 .mdl-checkbox__tick-outline {
-  -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2FclipPath%3E%3Cmask%20maskContentUnits%3D%22objectBoundingBox%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cpath%20clip-path%3D%22url(%23a)%22%20d%3D%22M0%200h1v1H0z%22%2F%3E%3C%2Fsvg%3E");
-          mask: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2FclipPath%3E%3Cmask%20maskContentUnits%3D%22objectBoundingBox%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cpath%20clip-path%3D%22url(%23a)%22%20d%3D%22M0%200h1v1H0z%22%2F%3E%3C%2Fsvg%3E"); }
+  -webkit-mask: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2FclipPath%3E%3Cmask%20maskContentUnits%3D%22objectBoundingBox%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cpath%20clip-path%3D%22url(%23a)%22%20d%3D%22M0%200h1v1H0z%22%2F%3E%3C%2Fsvg%3E');
+          mask: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2FclipPath%3E%3Cmask%20maskContentUnits%3D%22objectBoundingBox%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cpath%20clip-path%3D%22url(%23a)%22%20d%3D%22M0%200h1v1H0z%22%2F%3E%3C%2Fsvg%3E'); }
   .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
-    background: #e91e63 url("data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E"); }
+    background: #e91e63 url('data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E'); }
   .mdl-checkbox.is-checked.is-disabled .mdl-checkbox__tick-outline {
-    background: rgba(0, 0, 0, 0.26) url("data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E"); }
+    background: rgba(0, 0, 0, 0.26) url('data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E'); }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -3967,1100 +3937,1101 @@ Palettes (10 colors) 50 - 900 possible
 /* PROGRESS */
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
-  src: url("../fonts/Material-Design-Iconic-Font.eot?v=1.1.1");
-  src: url("../fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format("embedded-opentype"), url("../fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format("woff"), url("../fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format("truetype");
+  src: url('../fonts/Material-Design-Iconic-Font.eot?v=1.1.1');
+  src: url('../fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1') format('embedded-opentype'), url('../fonts/Material-Design-Iconic-Font.woff?v=1.1.1') format('woff'), url('../fonts/Material-Design-Iconic-Font.ttf?v=1.1.1') format('truetype');
   font-weight: normal;
   font-style: normal; }
+
 .mdl-icon {
   font-family: 'Material-Design-Iconic-Font';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
 .mdl-icon--3d-rotation:before {
-  content: ""; }
+  content: "\f000"; }
 
 .mdl-icon--accessibility:before {
-  content: ""; }
+  content: "\f001"; }
 
 .mdl-icon--account-balance:before {
-  content: ""; }
+  content: "\f002"; }
 
 .mdl-icon--account-balance-wallet:before {
-  content: ""; }
+  content: "\f003"; }
 
 .mdl-icon--account-box:before {
-  content: ""; }
+  content: "\f004"; }
 
 .mdl-icon--account-child:before {
-  content: ""; }
+  content: "\f005"; }
 
 .mdl-icon--account-circle:before {
-  content: ""; }
+  content: "\f006"; }
 
 .mdl-icon--add-shopping-cart:before {
-  content: ""; }
+  content: "\f007"; }
 
 .mdl-icon--alarm:before {
-  content: ""; }
+  content: "\f008"; }
 
 .mdl-icon--alarm-add:before {
-  content: ""; }
+  content: "\f009"; }
 
 .mdl-icon--alarm-off:before {
-  content: ""; }
+  content: "\f00a"; }
 
 .mdl-icon--alarm-on:before {
-  content: ""; }
+  content: "\f00b"; }
 
 .mdl-icon--android:before {
-  content: ""; }
+  content: "\f00c"; }
 
 .mdl-icon--announcement:before {
-  content: ""; }
+  content: "\f00d"; }
 
 .mdl-icon--aspect-ratio:before {
-  content: ""; }
+  content: "\f00e"; }
 
 .mdl-icon--assessment:before {
-  content: ""; }
+  content: "\f00f"; }
 
 .mdl-icon--assignment:before {
-  content: ""; }
+  content: "\f010"; }
 
 .mdl-icon--assignment-ind:before {
-  content: ""; }
+  content: "\f011"; }
 
 .mdl-icon--assignment-late:before {
-  content: ""; }
+  content: "\f012"; }
 
 .mdl-icon--assignment-return:before {
-  content: ""; }
+  content: "\f013"; }
 
 .mdl-icon--assignment-returned:before {
-  content: ""; }
+  content: "\f014"; }
 
 .mdl-icon--assignment-turned-in:before {
-  content: ""; }
+  content: "\f015"; }
 
 .mdl-icon--autorenew:before {
-  content: ""; }
+  content: "\f016"; }
 
 .mdl-icon--backup:before {
-  content: ""; }
+  content: "\f017"; }
 
 .mdl-icon--book:before {
-  content: ""; }
+  content: "\f018"; }
 
 .mdl-icon--bookmark:before {
-  content: ""; }
+  content: "\f019"; }
 
 .mdl-icon--bookmark-outline:before {
-  content: ""; }
+  content: "\f01a"; }
 
 .mdl-icon--bug-report:before {
-  content: ""; }
+  content: "\f01b"; }
 
 .mdl-icon--cached:before {
-  content: ""; }
+  content: "\f01c"; }
 
 .mdl-icon--class:before {
-  content: ""; }
+  content: "\f01d"; }
 
 .mdl-icon--credit-card:before {
-  content: ""; }
+  content: "\f01e"; }
 
 .mdl-icon--dashboard:before {
-  content: ""; }
+  content: "\f01f"; }
 
 .mdl-icon--delete:before {
-  content: ""; }
+  content: "\f020"; }
 
 .mdl-icon--description:before {
-  content: ""; }
+  content: "\f021"; }
 
 .mdl-icon--dns:before {
-  content: ""; }
+  content: "\f022"; }
 
 .mdl-icon--done:before {
-  content: ""; }
+  content: "\f023"; }
 
 .mdl-icon--done-all:before {
-  content: ""; }
+  content: "\f024"; }
 
 .mdl-icon--event:before {
-  content: ""; }
+  content: "\f025"; }
 
 .mdl-icon--exit-to-app:before {
-  content: ""; }
+  content: "\f026"; }
 
 .mdl-icon--explore:before {
-  content: ""; }
+  content: "\f027"; }
 
 .mdl-icon--extension:before {
-  content: ""; }
+  content: "\f028"; }
 
 .mdl-icon--face-unlock:before {
-  content: ""; }
+  content: "\f029"; }
 
 .mdl-icon--favorite:before {
-  content: ""; }
+  content: "\f02a"; }
 
 .mdl-icon--favorite-outline:before {
-  content: ""; }
+  content: "\f02b"; }
 
 .mdl-icon--find-in-page:before {
-  content: ""; }
+  content: "\f02c"; }
 
 .mdl-icon--find-replace:before {
-  content: ""; }
+  content: "\f02d"; }
 
 .mdl-icon--flip-to-back:before {
-  content: ""; }
+  content: "\f02e"; }
 
 .mdl-icon--flip-to-front:before {
-  content: ""; }
+  content: "\f02f"; }
 
 .mdl-icon--get-app:before {
-  content: ""; }
+  content: "\f030"; }
 
 .mdl-icon--grade:before {
-  content: ""; }
+  content: "\f031"; }
 
 .mdl-icon--group-work:before {
-  content: ""; }
+  content: "\f032"; }
 
 .mdl-icon--help:before {
-  content: ""; }
+  content: "\f033"; }
 
 .mdl-icon--highlight-remove:before {
-  content: ""; }
+  content: "\f034"; }
 
 .mdl-icon--history:before {
-  content: ""; }
+  content: "\f035"; }
 
 .mdl-icon--home:before {
-  content: ""; }
+  content: "\f036"; }
 
 .mdl-icon--https:before {
-  content: ""; }
+  content: "\f037"; }
 
 .mdl-icon--info:before {
-  content: ""; }
+  content: "\f038"; }
 
 .mdl-icon--info-outline:before {
-  content: ""; }
+  content: "\f039"; }
 
 .mdl-icon--input:before {
-  content: ""; }
+  content: "\f03a"; }
 
 .mdl-icon--invert-colors:before {
-  content: ""; }
+  content: "\f03b"; }
 
 .mdl-icon--label:before {
-  content: ""; }
+  content: "\f03c"; }
 
 .mdl-icon--label-outline:before {
-  content: ""; }
+  content: "\f03d"; }
 
 .mdl-icon--language:before {
-  content: ""; }
+  content: "\f03e"; }
 
 .mdl-icon--launch:before {
-  content: ""; }
+  content: "\f03f"; }
 
 .mdl-icon--list:before {
-  content: ""; }
+  content: "\f040"; }
 
 .mdl-icon--lock:before {
-  content: ""; }
+  content: "\f041"; }
 
 .mdl-icon--lock-open:before {
-  content: ""; }
+  content: "\f042"; }
 
 .mdl-icon--lock-outline:before {
-  content: ""; }
+  content: "\f043"; }
 
 .mdl-icon--loyalty:before {
-  content: ""; }
+  content: "\f044"; }
 
 .mdl-icon--markunread-mailbox:before {
-  content: ""; }
+  content: "\f045"; }
 
 .mdl-icon--note-add:before {
-  content: ""; }
+  content: "\f046"; }
 
 .mdl-icon--open-in-browser:before {
-  content: ""; }
+  content: "\f047"; }
 
 .mdl-icon--open-in-new:before {
-  content: ""; }
+  content: "\f048"; }
 
 .mdl-icon--open-with:before {
-  content: ""; }
+  content: "\f049"; }
 
 .mdl-icon--pageview:before {
-  content: ""; }
+  content: "\f04a"; }
 
 .mdl-icon--payment:before {
-  content: ""; }
+  content: "\f04b"; }
 
 .mdl-icon--perm-camera-mic:before {
-  content: ""; }
+  content: "\f04c"; }
 
 .mdl-icon--perm-contact-cal:before {
-  content: ""; }
+  content: "\f04d"; }
 
 .mdl-icon--perm-data-setting:before {
-  content: ""; }
+  content: "\f04e"; }
 
 .mdl-icon--perm-device-info:before {
-  content: ""; }
+  content: "\f04f"; }
 
 .mdl-icon--perm-identity:before {
-  content: ""; }
+  content: "\f050"; }
 
 .mdl-icon--perm-media:before {
-  content: ""; }
+  content: "\f051"; }
 
 .mdl-icon--perm-phone-msg:before {
-  content: ""; }
+  content: "\f052"; }
 
 .mdl-icon--perm-scan-wifi:before {
-  content: ""; }
+  content: "\f053"; }
 
 .mdl-icon--picture-in-picture:before {
-  content: ""; }
+  content: "\f054"; }
 
 .mdl-icon--polymer:before {
-  content: ""; }
+  content: "\f055"; }
 
 .mdl-icon--print:before {
-  content: ""; }
+  content: "\f056"; }
 
 .mdl-icon--query-builder:before {
-  content: ""; }
+  content: "\f057"; }
 
 .mdl-icon--question-answer:before {
-  content: ""; }
+  content: "\f058"; }
 
 .mdl-icon--receipt:before {
-  content: ""; }
+  content: "\f059"; }
 
 .mdl-icon--redeem:before {
-  content: ""; }
+  content: "\f05a"; }
 
 .mdl-icon--reorder:before {
-  content: ""; }
+  content: "\f094"; }
 
 .mdl-icon--report-problem:before {
-  content: ""; }
+  content: "\f05b"; }
 
 .mdl-icon--restore:before {
-  content: ""; }
+  content: "\f05c"; }
 
 .mdl-icon--room:before {
-  content: ""; }
+  content: "\f05d"; }
 
 .mdl-icon--schedule:before {
-  content: ""; }
+  content: "\f05e"; }
 
 .mdl-icon--search:before {
-  content: ""; }
+  content: "\f05f"; }
 
 .mdl-icon--settings:before {
-  content: ""; }
+  content: "\f060"; }
 
 .mdl-icon--settings-applications:before {
-  content: ""; }
+  content: "\f061"; }
 
 .mdl-icon--settings-backup-restore:before {
-  content: ""; }
+  content: "\f062"; }
 
 .mdl-icon--settings-bluetooth:before {
-  content: ""; }
+  content: "\f063"; }
 
 .mdl-icon--settings-cell:before {
-  content: ""; }
+  content: "\f064"; }
 
 .mdl-icon--settings-display:before {
-  content: ""; }
+  content: "\f065"; }
 
 .mdl-icon--settings-ethernet:before {
-  content: ""; }
+  content: "\f066"; }
 
 .mdl-icon--settings-input-antenna:before {
-  content: ""; }
+  content: "\f067"; }
 
 .mdl-icon--settings-input-component:before {
-  content: ""; }
+  content: "\f068"; }
 
 .mdl-icon--settings-input-composite:before {
-  content: ""; }
+  content: "\f069"; }
 
 .mdl-icon--settings-input-hdmi:before {
-  content: ""; }
+  content: "\f06a"; }
 
 .mdl-icon--settings-input-svideo:before {
-  content: ""; }
+  content: "\f06b"; }
 
 .mdl-icon--settings-overscan:before {
-  content: ""; }
+  content: "\f06c"; }
 
 .mdl-icon--settings-phone:before {
-  content: ""; }
+  content: "\f06d"; }
 
 .mdl-icon--settings-power:before {
-  content: ""; }
+  content: "\f06e"; }
 
 .mdl-icon--settings-remote:before {
-  content: ""; }
+  content: "\f06f"; }
 
 .mdl-icon--settings-voice:before {
-  content: ""; }
+  content: "\f070"; }
 
 .mdl-icon--shop:before {
-  content: ""; }
+  content: "\f071"; }
 
 .mdl-icon--shopping-basket:before {
-  content: ""; }
+  content: "\f072"; }
 
 .mdl-icon--shopping-cart:before {
-  content: ""; }
+  content: "\f073"; }
 
 .mdl-icon--shop-two:before {
-  content: ""; }
+  content: "\f074"; }
 
 .mdl-icon--speaker-notes:before {
-  content: ""; }
+  content: "\f075"; }
 
 .mdl-icon--spellcheck:before {
-  content: ""; }
+  content: "\f076"; }
 
 .mdl-icon--star-rate:before {
-  content: ""; }
+  content: "\f077"; }
 
 .mdl-icon--stars:before {
-  content: ""; }
+  content: "\f078"; }
 
 .mdl-icon--store:before {
-  content: ""; }
+  content: "\f079"; }
 
 .mdl-icon--subject:before {
-  content: ""; }
+  content: "\f07a"; }
 
 .mdl-icon--supervisor-account:before {
   content: ""; }
 
 .mdl-icon--swap-horiz:before {
-  content: ""; }
+  content: "\f07b"; }
 
 .mdl-icon--swap-vert:before {
-  content: ""; }
+  content: "\f07c"; }
 
 .mdl-icon--swap-vert-circle:before {
-  content: ""; }
+  content: "\f07d"; }
 
 .mdl-icon--system-update-tv:before {
-  content: ""; }
+  content: "\f07e"; }
 
 .mdl-icon--tab:before {
-  content: ""; }
+  content: "\f07f"; }
 
 .mdl-icon--tab-unselected:before {
-  content: ""; }
+  content: "\f080"; }
 
 .mdl-icon--theaters:before {
-  content: ""; }
+  content: "\f081"; }
 
 .mdl-icon--thumb-down:before {
-  content: ""; }
+  content: "\f082"; }
 
 .mdl-icon--thumbs-up-down:before {
-  content: ""; }
+  content: "\f083"; }
 
 .mdl-icon--thumb-up:before {
-  content: ""; }
+  content: "\f084"; }
 
 .mdl-icon--toc:before {
-  content: ""; }
+  content: "\f085"; }
 
 .mdl-icon--today:before {
-  content: ""; }
+  content: "\f086"; }
 
 .mdl-icon--track-changes:before {
-  content: ""; }
+  content: "\f087"; }
 
 .mdl-icon--translate:before {
-  content: ""; }
+  content: "\f088"; }
 
 .mdl-icon--trending-down:before {
-  content: ""; }
+  content: "\f089"; }
 
 .mdl-icon--trending-neutral:before {
-  content: ""; }
+  content: "\f08a"; }
 
 .mdl-icon--trending-up:before {
-  content: ""; }
+  content: "\f08b"; }
 
 .mdl-icon--turned-in:before {
-  content: ""; }
+  content: "\f08c"; }
 
 .mdl-icon--turned-in-not:before {
-  content: ""; }
+  content: "\f08d"; }
 
 .mdl-icon--verified-user:before {
-  content: ""; }
+  content: "\f08e"; }
 
 .mdl-icon--view-agenda:before {
-  content: ""; }
+  content: "\f08f"; }
 
 .mdl-icon--view-array:before {
-  content: ""; }
+  content: "\f090"; }
 
 .mdl-icon--view-carousel:before {
-  content: ""; }
+  content: "\f091"; }
 
 .mdl-icon--view-column:before {
-  content: ""; }
+  content: "\f092"; }
 
 .mdl-icon--view-day:before {
-  content: ""; }
+  content: "\f093"; }
 
 .mdl-icon--view-headline:before {
-  content: ""; }
+  content: "\f094"; }
 
 .mdl-icon--view-list:before {
-  content: ""; }
+  content: "\f095"; }
 
 .mdl-icon--view-module:before {
-  content: ""; }
+  content: "\f096"; }
 
 .mdl-icon--view-quilt:before {
-  content: ""; }
+  content: "\f097"; }
 
 .mdl-icon--view-stream:before {
-  content: ""; }
+  content: "\f098"; }
 
 .mdl-icon--view-week:before {
-  content: ""; }
+  content: "\f099"; }
 
 .mdl-icon--visibility:before {
-  content: ""; }
+  content: "\f09a"; }
 
 .mdl-icon--visibility-off:before {
-  content: ""; }
+  content: "\f09b"; }
 
 .mdl-icon--wallet-giftcard:before {
-  content: ""; }
+  content: "\f09c"; }
 
 .mdl-icon--wallet-membership:before {
-  content: ""; }
+  content: "\f09d"; }
 
 .mdl-icon--wallet-travel:before {
-  content: ""; }
+  content: "\f09e"; }
 
 .mdl-icon--work:before {
-  content: ""; }
+  content: "\f09f"; }
 
 .mdl-icon--error:before {
-  content: ""; }
+  content: "\f0a0"; }
 
 .mdl-icon--warning:before {
-  content: ""; }
+  content: "\f0a1"; }
 
 .mdl-icon--album:before {
-  content: ""; }
+  content: "\f0a2"; }
 
 .mdl-icon--av-timer:before {
-  content: ""; }
+  content: "\f0a3"; }
 
 .mdl-icon--closed-caption:before {
-  content: ""; }
+  content: "\f0a4"; }
 
 .mdl-icon--equalizer:before {
-  content: ""; }
+  content: "\f0a5"; }
 
 .mdl-icon--explicit:before {
-  content: ""; }
+  content: "\f0a6"; }
 
 .mdl-icon--fast-forward:before {
-  content: ""; }
+  content: "\f0a7"; }
 
 .mdl-icon--fast-rewind:before {
-  content: ""; }
+  content: "\f0a8"; }
 
 .mdl-icon--games:before {
-  content: ""; }
+  content: "\f0a9"; }
 
 .mdl-icon--hearing:before {
-  content: ""; }
+  content: "\f0aa"; }
 
 .mdl-icon--high-quality:before {
-  content: ""; }
+  content: "\f0ab"; }
 
 .mdl-icon--loop:before {
-  content: ""; }
+  content: "\f0ac"; }
 
 .mdl-icon--mic:before {
-  content: ""; }
+  content: "\f0ad"; }
 
 .mdl-icon--mic-none:before {
-  content: ""; }
+  content: "\f0ae"; }
 
 .mdl-icon--mic-off:before {
-  content: ""; }
+  content: "\f0af"; }
 
 .mdl-icon--movie:before {
-  content: ""; }
+  content: "\f0b0"; }
 
 .mdl-icon--my-library-add:before {
-  content: ""; }
+  content: "\f0b1"; }
 
 .mdl-icon--my-library-books:before {
-  content: ""; }
+  content: "\f0b2"; }
 
 .mdl-icon--my-library-music:before {
-  content: ""; }
+  content: "\f0b3"; }
 
 .mdl-icon--new-releases:before {
-  content: ""; }
+  content: "\f0b4"; }
 
 .mdl-icon--not-interested:before {
-  content: ""; }
+  content: "\f0b5"; }
 
 .mdl-icon--pause:before {
-  content: ""; }
+  content: "\f0b6"; }
 
 .mdl-icon--pause-circle-fill:before {
-  content: ""; }
+  content: "\f0b7"; }
 
 .mdl-icon--pause-circle-outline:before {
-  content: ""; }
+  content: "\f0b8"; }
 
 .mdl-icon--play-arrow:before {
-  content: ""; }
+  content: "\f0b9"; }
 
 .mdl-icon--play-circle-fill:before {
-  content: ""; }
+  content: "\f0ba"; }
 
 .mdl-icon--play-circle-outline:before {
-  content: ""; }
+  content: "\f0bb"; }
 
 .mdl-icon--playlist-add:before {
-  content: ""; }
+  content: "\f0bc"; }
 
 .mdl-icon--play-shopping-bag:before {
-  content: ""; }
+  content: "\f0bd"; }
 
 .mdl-icon--queue:before {
-  content: ""; }
+  content: "\f0be"; }
 
 .mdl-icon--queue-music:before {
-  content: ""; }
+  content: "\f0bf"; }
 
 .mdl-icon--radio:before {
-  content: ""; }
+  content: "\f0c0"; }
 
 .mdl-icon--recent-actors:before {
-  content: ""; }
+  content: "\f0c1"; }
 
 .mdl-icon--repeat:before {
-  content: ""; }
+  content: "\f0c2"; }
 
 .mdl-icon--repeat-one:before {
-  content: ""; }
+  content: "\f0c3"; }
 
 .mdl-icon--replay:before {
-  content: ""; }
+  content: "\f0c4"; }
 
 .mdl-icon--shuffle:before {
-  content: ""; }
+  content: "\f0c5"; }
 
 .mdl-icon--skip-next:before {
-  content: ""; }
+  content: "\f0c6"; }
 
 .mdl-icon--skip-previous:before {
-  content: ""; }
+  content: "\f0c7"; }
 
 .mdl-icon--snooze:before {
-  content: ""; }
+  content: "\f0c8"; }
 
 .mdl-icon--stop:before {
-  content: ""; }
+  content: "\f0c9"; }
 
 .mdl-icon--subtitles:before {
-  content: ""; }
+  content: "\f0ca"; }
 
 .mdl-icon--surround-sound:before {
-  content: ""; }
+  content: "\f0cb"; }
 
 .mdl-icon--videocam:before {
-  content: ""; }
+  content: "\f0cc"; }
 
 .mdl-icon--videocam-off:before {
-  content: ""; }
+  content: "\f0cd"; }
 
 .mdl-icon--video-collection:before {
-  content: ""; }
+  content: "\f0ce"; }
 
 .mdl-icon--volume-down:before {
-  content: ""; }
+  content: "\f0cf"; }
 
 .mdl-icon--volume-mute:before {
-  content: ""; }
+  content: "\f0d0"; }
 
 .mdl-icon--volume-off:before {
-  content: ""; }
+  content: "\f0d1"; }
 
 .mdl-icon--volume-up:before {
-  content: ""; }
+  content: "\f0d2"; }
 
 .mdl-icon--web:before {
-  content: ""; }
+  content: "\f0d3"; }
 
 .mdl-icon--business:before {
-  content: ""; }
+  content: "\f0d4"; }
 
 .mdl-icon--call:before {
-  content: ""; }
+  content: "\f0d5"; }
 
 .mdl-icon--call-end:before {
-  content: ""; }
+  content: "\f0d6"; }
 
 .mdl-icon--call-made:before {
-  content: ""; }
+  content: "\f0d7"; }
 
 .mdl-icon--call-merge:before {
-  content: ""; }
+  content: "\f0d8"; }
 
 .mdl-icon--call-missed:before {
-  content: ""; }
+  content: "\f0d9"; }
 
 .mdl-icon--call-received:before {
-  content: ""; }
+  content: "\f0da"; }
 
 .mdl-icon--call-split:before {
-  content: ""; }
+  content: "\f0db"; }
 
 .mdl-icon--chat:before {
-  content: ""; }
+  content: "\f0dc"; }
 
 .mdl-icon--clear-all:before {
-  content: ""; }
+  content: "\f0dd"; }
 
 .mdl-icon--comment:before {
-  content: ""; }
+  content: "\f0de"; }
 
 .mdl-icon--contacts:before {
-  content: ""; }
+  content: "\f0df"; }
 
 .mdl-icon--dialer-sip:before {
-  content: ""; }
+  content: "\f0e0"; }
 
 .mdl-icon--dialpad:before {
-  content: ""; }
+  content: "\f0e1"; }
 
 .mdl-icon--dnd-on:before {
-  content: ""; }
+  content: "\f0e2"; }
 
 .mdl-icon--email:before {
-  content: ""; }
+  content: "\f0e3"; }
 
 .mdl-icon--forum:before {
-  content: ""; }
+  content: "\f0e4"; }
 
 .mdl-icon--import-export:before {
-  content: ""; }
+  content: "\f0e5"; }
 
 .mdl-icon--invert-colors-off:before {
-  content: ""; }
+  content: "\f0e6"; }
 
 .mdl-icon--invert-colors-on:before {
-  content: ""; }
+  content: "\f0e7"; }
 
 .mdl-icon--live-help:before {
-  content: ""; }
+  content: "\f0e8"; }
 
 .mdl-icon--location-off:before {
-  content: ""; }
+  content: "\f0e9"; }
 
 .mdl-icon--location-on:before {
-  content: ""; }
+  content: "\f0ea"; }
 
 .mdl-icon--message:before {
-  content: ""; }
+  content: "\f0eb"; }
 
 .mdl-icon--messenger:before {
-  content: ""; }
+  content: "\f0ec"; }
 
 .mdl-icon--no-sim:before {
-  content: ""; }
+  content: "\f0ed"; }
 
 .mdl-icon--phone:before {
-  content: ""; }
+  content: "\f0ee"; }
 
 .mdl-icon--portable-wifi-off:before {
-  content: ""; }
+  content: "\f0ef"; }
 
 .mdl-icon--quick-contacts-dialer:before {
-  content: ""; }
+  content: "\f0f0"; }
 
 .mdl-icon--quick-contacts-mail:before {
-  content: ""; }
+  content: "\f0f1"; }
 
 .mdl-icon--ring-volume:before {
-  content: ""; }
+  content: "\f0f2"; }
 
 .mdl-icon--stay-current-landscape:before {
-  content: ""; }
+  content: "\f0f3"; }
 
 .mdl-icon--stay-current-portrait:before {
-  content: ""; }
+  content: "\f0f4"; }
 
 .mdl-icon--stay-primary-landscape:before {
-  content: ""; }
+  content: "\f0f5"; }
 
 .mdl-icon--stay-primary-portrait:before {
-  content: ""; }
+  content: "\f0f6"; }
 
 .mdl-icon--swap-calls:before {
-  content: ""; }
+  content: "\f0f7"; }
 
 .mdl-icon--textsms:before {
-  content: ""; }
+  content: "\f0f8"; }
 
 .mdl-icon--voicemail:before {
-  content: ""; }
+  content: "\f0f9"; }
 
 .mdl-icon--vpn-key:before {
-  content: ""; }
+  content: "\f0fa"; }
 
 .mdl-icon--add:before {
-  content: ""; }
+  content: "\f0fb"; }
 
 .mdl-icon--add-box:before {
-  content: ""; }
+  content: "\f0fc"; }
 
 .mdl-icon--add-circle:before {
-  content: ""; }
+  content: "\f0fd"; }
 
 .mdl-icon--add-circle-outline:before {
-  content: ""; }
+  content: "\f0fe"; }
 
 .mdl-icon--archive:before {
-  content: ""; }
+  content: "\f0ff"; }
 
 .mdl-icon--backspace:before {
-  content: ""; }
+  content: "\f100"; }
 
 .mdl-icon--block:before {
-  content: ""; }
+  content: "\f101"; }
 
 .mdl-icon--clear:before {
-  content: ""; }
+  content: "\f102"; }
 
 .mdl-icon--content-copy:before {
-  content: ""; }
+  content: "\f103"; }
 
 .mdl-icon--content-cut:before {
-  content: ""; }
+  content: "\f104"; }
 
 .mdl-icon--content-paste:before {
-  content: ""; }
+  content: "\f105"; }
 
 .mdl-icon--create:before {
-  content: ""; }
+  content: "\f106"; }
 
 .mdl-icon--drafts:before {
-  content: ""; }
+  content: "\f107"; }
 
 .mdl-icon--filter-list:before {
-  content: ""; }
+  content: "\f108"; }
 
 .mdl-icon--flag:before {
-  content: ""; }
+  content: "\f109"; }
 
 .mdl-icon--forward:before {
-  content: ""; }
+  content: "\f10a"; }
 
 .mdl-icon--gesture:before {
-  content: ""; }
+  content: "\f10b"; }
 
 .mdl-icon--inbox:before {
-  content: ""; }
+  content: "\f10c"; }
 
 .mdl-icon--link:before {
-  content: ""; }
+  content: "\f10d"; }
 
 .mdl-icon--mail:before {
-  content: ""; }
+  content: "\f10e"; }
 
 .mdl-icon--markunread:before {
-  content: ""; }
+  content: "\f10f"; }
 
 .mdl-icon--redo:before {
-  content: ""; }
+  content: "\f110"; }
 
 .mdl-icon--remove:before {
-  content: ""; }
+  content: "\f111"; }
 
 .mdl-icon--remove-circle:before {
-  content: ""; }
+  content: "\f112"; }
 
 .mdl-icon--remove-circle-outline:before {
-  content: ""; }
+  content: "\f113"; }
 
 .mdl-icon--reply:before {
-  content: ""; }
+  content: "\f114"; }
 
 .mdl-icon--reply-all:before {
-  content: ""; }
+  content: "\f115"; }
 
 .mdl-icon--report:before {
-  content: ""; }
+  content: "\f116"; }
 
 .mdl-icon--save:before {
-  content: ""; }
+  content: "\f117"; }
 
 .mdl-icon--select-all:before {
-  content: ""; }
+  content: "\f118"; }
 
 .mdl-icon--send:before {
-  content: ""; }
+  content: "\f119"; }
 
 .mdl-icon--sort:before {
-  content: ""; }
+  content: "\f11a"; }
 
 .mdl-icon--text-format:before {
-  content: ""; }
+  content: "\f11b"; }
 
 .mdl-icon--undo:before {
-  content: ""; }
+  content: "\f11c"; }
 
 .mdl-icon--access-alarm:before {
-  content: ""; }
+  content: "\f11d"; }
 
 .mdl-icon--access-alarms:before {
-  content: ""; }
+  content: "\f11e"; }
 
 .mdl-icon--access-time:before {
-  content: ""; }
+  content: "\f11f"; }
 
 .mdl-icon--add-alarm:before {
-  content: ""; }
+  content: "\f120"; }
 
 .mdl-icon--airplanemode-off:before {
-  content: ""; }
+  content: "\f121"; }
 
 .mdl-icon--airplanemode-on:before {
-  content: ""; }
+  content: "\f122"; }
 
 .mdl-icon--battery-20:before {
-  content: ""; }
+  content: "\f123"; }
 
 .mdl-icon--battery-30:before {
-  content: ""; }
+  content: "\f124"; }
 
 .mdl-icon--battery-50:before {
-  content: ""; }
+  content: "\f125"; }
 
 .mdl-icon--battery-60:before {
-  content: ""; }
+  content: "\f126"; }
 
 .mdl-icon--battery-80:before {
-  content: ""; }
+  content: "\f127"; }
 
 .mdl-icon--battery-90:before {
-  content: ""; }
+  content: "\f128"; }
 
 .mdl-icon--battery-alert:before {
-  content: ""; }
+  content: "\f129"; }
 
 .mdl-icon--battery-charging-20:before {
-  content: ""; }
+  content: "\f12a"; }
 
 .mdl-icon--battery-charging-30:before {
-  content: ""; }
+  content: "\f12b"; }
 
 .mdl-icon--battery-charging-50:before {
-  content: ""; }
+  content: "\f12c"; }
 
 .mdl-icon--battery-charging-60:before {
-  content: ""; }
+  content: "\f12d"; }
 
 .mdl-icon--battery-charging-80:before {
-  content: ""; }
+  content: "\f12e"; }
 
 .mdl-icon--battery-charging-90:before {
-  content: ""; }
+  content: "\f12f"; }
 
 .mdl-icon--battery-charging-full:before {
-  content: ""; }
+  content: "\f130"; }
 
 .mdl-icon--battery-full:before {
-  content: ""; }
+  content: "\f131"; }
 
 .mdl-icon--battery-std:before {
-  content: ""; }
+  content: "\f132"; }
 
 .mdl-icon--battery-unknown:before {
-  content: ""; }
+  content: "\f133"; }
 
 .mdl-icon--bluetooth:before {
-  content: ""; }
+  content: "\f134"; }
 
 .mdl-icon--bluetooth-connected:before {
-  content: ""; }
+  content: "\f135"; }
 
 .mdl-icon--bluetooth-disabled:before {
-  content: ""; }
+  content: "\f136"; }
 
 .mdl-icon--bluetooth-searching:before {
-  content: ""; }
+  content: "\f137"; }
 
 .mdl-icon--brightness-auto:before {
-  content: ""; }
+  content: "\f138"; }
 
 .mdl-icon--brightness-high:before {
-  content: ""; }
+  content: "\f139"; }
 
 .mdl-icon--brightness-low:before {
-  content: ""; }
+  content: "\f13a"; }
 
 .mdl-icon--brightness-medium:before {
-  content: ""; }
+  content: "\f13b"; }
 
 .mdl-icon--data-usage:before {
-  content: ""; }
+  content: "\f13c"; }
 
 .mdl-icon--developer-mode:before {
-  content: ""; }
+  content: "\f13d"; }
 
 .mdl-icon--devices:before {
-  content: ""; }
+  content: "\f13e"; }
 
 .mdl-icon--dvr:before {
-  content: ""; }
+  content: "\f13f"; }
 
 .mdl-icon--gps-fixed:before {
-  content: ""; }
+  content: "\f140"; }
 
 .mdl-icon--gps-not-fixed:before {
-  content: ""; }
+  content: "\f141"; }
 
 .mdl-icon--gps-off:before {
-  content: ""; }
+  content: "\f142"; }
 
 .mdl-icon--location-disabled:before {
-  content: ""; }
+  content: "\f143"; }
 
 .mdl-icon--location-searching:before {
-  content: ""; }
+  content: "\f144"; }
 
 .mdl-icon--multitrack-audio:before {
-  content: ""; }
+  content: "\f145"; }
 
 .mdl-icon--network-cell:before {
-  content: ""; }
+  content: "\f146"; }
 
 .mdl-icon--network-wifi:before {
-  content: ""; }
+  content: "\f147"; }
 
 .mdl-icon--nfc:before {
-  content: ""; }
+  content: "\f148"; }
 
 .mdl-icon--now-wallpaper:before {
-  content: ""; }
+  content: "\f149"; }
 
 .mdl-icon--now-widgets:before {
-  content: ""; }
+  content: "\f14a"; }
 
 .mdl-icon--screen-lock-landscape:before {
-  content: ""; }
+  content: "\f14b"; }
 
 .mdl-icon--screen-lock-portrait:before {
-  content: ""; }
+  content: "\f14c"; }
 
 .mdl-icon--screen-lock-rotation:before {
-  content: ""; }
+  content: "\f14d"; }
 
 .mdl-icon--screen-rotation:before {
-  content: ""; }
+  content: "\f14e"; }
 
 .mdl-icon--sd-storage:before {
-  content: ""; }
+  content: "\f14f"; }
 
 .mdl-icon--settings-system-daydream:before {
-  content: ""; }
+  content: "\f150"; }
 
 .mdl-icon--signal-cellular-0-bar:before {
-  content: ""; }
+  content: "\f151"; }
 
 .mdl-icon--signal-cellular-1-bar:before {
-  content: ""; }
+  content: "\f152"; }
 
 .mdl-icon--signal-cellular-2-bar:before {
-  content: ""; }
+  content: "\f153"; }
 
 .mdl-icon--signal-cellular-3-bar:before {
-  content: ""; }
+  content: "\f154"; }
 
 .mdl-icon--signal-cellular-4-bar:before {
-  content: ""; }
+  content: "\f155"; }
 
 .mdl-icon--signal-cellular-connected-no-internet-0-bar:before {
-  content: ""; }
+  content: "\f156"; }
 
 .mdl-icon--signal-cellular-connected-no-internet-1-bar:before {
-  content: ""; }
+  content: "\f157"; }
 
 .mdl-icon--signal-cellular-connected-no-internet-2-bar:before {
-  content: ""; }
+  content: "\f158"; }
 
 .mdl-icon--signal-cellular-connected-no-internet-3-bar:before {
-  content: ""; }
+  content: "\f159"; }
 
 .mdl-icon--signal-cellular-connected-no-internet-4-bar:before {
-  content: ""; }
+  content: "\f15a"; }
 
 .mdl-icon--signal-cellular-no-sim:before {
-  content: ""; }
+  content: "\f15b"; }
 
 .mdl-icon--signal-cellular-null:before {
-  content: ""; }
+  content: "\f15c"; }
 
 .mdl-icon--signal-cellular-off:before {
-  content: ""; }
+  content: "\f15d"; }
 
 .mdl-icon--signal-wifi-0-bar:before {
-  content: ""; }
+  content: "\f15e"; }
 
 .mdl-icon--signal-wifi-1-bar:before {
-  content: ""; }
+  content: "\f15f"; }
 
 .mdl-icon--signal-wifi-2-bar:before {
-  content: ""; }
+  content: "\f160"; }
 
 .mdl-icon--signal-wifi-3-bar:before {
-  content: ""; }
+  content: "\f161"; }
 
 .mdl-icon--signal-wifi-4-bar:before {
-  content: ""; }
+  content: "\f162"; }
 
 .mdl-icon--signal-wifi-off:before {
-  content: ""; }
+  content: "\f163"; }
 
 .mdl-icon--signal-wifi-statusbar-1-bar:before {
-  content: ""; }
+  content: "\f15f"; }
 
 .mdl-icon--signal-wifi-statusbar-2-bar:before {
-  content: ""; }
+  content: "\f160"; }
 
 .mdl-icon--signal-wifi-statusbar-3-bar:before {
-  content: ""; }
+  content: "\f161"; }
 
 .mdl-icon--signal-wifi-statusbar-4-bar:before {
-  content: ""; }
+  content: "\f162"; }
 
 .mdl-icon--signal-wifi-statusbar-connected-no-internet:before {
   content: ""; }
@@ -5084,1181 +5055,1182 @@ Palettes (10 colors) 50 - 900 possible
   content: ""; }
 
 .mdl-icon--storage:before {
-  content: ""; }
+  content: "\f164"; }
 
 .mdl-icon--usb:before {
-  content: ""; }
+  content: "\f165"; }
 
 .mdl-icon--wifi-lock:before {
-  content: ""; }
+  content: "\f166"; }
 
 .mdl-icon--wifi-tethering:before {
-  content: ""; }
+  content: "\f167"; }
 
 .mdl-icon--attach-file:before {
-  content: ""; }
+  content: "\f168"; }
 
 .mdl-icon--attach-money:before {
-  content: ""; }
+  content: "\f169"; }
 
 .mdl-icon--border-all:before {
-  content: ""; }
+  content: "\f16a"; }
 
 .mdl-icon--border-bottom:before {
-  content: ""; }
+  content: "\f16b"; }
 
 .mdl-icon--border-clear:before {
-  content: ""; }
+  content: "\f16c"; }
 
 .mdl-icon--border-color:before {
-  content: ""; }
+  content: "\f16d"; }
 
 .mdl-icon--border-horizontal:before {
-  content: ""; }
+  content: "\f16e"; }
 
 .mdl-icon--border-inner:before {
-  content: ""; }
+  content: "\f16f"; }
 
 .mdl-icon--border-left:before {
-  content: ""; }
+  content: "\f170"; }
 
 .mdl-icon--border-outer:before {
-  content: ""; }
+  content: "\f171"; }
 
 .mdl-icon--border-right:before {
-  content: ""; }
+  content: "\f172"; }
 
 .mdl-icon--border-style:before {
-  content: ""; }
+  content: "\f173"; }
 
 .mdl-icon--border-top:before {
-  content: ""; }
+  content: "\f174"; }
 
 .mdl-icon--border-vertical:before {
-  content: ""; }
+  content: "\f175"; }
 
 .mdl-icon--format-align-center:before {
-  content: ""; }
+  content: "\f176"; }
 
 .mdl-icon--format-align-justify:before {
-  content: ""; }
+  content: "\f177"; }
 
 .mdl-icon--format-align-left:before {
-  content: ""; }
+  content: "\f178"; }
 
 .mdl-icon--format-align-right:before {
-  content: ""; }
+  content: "\f179"; }
 
 .mdl-icon--format-bold:before {
-  content: ""; }
+  content: "\f17a"; }
 
 .mdl-icon--format-clear:before {
-  content: ""; }
+  content: "\f17b"; }
 
 .mdl-icon--format-color-fill:before {
-  content: ""; }
+  content: "\f17c"; }
 
 .mdl-icon--format-color-reset:before {
-  content: ""; }
+  content: "\f17d"; }
 
 .mdl-icon--format-color-text:before {
-  content: ""; }
+  content: "\f17e"; }
 
 .mdl-icon--format-indent-decrease:before {
-  content: ""; }
+  content: "\f17f"; }
 
 .mdl-icon--format-indent-increase:before {
-  content: ""; }
+  content: "\f180"; }
 
 .mdl-icon--format-italic:before {
-  content: ""; }
+  content: "\f181"; }
 
 .mdl-icon--format-line-spacing:before {
-  content: ""; }
+  content: "\f182"; }
 
 .mdl-icon--format-list-bulleted:before {
-  content: ""; }
+  content: "\f183"; }
 
 .mdl-icon--format-list-numbered:before {
-  content: ""; }
+  content: "\f184"; }
 
 .mdl-icon--format-paint:before {
-  content: ""; }
+  content: "\f185"; }
 
 .mdl-icon--format-quote:before {
-  content: ""; }
+  content: "\f186"; }
 
 .mdl-icon--format-size:before {
-  content: ""; }
+  content: "\f187"; }
 
 .mdl-icon--format-strikethrough:before {
-  content: ""; }
+  content: "\f188"; }
 
 .mdl-icon--format-textdirection-l-to-r:before {
-  content: ""; }
+  content: "\f189"; }
 
 .mdl-icon--format-textdirection-r-to-l:before {
-  content: ""; }
+  content: "\f18a"; }
 
 .mdl-icon--format-underline:before {
-  content: ""; }
+  content: "\f18b"; }
 
 .mdl-icon--functions:before {
-  content: ""; }
+  content: "\f18c"; }
 
 .mdl-icon--insert-chart:before {
-  content: ""; }
+  content: "\f18d"; }
 
 .mdl-icon--insert-comment:before {
-  content: ""; }
+  content: "\f18e"; }
 
 .mdl-icon--insert-drive-file:before {
-  content: ""; }
+  content: "\f18f"; }
 
 .mdl-icon--insert-emoticon:before {
-  content: ""; }
+  content: "\f190"; }
 
 .mdl-icon--insert-invitation:before {
-  content: ""; }
+  content: "\f191"; }
 
 .mdl-icon--insert-link:before {
-  content: ""; }
+  content: "\f192"; }
 
 .mdl-icon--insert-photo:before {
-  content: ""; }
+  content: "\f193"; }
 
 .mdl-icon--merge-type:before {
-  content: ""; }
+  content: "\f194"; }
 
 .mdl-icon--mode-comment:before {
-  content: ""; }
+  content: "\f195"; }
 
 .mdl-icon--mode-edit:before {
-  content: ""; }
+  content: "\f196"; }
 
 .mdl-icon--publish:before {
-  content: ""; }
+  content: "\f197"; }
 
 .mdl-icon--vertical-align-bottom:before {
-  content: ""; }
+  content: "\f198"; }
 
 .mdl-icon--vertical-align-center:before {
-  content: ""; }
+  content: "\f199"; }
 
 .mdl-icon--vertical-align-top:before {
-  content: ""; }
+  content: "\f19a"; }
 
 .mdl-icon--wrap-text:before {
-  content: ""; }
+  content: "\f19b"; }
 
 .mdl-icon--attachment:before {
-  content: ""; }
+  content: "\f19c"; }
 
 .mdl-icon--cloud:before {
-  content: ""; }
+  content: "\f19d"; }
 
 .mdl-icon--cloud-circle:before {
-  content: ""; }
+  content: "\f19e"; }
 
 .mdl-icon--cloud-done:before {
-  content: ""; }
+  content: "\f19f"; }
 
 .mdl-icon--cloud-download:before {
-  content: ""; }
+  content: "\f1a0"; }
 
 .mdl-icon--cloud-off:before {
-  content: ""; }
+  content: "\f1a1"; }
 
 .mdl-icon--cloud-queue:before {
-  content: ""; }
+  content: "\f1a2"; }
 
 .mdl-icon--cloud-upload:before {
-  content: ""; }
+  content: "\f1a3"; }
 
 .mdl-icon--file-download:before {
-  content: ""; }
+  content: "\f1a4"; }
 
 .mdl-icon--file-upload:before {
-  content: ""; }
+  content: "\f1a5"; }
 
 .mdl-icon--folder:before {
-  content: ""; }
+  content: "\f1a6"; }
 
 .mdl-icon--folder-open:before {
-  content: ""; }
+  content: "\f1a7"; }
 
 .mdl-icon--folder-shared:before {
-  content: ""; }
+  content: "\f1a8"; }
 
 .mdl-icon--cast:before {
-  content: ""; }
+  content: "\f1a9"; }
 
 .mdl-icon--cast-connected:before {
-  content: ""; }
+  content: "\f1aa"; }
 
 .mdl-icon--computer:before {
-  content: ""; }
+  content: "\f1ab"; }
 
 .mdl-icon--desktop-mac:before {
-  content: ""; }
+  content: "\f1ac"; }
 
 .mdl-icon--desktop-windows:before {
-  content: ""; }
+  content: "\f1ad"; }
 
 .mdl-icon--dock:before {
-  content: ""; }
+  content: "\f1ae"; }
 
 .mdl-icon--gamepad:before {
-  content: ""; }
+  content: "\f1af"; }
 
 .mdl-icon--headset:before {
-  content: ""; }
+  content: "\f1b0"; }
 
 .mdl-icon--headset-mic:before {
-  content: ""; }
+  content: "\f1b1"; }
 
 .mdl-icon--keyboard:before {
-  content: ""; }
+  content: "\f1b2"; }
 
 .mdl-icon--keyboard-alt:before {
-  content: ""; }
+  content: "\f1b3"; }
 
 .mdl-icon--keyboard-arrow-down:before {
-  content: ""; }
+  content: "\f1b4"; }
 
 .mdl-icon--keyboard-arrow-left:before {
-  content: ""; }
+  content: "\f1b5"; }
 
 .mdl-icon--keyboard-arrow-right:before {
-  content: ""; }
+  content: "\f1b6"; }
 
 .mdl-icon--keyboard-arrow-up:before {
-  content: ""; }
+  content: "\f1b7"; }
 
 .mdl-icon--keyboard-backspace:before {
-  content: ""; }
+  content: "\f1b8"; }
 
 .mdl-icon--keyboard-capslock:before {
-  content: ""; }
+  content: "\f1b9"; }
 
 .mdl-icon--keyboard-control:before {
-  content: ""; }
+  content: "\f1ba"; }
 
 .mdl-icon--keyboard-hide:before {
-  content: ""; }
+  content: "\f1bb"; }
 
 .mdl-icon--keyboard-return:before {
-  content: ""; }
+  content: "\f1bc"; }
 
 .mdl-icon--keyboard-tab:before {
-  content: ""; }
+  content: "\f1bd"; }
 
 .mdl-icon--keyboard-voice:before {
-  content: ""; }
+  content: "\f1be"; }
 
 .mdl-icon--laptop:before {
-  content: ""; }
+  content: "\f1bf"; }
 
 .mdl-icon--laptop-chromebook:before {
-  content: ""; }
+  content: "\f1c0"; }
 
 .mdl-icon--laptop-mac:before {
-  content: ""; }
+  content: "\f1c1"; }
 
 .mdl-icon--laptop-windows:before {
-  content: ""; }
+  content: "\f1c2"; }
 
 .mdl-icon--memory:before {
-  content: ""; }
+  content: "\f1c3"; }
 
 .mdl-icon--mouse:before {
-  content: ""; }
+  content: "\f1c4"; }
 
 .mdl-icon--phone-android:before {
-  content: ""; }
+  content: "\f1c5"; }
 
 .mdl-icon--phone-iphone:before {
-  content: ""; }
+  content: "\f1c6"; }
 
 .mdl-icon--phonelink:before {
-  content: ""; }
+  content: "\f1c7"; }
 
 .mdl-icon--phonelink-off:before {
-  content: ""; }
+  content: "\f1c8"; }
 
 .mdl-icon--security:before {
-  content: ""; }
+  content: "\f1c9"; }
 
 .mdl-icon--sim-card:before {
-  content: ""; }
+  content: "\f1ca"; }
 
 .mdl-icon--smartphone:before {
-  content: ""; }
+  content: "\f1cb"; }
 
 .mdl-icon--speaker:before {
-  content: ""; }
+  content: "\f1cc"; }
 
 .mdl-icon--tablet:before {
-  content: ""; }
+  content: "\f1cd"; }
 
 .mdl-icon--tablet-android:before {
-  content: ""; }
+  content: "\f1ce"; }
 
 .mdl-icon--tablet-mac:before {
-  content: ""; }
+  content: "\f1cf"; }
 
 .mdl-icon--tv:before {
-  content: ""; }
+  content: "\f1d0"; }
 
 .mdl-icon--watch:before {
-  content: ""; }
+  content: "\f1d1"; }
 
 .mdl-icon--add-to-photos:before {
-  content: ""; }
+  content: "\f1d2"; }
 
 .mdl-icon--adjust:before {
-  content: ""; }
+  content: "\f1d3"; }
 
 .mdl-icon--assistant-photo:before {
-  content: ""; }
+  content: "\f1d4"; }
 
 .mdl-icon--audiotrack:before {
-  content: ""; }
+  content: "\f1d5"; }
 
 .mdl-icon--blur-circular:before {
-  content: ""; }
+  content: "\f1d6"; }
 
 .mdl-icon--blur-linear:before {
-  content: ""; }
+  content: "\f1d7"; }
 
 .mdl-icon--blur-off:before {
-  content: ""; }
+  content: "\f1d8"; }
 
 .mdl-icon--blur-on:before {
-  content: ""; }
+  content: "\f1d9"; }
 
 .mdl-icon--brightness-1:before {
-  content: ""; }
+  content: "\f1da"; }
 
 .mdl-icon--brightness-2:before {
-  content: ""; }
+  content: "\f1db"; }
 
 .mdl-icon--brightness-3:before {
-  content: ""; }
+  content: "\f1dc"; }
 
 .mdl-icon--brightness-4:before {
-  content: ""; }
+  content: "\f1dd"; }
 
 .mdl-icon--brightness-5:before {
-  content: ""; }
+  content: "\f1de"; }
 
 .mdl-icon--brightness-6:before {
-  content: ""; }
+  content: "\f1df"; }
 
 .mdl-icon--brightness-7:before {
-  content: ""; }
+  content: "\f1e0"; }
 
 .mdl-icon--brush:before {
-  content: ""; }
+  content: "\f1e1"; }
 
 .mdl-icon--camera:before {
-  content: ""; }
+  content: "\f1e2"; }
 
 .mdl-icon--camera-alt:before {
-  content: ""; }
+  content: "\f1e3"; }
 
 .mdl-icon--camera-front:before {
-  content: ""; }
+  content: "\f1e4"; }
 
 .mdl-icon--camera-rear:before {
-  content: ""; }
+  content: "\f1e5"; }
 
 .mdl-icon--camera-roll:before {
-  content: ""; }
+  content: "\f1e6"; }
 
 .mdl-icon--center-focus-strong:before {
-  content: ""; }
+  content: "\f1e7"; }
 
 .mdl-icon--center-focus-weak:before {
-  content: ""; }
+  content: "\f1e8"; }
 
 .mdl-icon--collections:before {
-  content: ""; }
+  content: "\f1e9"; }
 
 .mdl-icon--colorize:before {
-  content: ""; }
+  content: "\f1ea"; }
 
 .mdl-icon--color-lens:before {
-  content: ""; }
+  content: "\f1eb"; }
 
 .mdl-icon--compare:before {
-  content: ""; }
+  content: "\f1ec"; }
 
 .mdl-icon--control-point:before {
-  content: ""; }
+  content: "\f1ed"; }
 
 .mdl-icon--control-point-duplicate:before {
-  content: ""; }
+  content: "\f1ee"; }
 
 .mdl-icon--crop:before {
-  content: ""; }
+  content: "\f1ef"; }
 
 .mdl-icon--crop-3-2:before {
-  content: ""; }
+  content: "\f1f0"; }
 
 .mdl-icon--crop-5-4:before {
-  content: ""; }
+  content: "\f1f1"; }
 
 .mdl-icon--crop-7-5:before {
-  content: ""; }
+  content: "\f1f2"; }
 
 .mdl-icon--crop-16-9:before {
-  content: ""; }
+  content: "\f1f3"; }
 
 .mdl-icon--crop-din:before {
-  content: ""; }
+  content: "\f1f4"; }
 
 .mdl-icon--crop-free:before {
-  content: ""; }
+  content: "\f1f5"; }
 
 .mdl-icon--crop-landscape:before {
-  content: ""; }
+  content: "\f1f6"; }
 
 .mdl-icon--crop-original:before {
-  content: ""; }
+  content: "\f1f7"; }
 
 .mdl-icon--crop-portrait:before {
-  content: ""; }
+  content: "\f1f8"; }
 
 .mdl-icon--crop-square:before {
-  content: ""; }
+  content: "\f1f9"; }
 
 .mdl-icon--dehaze:before {
-  content: ""; }
+  content: "\f1fa"; }
 
 .mdl-icon--details:before {
-  content: ""; }
+  content: "\f1fb"; }
 
 .mdl-icon--edit:before {
-  content: ""; }
+  content: "\f1fc"; }
 
 .mdl-icon--exposure:before {
-  content: ""; }
+  content: "\f1fd"; }
 
 .mdl-icon--exposure-minus-1:before {
-  content: ""; }
+  content: "\f1fe"; }
 
 .mdl-icon--exposure-minus-2:before {
-  content: ""; }
+  content: "\f1ff"; }
 
 .mdl-icon--exposure-zero:before {
-  content: ""; }
+  content: "\f200"; }
 
 .mdl-icon--exposure-plus-1:before {
-  content: ""; }
+  content: "\f201"; }
 
 .mdl-icon--exposure-plus-2:before {
-  content: ""; }
+  content: "\f202"; }
 
 .mdl-icon--filter:before {
-  content: ""; }
+  content: "\f203"; }
 
 .mdl-icon--filter-1:before {
-  content: ""; }
+  content: "\f204"; }
 
 .mdl-icon--filter-2:before {
-  content: ""; }
+  content: "\f205"; }
 
 .mdl-icon--filter-3:before {
-  content: ""; }
+  content: "\f206"; }
 
 .mdl-icon--filter-4:before {
-  content: ""; }
+  content: "\f207"; }
 
 .mdl-icon--filter-5:before {
-  content: ""; }
+  content: "\f208"; }
 
 .mdl-icon--filter-6:before {
-  content: ""; }
+  content: "\f209"; }
 
 .mdl-icon--filter-7:before {
-  content: ""; }
+  content: "\f20a"; }
 
 .mdl-icon--filter-8:before {
-  content: ""; }
+  content: "\f20b"; }
 
 .mdl-icon--filter-9:before {
-  content: ""; }
+  content: "\f20c"; }
 
 .mdl-icon--filter-9-plus:before {
-  content: ""; }
+  content: "\f20d"; }
 
 .mdl-icon--filter-b-and-w:before {
-  content: ""; }
+  content: "\f20e"; }
 
 .mdl-icon--filter-center-focus:before {
-  content: ""; }
+  content: "\f20f"; }
 
 .mdl-icon--filter-drama:before {
-  content: ""; }
+  content: "\f210"; }
 
 .mdl-icon--filter-frames:before {
-  content: ""; }
+  content: "\f211"; }
 
 .mdl-icon--filter-hdr:before {
-  content: ""; }
+  content: "\f212"; }
 
 .mdl-icon--filter-none:before {
-  content: ""; }
+  content: "\f213"; }
 
 .mdl-icon--filter-tilt-shift:before {
-  content: ""; }
+  content: "\f214"; }
 
 .mdl-icon--filter-vintage:before {
-  content: ""; }
+  content: "\f215"; }
 
 .mdl-icon--flare:before {
-  content: ""; }
+  content: "\f216"; }
 
 .mdl-icon--flash-auto:before {
-  content: ""; }
+  content: "\f217"; }
 
 .mdl-icon--flash-off:before {
-  content: ""; }
+  content: "\f218"; }
 
 .mdl-icon--flash-on:before {
-  content: ""; }
+  content: "\f219"; }
 
 .mdl-icon--flip:before {
-  content: ""; }
+  content: "\f21a"; }
 
 .mdl-icon--gradient:before {
-  content: ""; }
+  content: "\f21b"; }
 
 .mdl-icon--grain:before {
-  content: ""; }
+  content: "\f21c"; }
 
 .mdl-icon--grid-off:before {
-  content: ""; }
+  content: "\f21d"; }
 
 .mdl-icon--grid-on:before {
-  content: ""; }
+  content: "\f21e"; }
 
 .mdl-icon--hdr-off:before {
-  content: ""; }
+  content: "\f21f"; }
 
 .mdl-icon--hdr-on:before {
-  content: ""; }
+  content: "\f220"; }
 
 .mdl-icon--hdr-strong:before {
-  content: ""; }
+  content: "\f221"; }
 
 .mdl-icon--hdr-weak:before {
-  content: ""; }
+  content: "\f222"; }
 
 .mdl-icon--healing:before {
-  content: ""; }
+  content: "\f223"; }
 
 .mdl-icon--image:before {
-  content: ""; }
+  content: "\f224"; }
 
 .mdl-icon--image-aspect-ratio:before {
-  content: ""; }
+  content: "\f225"; }
 
 .mdl-icon--iso:before {
-  content: ""; }
+  content: "\f226"; }
 
 .mdl-icon--landscape:before {
-  content: ""; }
+  content: "\f227"; }
 
 .mdl-icon--leak-add:before {
-  content: ""; }
+  content: "\f228"; }
 
 .mdl-icon--leak-remove:before {
-  content: ""; }
+  content: "\f229"; }
 
 .mdl-icon--lens:before {
-  content: ""; }
+  content: "\f22a"; }
 
 .mdl-icon--looks:before {
-  content: ""; }
+  content: "\f22b"; }
 
 .mdl-icon--looks-1:before {
-  content: ""; }
+  content: "\f22c"; }
 
 .mdl-icon--looks-2:before {
-  content: ""; }
+  content: "\f22d"; }
 
 .mdl-icon--looks-3:before {
-  content: ""; }
+  content: "\f22e"; }
 
 .mdl-icon--looks-4:before {
-  content: ""; }
+  content: "\f22f"; }
 
 .mdl-icon--looks-5:before {
-  content: ""; }
+  content: "\f230"; }
 
 .mdl-icon--looks-6:before {
-  content: ""; }
+  content: "\f231"; }
 
 .mdl-icon--looks-one:before {
-  content: ""; }
+  content: "\f22c"; }
 
 .mdl-icon--looks-two:before {
-  content: ""; }
+  content: "\f22d"; }
 
 .mdl-icon--loupe:before {
-  content: ""; }
+  content: "\f232"; }
 
 .mdl-icon--movie-creation:before {
-  content: ""; }
+  content: "\f233"; }
 
 .mdl-icon--nature:before {
-  content: ""; }
+  content: "\f234"; }
 
 .mdl-icon--nature-people:before {
-  content: ""; }
+  content: "\f235"; }
 
 .mdl-icon--navigate-before:before {
-  content: ""; }
+  content: "\f236"; }
 
 .mdl-icon--navigate-next:before {
-  content: ""; }
+  content: "\f237"; }
 
 .mdl-icon--palette:before {
-  content: ""; }
+  content: "\f238"; }
 
 .mdl-icon--panorama:before {
-  content: ""; }
+  content: "\f239"; }
 
 .mdl-icon--panorama-fisheye:before {
-  content: ""; }
+  content: "\f23a"; }
 
 .mdl-icon--panorama-horizontal:before {
-  content: ""; }
+  content: "\f23b"; }
 
 .mdl-icon--panorama-vertical:before {
-  content: ""; }
+  content: "\f23c"; }
 
 .mdl-icon--panorama-wide-angle:before {
-  content: ""; }
+  content: "\f23d"; }
 
 .mdl-icon--photo:before {
-  content: ""; }
+  content: "\f23e"; }
 
 .mdl-icon--photo-album:before {
-  content: ""; }
+  content: "\f23f"; }
 
 .mdl-icon--photo-camera:before {
-  content: ""; }
+  content: "\f240"; }
 
 .mdl-icon--photo-library:before {
-  content: ""; }
+  content: "\f241"; }
 
 .mdl-icon--portrait:before {
-  content: ""; }
+  content: "\f242"; }
 
 .mdl-icon--remove-red-eye:before {
-  content: ""; }
+  content: "\f243"; }
 
 .mdl-icon--rotate-left:before {
-  content: ""; }
+  content: "\f244"; }
 
 .mdl-icon--rotate-right:before {
-  content: ""; }
+  content: "\f245"; }
 
 .mdl-icon--slideshow:before {
-  content: ""; }
+  content: "\f246"; }
 
 .mdl-icon--straighten:before {
-  content: ""; }
+  content: "\f247"; }
 
 .mdl-icon--style:before {
-  content: ""; }
+  content: "\f248"; }
 
 .mdl-icon--switch-camera:before {
-  content: ""; }
+  content: "\f249"; }
 
 .mdl-icon--switch-video:before {
-  content: ""; }
+  content: "\f24a"; }
 
 .mdl-icon--tag-faces:before {
-  content: ""; }
+  content: "\f24b"; }
 
 .mdl-icon--texture:before {
-  content: ""; }
+  content: "\f24c"; }
 
 .mdl-icon--timelapse:before {
-  content: ""; }
+  content: "\f24d"; }
 
 .mdl-icon--timer:before {
-  content: ""; }
+  content: "\f24e"; }
 
 .mdl-icon--timer-3:before {
-  content: ""; }
+  content: "\f24f"; }
 
 .mdl-icon--timer-10:before {
-  content: ""; }
+  content: "\f250"; }
 
 .mdl-icon--timer-auto:before {
-  content: ""; }
+  content: "\f251"; }
 
 .mdl-icon--timer-off:before {
-  content: ""; }
+  content: "\f252"; }
 
 .mdl-icon--tonality:before {
-  content: ""; }
+  content: "\f253"; }
 
 .mdl-icon--transform:before {
-  content: ""; }
+  content: "\f254"; }
 
 .mdl-icon--tune:before {
-  content: ""; }
+  content: "\f255"; }
 
 .mdl-icon--wb-auto:before {
-  content: ""; }
+  content: "\f256"; }
 
 .mdl-icon--wb-cloudy:before {
-  content: ""; }
+  content: "\f257"; }
 
 .mdl-icon--wb-incandescent:before {
-  content: ""; }
+  content: "\f258"; }
 
 .mdl-icon--wb-irradescent:before {
-  content: ""; }
+  content: "\f259"; }
 
 .mdl-icon--wb-sunny:before {
-  content: ""; }
+  content: "\f25a"; }
 
 .mdl-icon--beenhere:before {
-  content: ""; }
+  content: "\f25b"; }
 
 .mdl-icon--directions:before {
-  content: ""; }
+  content: "\f25c"; }
 
 .mdl-icon--directions-bike:before {
-  content: ""; }
+  content: "\f25d"; }
 
 .mdl-icon--directions-bus:before {
-  content: ""; }
+  content: "\f25e"; }
 
 .mdl-icon--directions-car:before {
-  content: ""; }
+  content: "\f25f"; }
 
 .mdl-icon--directions-ferry:before {
-  content: ""; }
+  content: "\f260"; }
 
 .mdl-icon--directions-subway:before {
-  content: ""; }
+  content: "\f261"; }
 
 .mdl-icon--directions-train:before {
-  content: ""; }
+  content: "\f262"; }
 
 .mdl-icon--directions-transit:before {
-  content: ""; }
+  content: "\f263"; }
 
 .mdl-icon--directions-walk:before {
-  content: ""; }
+  content: "\f264"; }
 
 .mdl-icon--flight:before {
-  content: ""; }
+  content: "\f265"; }
 
 .mdl-icon--hotel:before {
-  content: ""; }
+  content: "\f266"; }
 
 .mdl-icon--layers:before {
-  content: ""; }
+  content: "\f267"; }
 
 .mdl-icon--layers-clear:before {
-  content: ""; }
+  content: "\f268"; }
 
 .mdl-icon--local-airport:before {
-  content: ""; }
+  content: "\f269"; }
 
 .mdl-icon--local-atm:before {
-  content: ""; }
+  content: "\f26a"; }
 
 .mdl-icon--local-attraction:before {
-  content: ""; }
+  content: "\f26b"; }
 
 .mdl-icon--local-bar:before {
-  content: ""; }
+  content: "\f26c"; }
 
 .mdl-icon--local-cafe:before {
-  content: ""; }
+  content: "\f26d"; }
 
 .mdl-icon--local-car-wash:before {
-  content: ""; }
+  content: "\f26e"; }
 
 .mdl-icon--local-convenience-store:before {
-  content: ""; }
+  content: "\f26f"; }
 
 .mdl-icon--local-drink:before {
-  content: ""; }
+  content: "\f270"; }
 
 .mdl-icon--local-florist:before {
-  content: ""; }
+  content: "\f271"; }
 
 .mdl-icon--local-gas-station:before {
-  content: ""; }
+  content: "\f272"; }
 
 .mdl-icon--local-grocery-store:before {
-  content: ""; }
+  content: "\f273"; }
 
 .mdl-icon--local-hospital:before {
-  content: ""; }
+  content: "\f274"; }
 
 .mdl-icon--local-hotel:before {
-  content: ""; }
+  content: "\f275"; }
 
 .mdl-icon--local-laundry-service:before {
-  content: ""; }
+  content: "\f276"; }
 
 .mdl-icon--local-library:before {
-  content: ""; }
+  content: "\f277"; }
 
 .mdl-icon--local-mall:before {
-  content: ""; }
+  content: "\f278"; }
 
 .mdl-icon--local-movies:before {
-  content: ""; }
+  content: "\f279"; }
 
 .mdl-icon--local-offer:before {
-  content: ""; }
+  content: "\f27a"; }
 
 .mdl-icon--local-parking:before {
-  content: ""; }
+  content: "\f27b"; }
 
 .mdl-icon--local-pharmacy:before {
-  content: ""; }
+  content: "\f27c"; }
 
 .mdl-icon--local-phone:before {
-  content: ""; }
+  content: "\f27d"; }
 
 .mdl-icon--local-pizza:before {
-  content: ""; }
+  content: "\f27e"; }
 
 .mdl-icon--local-play:before {
-  content: ""; }
+  content: "\f27f"; }
 
 .mdl-icon--local-post-office:before {
-  content: ""; }
+  content: "\f280"; }
 
 .mdl-icon--local-print-shop:before {
-  content: ""; }
+  content: "\f281"; }
 
 .mdl-icon--local-restaurant:before {
-  content: ""; }
+  content: "\f282"; }
 
 .mdl-icon--local-see:before {
-  content: ""; }
+  content: "\f283"; }
 
 .mdl-icon--local-shipping:before {
-  content: ""; }
+  content: "\f284"; }
 
 .mdl-icon--local-taxi:before {
-  content: ""; }
+  content: "\f285"; }
 
 .mdl-icon--location-history:before {
-  content: ""; }
+  content: "\f286"; }
 
 .mdl-icon--map:before {
-  content: ""; }
+  content: "\f287"; }
 
 .mdl-icon--my-location:before {
-  content: ""; }
+  content: "\f288"; }
 
 .mdl-icon--navigation:before {
-  content: ""; }
+  content: "\f289"; }
 
 .mdl-icon--pin-drop:before {
-  content: ""; }
+  content: "\f28a"; }
 
 .mdl-icon--place:before {
-  content: ""; }
+  content: "\f28b"; }
 
 .mdl-icon--rate-review:before {
-  content: ""; }
+  content: "\f28c"; }
 
 .mdl-icon--restaurant-menu:before {
-  content: ""; }
+  content: "\f28d"; }
 
 .mdl-icon--satellite:before {
-  content: ""; }
+  content: "\f28e"; }
 
 .mdl-icon--store-mall-directory:before {
-  content: ""; }
+  content: "\f28f"; }
 
 .mdl-icon--terrain:before {
-  content: ""; }
+  content: "\f290"; }
 
 .mdl-icon--traffic:before {
-  content: ""; }
+  content: "\f291"; }
 
 .mdl-icon--apps:before {
-  content: ""; }
+  content: "\f292"; }
 
 .mdl-icon--cancel:before {
-  content: ""; }
+  content: "\f293"; }
 
 .mdl-icon--arrow-drop-down-circle:before {
-  content: ""; }
+  content: "\f294"; }
 
 .mdl-icon--arrow-drop-down:before {
-  content: ""; }
+  content: "\f295"; }
 
 .mdl-icon--arrow-drop-up:before {
-  content: ""; }
+  content: "\f296"; }
 
 .mdl-icon--arrow-back:before {
-  content: ""; }
+  content: "\f297"; }
 
 .mdl-icon--arrow-forward:before {
-  content: ""; }
+  content: "\f298"; }
 
 .mdl-icon--check:before {
-  content: ""; }
+  content: "\f299"; }
 
 .mdl-icon--close:before {
-  content: ""; }
+  content: "\f29a"; }
 
 .mdl-icon--chevron-left:before {
-  content: ""; }
+  content: "\f29b"; }
 
 .mdl-icon--chevron-right:before {
-  content: ""; }
+  content: "\f29c"; }
 
 .mdl-icon--expand-less:before {
-  content: ""; }
+  content: "\f29d"; }
 
 .mdl-icon--expand-more:before {
-  content: ""; }
+  content: "\f29e"; }
 
 .mdl-icon--fullscreen:before {
-  content: ""; }
+  content: "\f29f"; }
 
 .mdl-icon--fullscreen-exit:before {
-  content: ""; }
+  content: "\f2a0"; }
 
 .mdl-icon--menu:before {
-  content: ""; }
+  content: "\f2a1"; }
 
 .mdl-icon--more-horiz:before {
-  content: ""; }
+  content: "\f2a2"; }
 
 .mdl-icon--more-vert:before {
-  content: ""; }
+  content: "\f2a3"; }
 
 .mdl-icon--refresh:before {
-  content: ""; }
+  content: "\f2a4"; }
 
 .mdl-icon--unfold-less:before {
-  content: ""; }
+  content: "\f2a5"; }
 
 .mdl-icon--unfold-more:before {
-  content: ""; }
+  content: "\f2a6"; }
 
 .mdl-icon--adb:before {
-  content: ""; }
+  content: "\f2a7"; }
 
 .mdl-icon--bluetooth-audio:before {
-  content: ""; }
+  content: "\f2a8"; }
 
 .mdl-icon--disc-full:before {
-  content: ""; }
+  content: "\f2a9"; }
 
 .mdl-icon--dnd-forwardslash:before {
-  content: ""; }
+  content: "\f2aa"; }
 
 .mdl-icon--do-not-disturb:before {
-  content: ""; }
+  content: "\f2ab"; }
 
 .mdl-icon--drive-eta:before {
-  content: ""; }
+  content: "\f2ac"; }
 
 .mdl-icon--event-available:before {
-  content: ""; }
+  content: "\f2ad"; }
 
 .mdl-icon--event-busy:before {
-  content: ""; }
+  content: "\f2ae"; }
 
 .mdl-icon--event-note:before {
-  content: ""; }
+  content: "\f2af"; }
 
 .mdl-icon--folder-special:before {
-  content: ""; }
+  content: "\f2b0"; }
 
 .mdl-icon--mms:before {
-  content: ""; }
+  content: "\f2b1"; }
 
 .mdl-icon--more:before {
-  content: ""; }
+  content: "\f2b2"; }
 
 .mdl-icon--network-locked:before {
-  content: ""; }
+  content: "\f2b3"; }
 
 .mdl-icon--phone-bluetooth-speaker:before {
-  content: ""; }
+  content: "\f2b4"; }
 
 .mdl-icon--phone-forwarded:before {
-  content: ""; }
+  content: "\f2b5"; }
 
 .mdl-icon--phone-in-talk:before {
-  content: ""; }
+  content: "\f2b6"; }
 
 .mdl-icon--phone-locked:before {
-  content: ""; }
+  content: "\f2b7"; }
 
 .mdl-icon--phone-missed:before {
-  content: ""; }
+  content: "\f2b8"; }
 
 .mdl-icon--phone-paused:before {
-  content: ""; }
+  content: "\f2b9"; }
 
 .mdl-icon--play-download:before {
-  content: ""; }
+  content: "\f2ba"; }
 
 .mdl-icon--play-install:before {
-  content: ""; }
+  content: "\f2bb"; }
 
 .mdl-icon--sd-card:before {
-  content: ""; }
+  content: "\f2bc"; }
 
 .mdl-icon--sim-card-alert:before {
-  content: ""; }
+  content: "\f2bd"; }
 
 .mdl-icon--sms:before {
-  content: ""; }
+  content: "\f2be"; }
 
 .mdl-icon--sms-failed:before {
-  content: ""; }
+  content: "\f2bf"; }
 
 .mdl-icon--sync:before {
-  content: ""; }
+  content: "\f2c0"; }
 
 .mdl-icon--sync-disabled:before {
-  content: ""; }
+  content: "\f2c1"; }
 
 .mdl-icon--sync-problem:before {
-  content: ""; }
+  content: "\f2c2"; }
 
 .mdl-icon--system-update:before {
-  content: ""; }
+  content: "\f2c3"; }
 
 .mdl-icon--tap-and-play:before {
-  content: ""; }
+  content: "\f2c4"; }
 
 .mdl-icon--time-to-leave:before {
-  content: ""; }
+  content: "\f2c5"; }
 
 .mdl-icon--vibration:before {
-  content: ""; }
+  content: "\f2c6"; }
 
 .mdl-icon--voice-chat:before {
-  content: ""; }
+  content: "\f2c7"; }
 
 .mdl-icon--vpn-lock:before {
-  content: ""; }
+  content: "\f2c8"; }
 
 .mdl-icon--cake:before {
-  content: ""; }
+  content: "\f2c9"; }
 
 .mdl-icon--domain:before {
-  content: ""; }
+  content: "\f2ca"; }
 
 .mdl-icon--location-city:before {
-  content: ""; }
+  content: "\f2cb"; }
 
 .mdl-icon--mood:before {
-  content: ""; }
+  content: "\f2cc"; }
 
 .mdl-icon--notifications-none:before {
-  content: ""; }
+  content: "\f2cd"; }
 
 .mdl-icon--notifications:before {
-  content: ""; }
+  content: "\f2ce"; }
 
 .mdl-icon--notifications-off:before {
-  content: ""; }
+  content: "\f2cf"; }
 
 .mdl-icon--notifications-on:before {
-  content: ""; }
+  content: "\f2d0"; }
 
 .mdl-icon--notifications-paused:before {
-  content: ""; }
+  content: "\f2d1"; }
 
 .mdl-icon--pages:before {
-  content: ""; }
+  content: "\f2d2"; }
 
 .mdl-icon--party-mode:before {
-  content: ""; }
+  content: "\f2d3"; }
 
 .mdl-icon--group:before {
-  content: ""; }
+  content: "\f2d4"; }
 
 .mdl-icon--group-add:before {
-  content: ""; }
+  content: "\f2d5"; }
 
 .mdl-icon--people:before {
-  content: ""; }
+  content: "\f2d6"; }
 
 .mdl-icon--people-outline:before {
-  content: ""; }
+  content: "\f2d7"; }
 
 .mdl-icon--person:before {
-  content: ""; }
+  content: "\f2d8"; }
 
 .mdl-icon--person-add:before {
-  content: ""; }
+  content: "\f2d9"; }
 
 .mdl-icon--person-outline:before {
-  content: ""; }
+  content: "\f2da"; }
 
 .mdl-icon--plus-one:before {
-  content: ""; }
+  content: "\f2db"; }
 
 .mdl-icon--poll:before {
-  content: ""; }
+  content: "\f2dc"; }
 
 .mdl-icon--public:before {
-  content: ""; }
+  content: "\f2dd"; }
 
 .mdl-icon--school:before {
-  content: ""; }
+  content: "\f2de"; }
 
 .mdl-icon--share:before {
-  content: ""; }
+  content: "\f2df"; }
 
 .mdl-icon--whatshot:before {
-  content: ""; }
+  content: "\f2e0"; }
 
 .mdl-icon--check-box:before {
-  content: ""; }
+  content: "\f2e1"; }
 
 .mdl-icon--check-box-outline-blank:before {
-  content: ""; }
+  content: "\f2e2"; }
 
 .mdl-icon--radio-button-off:before {
-  content: ""; }
+  content: "\f2e3"; }
 
 .mdl-icon--radio-button-on:before {
-  content: ""; }
+  content: "\f2e4"; }
 
 .mdl-icon--star:before {
-  content: ""; }
+  content: "\f2e5"; }
 
 .mdl-icon--star-half:before {
-  content: ""; }
+  content: "\f2e6"; }
 
 .mdl-icon--star-outline:before {
-  content: ""; }
+  content: "\f2e7"; }
 
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
   src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?v=1.1.1");
-  src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format("embedded-opentype"), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format("woff"), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format("truetype");
+  src: url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.eot?#iefix&v=1.1.1") format('embedded-opentype'), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.woff?v=1.1.1") format('woff'), url("packages/mdl/assets/fonts/Material-Design-Iconic-Font.ttf?v=1.1.1") format('truetype');
   font-weight: normal;
   font-style: normal; }
+
 /* ==========  TYPOGRAPHY  ========== */
 /* We're splitting fonts into "preferred" and "performance" in order to optimize
    page loading. For important text, such as the body, we want it to load
@@ -6558,15 +6530,14 @@ Palettes (10 colors) 50 - 900 possible
 @media screen and (min-width: 760px) {
   .mdl-mega-footer--left-section {
     float: left; }
-
   .mdl-mega-footer--right-section {
     float: right; }
-
   .mdl-mega-footer--right-section a {
     display: inline-block;
     margin-left: 16px;
     line-height: 36px;
     vertical-align: middle; } }
+
 .mdl-mega-footer--social-btn {
   width: 36px;
   height: 36px;
@@ -6582,29 +6553,24 @@ Palettes (10 colors) 50 - 900 possible
 @media screen and (min-width: 760px) {
   .mdl-mega-footer--drop-down-section {
     width: 33%; }
-
-  .mdl-mega-footer--drop-down-section:nth-child(1),
-  .mdl-mega-footer--drop-down-section:nth-child(2) {
+  .mdl-mega-footer--drop-down-section:nth-child(1), .mdl-mega-footer--drop-down-section:nth-child(2) {
     float: left; }
-
   .mdl-mega-footer--drop-down-section:nth-child(3) {
     float: right; }
     .mdl-mega-footer--drop-down-section:nth-child(3):after {
       clear: right; }
-
   .mdl-mega-footer--drop-down-section:nth-child(4) {
     float: right; }
-
   .mdl-mega-footer--middle-section:after {
     content: '';
     display: block;
     clear: both; } }
+
 @media screen and (min-width: 1024px) {
-  .mdl-mega-footer--drop-down-section,
-  .mdl-mega-footer--drop-down-section:nth-child(3),
-  .mdl-mega-footer--drop-down-section:nth-child(4) {
+  .mdl-mega-footer--drop-down-section, .mdl-mega-footer--drop-down-section:nth-child(3), .mdl-mega-footer--drop-down-section:nth-child(4) {
     width: 24%;
     float: left; } }
+
 .mdl-mega-footer--heading-checkbox {
   position: absolute;
   width: 100%;
@@ -6619,7 +6585,7 @@ Palettes (10 colors) 50 - 900 possible
     font-family: 'Material-Design-Iconic-Font';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: ""; }
+    content: "\f29d"; }
 
 .mdl-mega-footer--heading-checkbox:checked ~ ul {
   display: none; }
@@ -6627,7 +6593,7 @@ Palettes (10 colors) 50 - 900 possible
   font-family: 'Material-Design-Iconic-Font';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  content: ""; }
+  content: "\f29e"; }
 
 .mdl-mega-footer--heading {
   position: relative;
@@ -6671,11 +6637,11 @@ Palettes (10 colors) 50 - 900 possible
     display: none; }
     .mdl-mega-footer--heading-checkbox ~ .mdl-mega-footer--heading:after {
       background-image: none; }
-
   .mdl-mega-footer--heading-checkbox:checked ~ ul {
     display: block; }
   .mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer--heading:after {
     content: ''; } }
+
 .mdl-mega-footer--bottom-section {
   margin-bottom: 16px; }
 
@@ -6698,6 +6664,7 @@ Palettes (10 colors) 50 - 900 possible
     float: left;
     margin-bottom: 0;
     margin-right: 16px; } }
+
 /* ==========  Color Palettes  ========== */
 /*
 Palettes (14 colors)  50 - 900 + A100 - A700 possible
@@ -6842,6 +6809,243 @@ Palettes (10 colors) 50 - 900 possible
   margin: 0;
   background-color: #9e9e9e;
   border: none; }
+
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+.mdl-grid {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0 auto 0 auto;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch; }
+  .mdl-grid.mdl-grid--no-spacing {
+    padding: 0; }
+
+.mdl-cell--top {
+  -webkit-align-self: flex-start;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+
+.mdl-cell--middle {
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center; }
+
+.mdl-cell--bottom {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end; }
+
+.mdl-cell--stretch {
+  -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+          align-self: stretch; }
+
+.mdl-grid.mdl-grid--no-spacing > .mdl-cell {
+  margin: 0; }
+
+.mdl-grid {
+  padding: 8px; }
+
+.mdl-cell {
+  margin: 8px;
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell {
+    width: calc(100%); }
+
+.mdl-cell--1-col {
+  width: calc(25% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--1-col {
+    width: 25%; }
+
+.mdl-cell--2-col {
+  width: calc(50% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--2-col {
+    width: 50%; }
+
+.mdl-cell--3-col {
+  width: calc(75% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--3-col {
+    width: 75%; }
+
+.mdl-cell--4-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--4-col {
+    width: 100%; }
+
+.mdl-cell--5-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--5-col {
+    width: 100%; }
+
+.mdl-cell--6-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--6-col {
+    width: 100%; }
+
+.mdl-cell--7-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--7-col {
+    width: 100%; }
+
+.mdl-cell--8-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--8-col {
+    width: 100%; }
+
+.mdl-cell--9-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--9-col {
+    width: 100%; }
+
+.mdl-cell--10-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--10-col {
+    width: 100%; }
+
+.mdl-cell--11-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--11-col {
+    width: 100%; }
+
+.mdl-cell--12-col {
+  width: calc(100% - 16px); }
+  .mdl-grid--no-spacing > .mdl-cell--12-col {
+    width: 100%; }
+
+@media (min-width: 480px) and (max-width: 839px) {
+  .mdl-grid {
+    padding: 8px; }
+  .mdl-cell {
+    margin: 8px;
+    width: calc(50% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell {
+      width: calc(50%); }
+  .mdl-cell--1-col {
+    width: calc(12.5% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--1-col {
+      width: 12.5%; }
+  .mdl-cell--2-col {
+    width: calc(25% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--2-col {
+      width: 25%; }
+  .mdl-cell--3-col {
+    width: calc(37.5% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--3-col {
+      width: 37.5%; }
+  .mdl-cell--4-col {
+    width: calc(50% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--4-col {
+      width: 50%; }
+  .mdl-cell--5-col {
+    width: calc(62.5% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--5-col {
+      width: 62.5%; }
+  .mdl-cell--6-col {
+    width: calc(75% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--6-col {
+      width: 75%; }
+  .mdl-cell--7-col {
+    width: calc(87.5% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--7-col {
+      width: 87.5%; }
+  .mdl-cell--8-col {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--8-col {
+      width: 100%; }
+  .mdl-cell--9-col {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--9-col {
+      width: 100%; }
+  .mdl-cell--10-col {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--10-col {
+      width: 100%; }
+  .mdl-cell--11-col {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--11-col {
+      width: 100%; }
+  .mdl-cell--12-col {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--12-col {
+      width: 100%; } }
+
+@media (min-width: 840px) {
+  .mdl-grid {
+    padding: 8px; }
+  .mdl-cell {
+    margin: 8px;
+    width: calc(33.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell {
+      width: calc(33.33333%); }
+  .mdl-cell--1-col {
+    width: calc(8.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--1-col {
+      width: 8.33333%; }
+  .mdl-cell--2-col {
+    width: calc(16.66667% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--2-col {
+      width: 16.66667%; }
+  .mdl-cell--3-col {
+    width: calc(25% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--3-col {
+      width: 25%; }
+  .mdl-cell--4-col {
+    width: calc(33.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--4-col {
+      width: 33.33333%; }
+  .mdl-cell--5-col {
+    width: calc(41.66667% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--5-col {
+      width: 41.66667%; }
+  .mdl-cell--6-col {
+    width: calc(50% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--6-col {
+      width: 50%; }
+  .mdl-cell--7-col {
+    width: calc(58.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--7-col {
+      width: 58.33333%; }
+  .mdl-cell--8-col {
+    width: calc(66.66667% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--8-col {
+      width: 66.66667%; }
+  .mdl-cell--9-col {
+    width: calc(75% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--9-col {
+      width: 75%; }
+  .mdl-cell--10-col {
+    width: calc(83.33333% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--10-col {
+      width: 83.33333%; }
+  .mdl-cell--11-col {
+    width: calc(91.66667% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--11-col {
+      width: 91.66667%; }
+  .mdl-cell--12-col {
+    width: calc(100% - 16px); }
+    .mdl-grid--no-spacing > .mdl-cell--12-col {
+      width: 100%; } }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -7209,8 +7413,9 @@ Palettes (10 colors) 50 - 900 possible
   .mdl-js-progress:not(.mdl-progress__indeterminate) > .auxbar {
     background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #e91e63, #e91e63);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #e91e63, #e91e63);
-    -webkit-mask: url("/images/buffer.svg");
-            mask: url("/images/buffer.svg"); } }
+    -webkit-mask: url('/images/buffer.svg');
+            mask: url('/images/buffer.svg'); } }
+
 .mdl-js-progress:not(.mdl-progress__indeterminate) > .auxbar {
   background-color: rgba(0, 0, 0, 0.26); }
 
@@ -7252,12 +7457,15 @@ Palettes (10 colors) 50 - 900 possible
   0% {
     left: 0%;
     width: 0%; }
+
   50% {
     left: 25%;
     width: 75%; }
+
   75% {
     left: 100%;
     width: 0%; } }
+
 @-webkit-keyframes indeterminate2{
   0%{
     left: 0%;
@@ -7271,25 +7479,31 @@ Palettes (10 colors) 50 - 900 possible
   100%{
     left: 100%;
     width: 0%; } }
+
 @keyframes indeterminate2 {
   0% {
     left: 0%;
     width: 0%; }
+
   50% {
     left: 0%;
     width: 0%; }
+
   75% {
     left: 0%;
     width: 25%; }
+
   100% {
     left: 100%;
     width: 0%; } }
+
 @supports (-webkit-appearance: none) {
   .mdl-js-progress:not(.mdl-progress__indeterminate) > .auxbar {
     background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #e91e63, #e91e63);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #e91e63, #e91e63);
-    -webkit-mask: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2212%22%20height%3D%224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cellipse%20cx%3D%222%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%222%22%20to%3D%22-10%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2214%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%20class%3D%22loader%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%2214%22%20to%3D%222%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3C%2Fsvg%3E");
-            mask: url("data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2212%22%20height%3D%224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cellipse%20cx%3D%222%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%222%22%20to%3D%22-10%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2214%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%20class%3D%22loader%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%2214%22%20to%3D%222%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3C%2Fsvg%3E"); } }
+    -webkit-mask: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2212%22%20height%3D%224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cellipse%20cx%3D%222%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%222%22%20to%3D%22-10%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2214%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%20class%3D%22loader%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%2214%22%20to%3D%222%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3C%2Fsvg%3E');
+            mask: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2212%22%20height%3D%224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cellipse%20cx%3D%222%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%222%22%20to%3D%22-10%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2214%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%20class%3D%22loader%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%2214%22%20to%3D%222%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3C%2Fsvg%3E'); } }
+
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -7429,7 +7643,7 @@ Palettes (10 colors) 50 - 900 possible
 .mdl-layout-title {
   display: block;
   position: relative;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
@@ -7514,7 +7728,7 @@ Palettes (10 colors) 50 - 900 possible
       -webkit-transform: translateX(0);
           -ms-transform: translateX(0);
               transform: translateX(0);
-      z-index: 2; } }
+      z-index: 3; } }
 
 .mdl-layout__drawer-button {
   display: block;
@@ -7540,7 +7754,7 @@ Palettes (10 colors) 50 - 900 possible
     font-family: 'Material-Design-Iconic-Font';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: ""; }
+    content: "\f2a1"; }
   .mdl-layout__header .mdl-layout__drawer-button {
     position: absolute;
     color: white;
@@ -7800,7 +8014,8 @@ Palettes (10 colors) 50 - 900 possible
   position: absolute;
   top: 0;
   height: 96px;
-  width: calc(100% - 96px);
+  width: calc(100% -
+        96px);
   padding: 0 0 0 72px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -7813,7 +8028,8 @@ Palettes (10 colors) 50 - 900 possible
     display: none; }
   @media screen and (max-width: 850px) {
     .mdl-layout__tab-bar {
-      width: calc(100% - 44px);
+      width: calc(100% -
+          44px);
       padding: 0 0 0 56px; } }
   .mdl-layout--fixed-tabs .mdl-layout__tab-bar {
     padding: 0;
@@ -7874,7 +8090,7 @@ Palettes (10 colors) 50 - 900 possible
     font-family: 'Material-Design-Iconic-Font';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: ""; }
+    content: "\f29b"; }
 
 .mdl-layout__tab-bar-right-button {
   right: 0; }
@@ -7883,7 +8099,7 @@ Palettes (10 colors) 50 - 900 possible
     font-family: 'Material-Design-Iconic-Font';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: ""; }
+    content: "\f29c"; }
 
 .mdl-layout__tab {
   margin: 0;
@@ -8492,8 +8708,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-slider.is-upgraded.is-lowest-value::-moz-range-thumb {
       border: 2px solid rgba(0, 0, 0, 0.26);
       background: transparent; }
-    .mdl-slider.is-upgraded.is-lowest-value ~
-    .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded.is-lowest-value ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-webkit-slider-thumb {
       border: 1.8px solid rgba(0, 0, 0, 0.26);
@@ -8504,15 +8719,13 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       border: 1.8px solid rgba(0, 0, 0, 0.26);
       transform: scale(1.33);
       box-shadow: none; }
-    .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active) ~
-    .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active) ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 8px; }
     .mdl-slider.is-upgraded.is-lowest-value:active::-webkit-slider-thumb {
       border: 1.5px solid rgba(0, 0, 0, 0.26);
       -webkit-transform: scale(1.5);
               transform: scale(1.5); }
-    .mdl-slider.is-upgraded.is-lowest-value:active ~
-    .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded.is-lowest-value:active ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 9px; }
     .mdl-slider.is-upgraded.is-lowest-value:active::-moz-range-thumb {
       border: 1.5px solid rgba(0, 0, 0, 0.26);
@@ -8542,12 +8755,10 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-slider.is-upgraded:disabled:focus::-moz-range-thumb, .mdl-slider.is-upgraded:disabled:active::-moz-range-thumb, .mdl-slider.is-upgraded:disabled::-moz-range-thumb {
       transform: scale(0.667);
       background: rgba(0, 0, 0, 0.26); }
-    .mdl-slider.is-upgraded:disabled ~
-    .mdl-slider__background-flex > .mdl-slider__background-lower {
+    .mdl-slider.is-upgraded:disabled ~ .mdl-slider__background-flex > .mdl-slider__background-lower {
       background-color: rgba(0, 0, 0, 0.26);
       left: -6px; }
-    .mdl-slider.is-upgraded:disabled ~
-    .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded:disabled ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded.is-lowest-value:disabled:focus::-webkit-slider-thumb, .mdl-slider.is-upgraded.is-lowest-value:disabled:active::-webkit-slider-thumb, .mdl-slider.is-upgraded.is-lowest-value:disabled::-webkit-slider-thumb {
       border: 3px solid rgba(0, 0, 0, 0.26);
@@ -8558,8 +8769,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       border: 3px solid rgba(0, 0, 0, 0.26);
       background: transparent;
       transform: scale(0.667); }
-    .mdl-slider.is-upgraded.is-lowest-value:disabled:active ~
-    .mdl-slider__background-flex > .mdl-slider__background-upper {
+    .mdl-slider.is-upgraded.is-lowest-value:disabled:active ~ .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded:disabled:focus::-ms-thumb, .mdl-slider.is-upgraded:disabled:active::-ms-thumb, .mdl-slider.is-upgraded:disabled::-ms-thumb {
       -ms-transform: scale(0.25);
@@ -8759,6 +8969,7 @@ Palettes (10 colors) 50 - 900 possible
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg); } }
+
 .mdl-spinner__layer {
   position: absolute;
   width: 100%;
@@ -8827,27 +9038,35 @@ Palettes (10 colors) 50 - 900 possible
   12.5% {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg); }
+
   25% {
     -webkit-transform: rotate(270deg);
             transform: rotate(270deg); }
+
   37.5% {
     -webkit-transform: rotate(405deg);
             transform: rotate(405deg); }
+
   50% {
     -webkit-transform: rotate(540deg);
             transform: rotate(540deg); }
+
   62.5% {
     -webkit-transform: rotate(675deg);
             transform: rotate(675deg); }
+
   75% {
     -webkit-transform: rotate(810deg);
             transform: rotate(810deg); }
+
   87.5% {
     -webkit-transform: rotate(945deg);
             transform: rotate(945deg); }
+
   to {
     -webkit-transform: rotate(1080deg);
             transform: rotate(1080deg); } }
+
 /**
 * HACK: Even though the intention is to have the current .mdl-spinner__layer-N
 * at `opacity: 1`, we set it to `opacity: 0.99` instead since this forces Chrome
@@ -8873,16 +9092,22 @@ Palettes (10 colors) 50 - 900 possible
 @keyframes mdl-spinner__layer-1-fade-in-out {
   from {
     opacity: 0.99; }
+
   25% {
     opacity: 0.99; }
+
   26% {
     opacity: 0; }
+
   89% {
     opacity: 0; }
+
   90% {
     opacity: 0.99; }
+
   100% {
     opacity: 0.99; } }
+
 @-webkit-keyframes mdl-spinner__layer-2-fade-in-out{
   from{
     opacity: 0; }
@@ -8894,17 +9119,23 @@ Palettes (10 colors) 50 - 900 possible
     opacity: 0.99; }
   51%{
     opacity: 0; } }
+
 @keyframes mdl-spinner__layer-2-fade-in-out {
   from {
     opacity: 0; }
+
   15% {
     opacity: 0; }
+
   25% {
     opacity: 0.99; }
+
   50% {
     opacity: 0.99; }
+
   51% {
     opacity: 0; } }
+
 @-webkit-keyframes mdl-spinner__layer-3-fade-in-out{
   from{
     opacity: 0; }
@@ -8916,17 +9147,23 @@ Palettes (10 colors) 50 - 900 possible
     opacity: 0.99; }
   76%{
     opacity: 0; } }
+
 @keyframes mdl-spinner__layer-3-fade-in-out {
   from {
     opacity: 0; }
+
   40% {
     opacity: 0; }
+
   50% {
     opacity: 0.99; }
+
   75% {
     opacity: 0.99; }
+
   76% {
     opacity: 0; } }
+
 @-webkit-keyframes mdl-spinner__layer-4-fade-in-out{
   from{
     opacity: 0; }
@@ -8938,17 +9175,23 @@ Palettes (10 colors) 50 - 900 possible
     opacity: 0.99; }
   100%{
     opacity: 0; } }
+
 @keyframes mdl-spinner__layer-4-fade-in-out {
   from {
     opacity: 0; }
+
   65% {
     opacity: 0; }
+
   75% {
     opacity: 0.99; }
+
   90% {
     opacity: 0.99; }
+
   100% {
     opacity: 0; } }
+
 /**
 * Patch the gap that appear between the two adjacent
 * div.mdl-spinner__circle-clipper while the spinner is rotating
@@ -9028,12 +9271,15 @@ Palettes (10 colors) 50 - 900 possible
   from {
     -webkit-transform: rotate(130deg);
             transform: rotate(130deg); }
+
   50% {
     -webkit-transform: rotate(-5deg);
             transform: rotate(-5deg); }
+
   to {
     -webkit-transform: rotate(130deg);
             transform: rotate(130deg); } }
+
 @-webkit-keyframes mdl-spinner__right-spin{
   from{
     -webkit-transform: rotate(-130deg);
@@ -9044,16 +9290,20 @@ Palettes (10 colors) 50 - 900 possible
   to{
     -webkit-transform: rotate(-130deg);
             transform: rotate(-130deg); } }
+
 @keyframes mdl-spinner__right-spin {
   from {
     -webkit-transform: rotate(-130deg);
             transform: rotate(-130deg); }
+
   50% {
     -webkit-transform: rotate(5deg);
             transform: rotate(5deg); }
+
   to {
     -webkit-transform: rotate(-130deg);
             transform: rotate(-130deg); } }
+
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -9266,8 +9516,8 @@ Palettes (10 colors) 50 - 900 possible
   cursor: pointer;
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-  -webkit-transition-duration: 0.40s;
-          transition-duration: 0.40s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   -webkit-transition-timing-function: step-end;
           transition-timing-function: step-end;
   -webkit-transition-property: left;
@@ -9466,9 +9716,11 @@ Palettes (10 colors) 50 - 900 possible
   0% {
     opacity: 0;
     width: 0; }
+
   100% {
     opacity: 1;
     width: 100%; } }
+
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
  *
@@ -9806,14 +10058,17 @@ Palettes (10 colors) 50 - 900 possible
     -webkit-transform: scale(0);
             transform: scale(0);
     opacity: 0; }
+
   50% {
     -webkit-transform: scale(0.99);
             transform: scale(0.99); }
+
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
     opacity: 1;
     visibility: visible; } }
+
 /* ==========  Color Palettes  ========== */
 /*
 Palettes (14 colors)  50 - 900 + A100 - A700 possible
@@ -10770,32 +11025,30 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
-.wsk-panel {
+.mdl-panel {
   padding: 8px 16px;
   color: rgba(0, 0, 0, 0.87);
   background-color: white;
   border-radius: 2px; }
-  .wsk-panel.wsk-panel--shadow {
+  .mdl-panel.mdl-panel--shadow {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23); }
-  .wsk-panel.wsk-panel--light-text {
+  .mdl-panel.mdl-panel--light-text {
     color: whitesmoke; }
-  .wsk-panel.wsk-panel--dark {
+  .mdl-panel.mdl-panel--dark {
     background-color: #e91e63; }
-  .wsk-panel.wsk-panel--darker {
+  .mdl-panel.mdl-panel--darker {
     background-color: #c2185b; }
-  .wsk-panel.wsk-panel--light {
+  .mdl-panel.mdl-panel--light {
     background-color: #f06292; }
-  .wsk-panel.wsk-panel--lighter {
+  .mdl-panel.mdl-panel--lighter {
     background-color: #f8bbd0; }
-  .wsk-panel.wsk-panel--accent {
+  .mdl-panel.mdl-panel--accent {
     background-color: #2196f3; }
-  .wsk-panel.wsk-panel--with-heading {
+  .mdl-panel.mdl-panel--with-heading {
     padding: 0; }
-    .wsk-panel.wsk-panel--with-heading > .wsk-panel__heading {
+    .mdl-panel.mdl-panel--with-heading > .mdl-panel__heading {
       padding: 8px 16px; }
-    .wsk-panel.wsk-panel--with-heading > .wsk-panel__content {
+    .mdl-panel.mdl-panel--with-heading > .mdl-panel__content {
       padding: 8px 16px;
       color: rgba(0, 0, 0, 0.87);
       background-color: white; }
-
-/*# sourceMappingURL=material.css.map */
