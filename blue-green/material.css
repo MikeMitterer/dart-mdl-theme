@@ -1,5 +1,102 @@
 @charset "UTF-8";
 /* Material Design Lite */
+/**
+ * Copyright 2015 Google Inc. All Rights Reserved.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/* ==========  Color Palettes  ========== */
+/*
+Palettes (14 colors)  50 - 900 + A100 - A700 possible
+    palette-red
+    palette-pink
+    palette-purple
+    palette-deep-purple
+    palette-indigo
+    palette-blue
+    palette-light-blue
+    palette-cyan
+    palette-teal
+    palette-green
+    palette-light-green
+    palette-lime
+    palette-yellow
+    palette-amber
+    palette-orange
+    palette-deep-orange
+
+Palettes (10 colors) 50 - 900 possible
+    palette-brown
+    palette-grey
+    palette-blue-grey
+*/
+/* ==========  Color & Themes  ========== */
+/* ==========  Typography  ========== */
+/* ==========  Components  ========== */
+/* ==========  Standard Buttons  ========== */
+/* ==========  Icon Toggles  ========== */
+/* ==========  Radio Buttons  ========== */
+/* ==========  Ripple effect  ========== */
+/* ==========  Layout  ========== */
+/* ==========  Content Tabs  ========== */
+/* ==========  Checkboxes  ========== */
+/* ==========  Switches  ========== */
+/* ==========  Spinner  ========== */
+/* ==========  Text fields  ========== */
+/* ==========  Card  ========== */
+/* Heading back */
+/* ==========  Sliders ========== */
+/* ========== Progress ========== */
+/* ==========  List ========== */
+/* ==========  Item ========== */
+/* ==========  Dropdown menu ========== */
+/* ==========  Tooltips  ========== */
+/* ==========  Footer  ========== */
+/* TEXTFIELD */
+/* SWITCH */
+/* SPINNER */
+/* RADIO */
+/* MENU */
+/* LIST */
+/* ICONS */
+/* ICON TOGGLE */
+/* FOOTER */
+/*mega-footer*/
+/**************
+ *
+ * Sizes
+ *
+ *************/
+/*mini-footer*/
+/**************
+ *
+ * Sizes
+ *
+ *************/
+/* COLUMN LAYOUT */
+/* CHECKBOX */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* BUTTON */
+/**
+ *
+ * Dimensions
+ *
+ */
+/* ANIMATION */
+/* PROGRESS */
+/* BADGE */
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
@@ -9,7 +106,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 html {
-  color: #222;
+  color: rgba(0, 0, 0, 0.87);
   font-size: 1em;
   line-height: 1.4; }
 
@@ -278,6 +375,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 /*
 Palettes (14 colors)  50 - 900 + A100 - A700 possible
     palette-red
@@ -1953,16 +2051,16 @@ Palettes (10 colors) 50 - 900 possible
   color: white !important; }
 
 .mdl-color--primary {
-  background-color: #2196f3 !important; }
+  background-color: #607d8b !important; }
 
 .mdl-color--primary-contrast {
   background-color: white !important; }
 
 .mdl-color--primary-dark {
-  background-color: #1976d2 !important; }
+  background-color: #455a64 !important; }
 
 .mdl-color--accent {
-  background-color: #69f0ae !important; }
+  background-color: #ff4081 !important; }
 
 .mdl-color--accent-contrast {
   background-color: white !important; }
@@ -2052,16 +2150,16 @@ Palettes (10 colors) 50 - 900 possible
   background-color: #00c853 !important; }
 
 .mdl-color-text--primary, a.mdl-color-text--primary {
-  color: #2196f3 !important; }
+  color: #607d8b !important; }
 
 .mdl-color-text--primary-contrast, a.mdl-color-text--primary-contrast {
   color: white !important; }
 
 .mdl-color-text--primary-dark, a.mdl-color-text--primary-dark {
-  color: #1976d2 !important; }
+  color: #455a64 !important; }
 
 .mdl-color-text--accent, a.mdl-color-text--accent {
-  color: #69f0ae !important; }
+  color: #ff4081 !important; }
 
 .mdl-color-text--accent-contrast, a.mdl-color-text--accent-contrast {
   color: white !important; }
@@ -2265,6 +2363,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 html, body {
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
@@ -2276,13 +2375,13 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0; }
 
 /**
- * Styles for HTML elements
- */
+* Styles for HTML elements
+*/
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 56px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.35;
   letter-spacing: -0.02em;
   opacity: 0.54;
   font-size: 0.6em; }
@@ -2291,71 +2390,98 @@ h1 {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 56px;
   font-weight: 400;
-  line-height: 1;
-  letter-spacing: -0.02em; }
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin-top: 24px;
+  margin-bottom: 24px; }
 
 h2 {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 45px;
   font-weight: 400;
-  line-height: 48px; }
+  line-height: 48px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
 
 h3 {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 34px;
   font-weight: 400;
-  line-height: 40px; }
+  line-height: 40px;
+  margin-top: 24px;
+  margin-bottom: 24px; }
 
 h4 {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 32px;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  margin-top: 24px;
+  margin-bottom: 16px; }
 
 h5 {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.02em; }
+  letter-spacing: 0.02em;
+  margin-top: 24px;
+  margin-bottom: 16px; }
 
 h6 {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0.04em;
+  margin-top: 24px;
+  margin-bottom: 16px; }
 
 p {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.04em;
-  margin: 0 0 16px 0; }
+  letter-spacing: 0; }
 
 a {
-  font-weight: bold; }
+  color: #ff4081;
+  font-weight: 500; }
 
 blockquote {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  position: relative;
   font-size: 24px;
   font-weight: 300;
   font-style: italic;
-  line-height: 1;
+  line-height: 1.35;
   letter-spacing: 0.08em; }
   blockquote:before {
-    content: '“';
-    opacity: 0.54; }
+    position: absolute;
+    left: -0.5em;
+    content: '“'; }
   blockquote:after {
     content: '”';
-    opacity: 0.54; }
+    margin-left: -0.05em; }
 
 mark {
   background-color: #f4ff81; }
 
 dt {
   font-weight: 700; }
+
+address {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  font-style: normal; }
+
+ul, ol {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0; }
 
 /**
  * Class Name Styles
@@ -2379,14 +2505,14 @@ dt {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 56px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.35;
   letter-spacing: -0.02em; }
 
 .mdl-typography--display-3-color-contrast {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 56px;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1.35;
   letter-spacing: -0.02em;
   opacity: 0.54; }
 
@@ -2465,26 +2591,26 @@ dt {
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0; }
 
 .mdl-typography--body-2-color-contrast {
   font-size: 14px;
   font-weight: bold;
   line-height: 24px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   opacity: 0.87; }
 
 .mdl-typography--body-1 {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0; }
 
 .mdl-typography--body-1-color-contrast {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   opacity: 0.87; }
 
 .mdl-typography--body-2-force-preferred-font {
@@ -2492,14 +2618,14 @@ dt {
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0; }
 
 .mdl-typography--body-2-force-preferred-font-color-contrast {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   opacity: 0.87; }
 
 .mdl-typography--body-1-force-preferred-font {
@@ -2507,34 +2633,34 @@ dt {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0; }
 
 .mdl-typography--body-1-force-preferred-font-color-contrast {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   opacity: 0.87; }
 
 .mdl-typography--caption {
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.08em; }
+  letter-spacing: 0; }
 
 .mdl-typography--caption-force-preferred-font {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.08em; }
+  letter-spacing: 0; }
 
 .mdl-typography--caption-color-contrast {
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   opacity: 0.54; }
 
 .mdl-typography--caption-force-preferred-font-color-contrast {
@@ -2542,7 +2668,7 @@ dt {
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
-  letter-spacing: 0.08em;
+  letter-spacing: 0;
   opacity: 0.54; }
 
 .mdl-typography--menu {
@@ -2550,31 +2676,31 @@ dt {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0; }
 
 .mdl-typography--menu-color-contrast {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   opacity: 0.87; }
 
 .mdl-typography--button {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
-  letter-spacing: 0.04em; }
+  letter-spacing: 0; }
 
 .mdl-typography--button-color-contrast {
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   opacity: 0.87; }
 
 .mdl-typography--text-left {
@@ -2600,12 +2726,6 @@ dt {
 
 .mdl-typography--text-capitalize {
   text-transform: capitalize; }
-
-.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td, .mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9; }
-
-.mdl-typography--table-striped > tbody > tr:nth-child(odd) > td, .mdl-typography--table-striped > tbody > tr:nth-child(odd) > th {
-  background-color: #f9f9f9; }
 
 .mdl-typography--font-thin {
   font-weight: 200 !important; }
@@ -2730,6 +2850,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-shadow--z1 {
   box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24); }
 
@@ -2841,6 +2962,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-ripple {
   background: black;
   border-radius: 50%;
@@ -2959,6 +3081,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-animation--default {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
@@ -3071,6 +3194,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-button {
   background: transparent;
   border: none;
@@ -3085,10 +3209,10 @@ Palettes (10 colors) 50 - 900 possible
   display: inline-block;
   font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   line-height: 1;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   overflow: hidden;
   will-change: box-shadow, transform;
   -webkit-transition: box-shadow 0.2s cubic-bezier(0.4, 0, 1, 1), background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
@@ -3112,7 +3236,7 @@ Palettes (10 colors) 50 - 900 possible
     cursor: auto;
     background-color: transparent; }
   .mdl-button.mdl-button--colored {
-    color: #2196f3; }
+    color: #607d8b; }
     .mdl-button.mdl-button--colored:focus:not(:active) {
       background-color: rgba(0, 0, 0, 0.12); }
 
@@ -3126,14 +3250,14 @@ Palettes (10 colors) 50 - 900 possible
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
     background-color: rgba(158, 158, 158, 0.4); }
   .mdl-button--raised.mdl-button--colored {
-    background: #2196f3;
+    background: #607d8b;
     color: white; }
     .mdl-button--raised.mdl-button--colored:hover {
-      background-color: #2196f3; }
+      background-color: #607d8b; }
     .mdl-button--raised.mdl-button--colored:active {
-      background-color: #2196f3; }
+      background-color: #607d8b; }
     .mdl-button--raised.mdl-button--colored:focus:not(:active) {
-      background-color: #2196f3; }
+      background-color: #607d8b; }
     .mdl-button--raised.mdl-button--colored .mdl-ripple {
       background: white; }
   .mdl-button--raised[disabled][disabled] {
@@ -3179,14 +3303,14 @@ Palettes (10 colors) 50 - 900 possible
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.18), 0 8px 16px rgba(0, 0, 0, 0.36);
     background-color: rgba(158, 158, 158, 0.4); }
   .mdl-button--fab.mdl-button--colored {
-    background: #69f0ae;
+    background: #ff4081;
     color: white; }
     .mdl-button--fab.mdl-button--colored:hover {
-      background-color: #69f0ae; }
+      background-color: #ff4081; }
     .mdl-button--fab.mdl-button--colored:focus:not(:active) {
-      background-color: #69f0ae; }
+      background-color: #ff4081; }
     .mdl-button--fab.mdl-button--colored:active {
-      background-color: #69f0ae; }
+      background-color: #ff4081; }
     .mdl-button--fab.mdl-button--colored .mdl-ripple {
       background: white; }
   .mdl-button--fab[disabled][disabled] {
@@ -3232,6 +3356,18 @@ Palettes (10 colors) 50 - 900 possible
   overflow: hidden; }
   .mdl-button[disabled] .mdl-button__ripple-container .mdl-ripple {
     background-color: transparent; }
+
+.mdl-button--primary.mdl-button--primary {
+  background-color: #607d8b;
+  color: white; }
+  .mdl-button--primary.mdl-button--primary .mdl-ripple {
+    background: white; }
+
+.mdl-button--accent.mdl-button--accent {
+  background-color: #ff4081;
+  color: white; }
+  .mdl-button--accent.mdl-button--accent .mdl-ripple {
+    background: white; }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -3329,6 +3465,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-card {
   font-size: 16px;
   height: 200px;
@@ -3340,7 +3477,7 @@ Palettes (10 colors) 50 - 900 possible
   border-radius: 2px; }
 
 .mdl-card--img-container {
-  background-color: #69f0ae;
+  background-color: #ff4081;
   background-repeat: repeat;
   background-position: 50% 50%;
   background-size: cover;
@@ -3353,7 +3490,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #1976d2 none repeat scroll 0 0/auto padding-box border-box;
+  background: #455a64 none repeat scroll 0 0/auto padding-box border-box;
   border: 0 none white;
   color: white;
   display: -webkit-box;
@@ -3398,7 +3535,7 @@ Palettes (10 colors) 50 - 900 possible
   width: 90%; }
 
 .mdl-card--caption {
-  background: #1976d2 none repeat scroll 0 0/auto padding-box border-box;
+  background: #455a64 none repeat scroll 0 0/auto padding-box border-box;
   border: 0 none white;
   color: white;
   font-size: 12px;
@@ -3413,7 +3550,7 @@ Palettes (10 colors) 50 - 900 possible
 
 .mdl-card--lower {
   border: 0 none #444444;
-  color: #2196f3;
+  color: #607d8b;
   font-size: 13px;
   height: 108px;
   line-height: 18px;
@@ -3436,7 +3573,7 @@ Palettes (10 colors) 50 - 900 possible
   border-right: 0 none #303f9f;
   border-top: 1px solid #ebebeb;
   box-sizing: border-box;
-  color: #1976d2;
+  color: #455a64;
   cursor: pointer;
   display: inline-block;
   font-size: 13px;
@@ -3554,6 +3691,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-checkbox {
   position: relative;
   z-index: 1;
@@ -3597,7 +3735,7 @@ Palettes (10 colors) 50 - 900 possible
   border-radius: 2px;
   z-index: 2; }
   .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
-    border: 2px solid #2196f3; }
+    border: 2px solid #607d8b; }
   .mdl-checkbox.is-disabled .mdl-checkbox__box-outline {
     border: 2px solid rgba(0, 0, 0, 0.26);
     cursor: auto; }
@@ -3616,8 +3754,8 @@ Palettes (10 colors) 50 - 900 possible
     box-shadow: 0 0 0px 8px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.1); }
   .mdl-checkbox.is-focused.is-checked .mdl-checkbox__focus-helper {
-    box-shadow: 0 0 0px 8px rgba(33, 150, 243, 0.26);
-    background-color: rgba(33, 150, 243, 0.26); }
+    box-shadow: 0 0 0px 8px rgba(96, 125, 139, 0.26);
+    background-color: rgba(96, 125, 139, 0.26); }
 
 .mdl-checkbox__tick-outline {
   position: absolute;
@@ -3635,7 +3773,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-transition-property: background;
           transition-property: background; }
   .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
-    background: #2196f3 url("/images/tick.svg"); }
+    background: #607d8b url("/images/tick.svg"); }
   .mdl-checkbox.is-checked.is-disabled .mdl-checkbox__tick-outline {
     background: rgba(0, 0, 0, 0.26) url("/images/tick.svg"); }
 
@@ -3662,7 +3800,7 @@ Palettes (10 colors) 50 - 900 possible
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
   .mdl-checkbox__ripple-container .mdl-ripple {
-    background: #2196f3; }
+    background: #607d8b; }
   .mdl-checkbox.is-disabled .mdl-checkbox__ripple-container {
     cursor: auto; }
   .mdl-checkbox.is-disabled .mdl-checkbox__ripple-container .mdl-ripple {
@@ -3672,7 +3810,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-mask: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2FclipPath%3E%3Cmask%20maskContentUnits%3D%22objectBoundingBox%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cpath%20clip-path%3D%22url(%23a)%22%20d%3D%22M0%200h1v1H0z%22%2F%3E%3C%2Fsvg%3E');
           mask: url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201%201%22%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2FclipPath%3E%3Cmask%20maskContentUnits%3D%22objectBoundingBox%22%3E%3Cpath%20d%3D%22M0%200v1h1V0H0zm.853.167L.96.273l-.53.53L.322.91.217.803.04.627.147.52l.176.177.53-.53z%22%20fill%3D%22%23fff%22%2F%3E%3C%2Fmask%3E%3C%2Fdefs%3E%3Cpath%20clip-path%3D%22url(%23a)%22%20d%3D%22M0%200h1v1H0z%22%2F%3E%3C%2Fsvg%3E'); }
   .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
-    background: #2196f3 url('data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E'); }
+    background: #607d8b url('data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E'); }
   .mdl-checkbox.is-checked.is-disabled .mdl-checkbox__tick-outline {
     background: rgba(0, 0, 0, 0.26) url('data:image/svg+xml;charset=utf-8,%3Csvg%0A%20%20%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%0A%20%20%20version%3D%221.1%22%0A%20%20%20viewBox%3D%220%200%201%201%22%0A%20%20%20preserveAspectRatio%3D%22xMinYMin%20meet%22%3E%0A%20%20%3Cpath%0A%20%20%20%20%20d%3D%22M%200.04038059%2C0.6267767%200.14644661%2C0.52071068%200.42928932%2C0.80355339%200.3232233%2C0.90961941%20z%20M%200.21715729%2C0.80355339%200.85355339%2C0.16715729%200.95961941%2C0.2732233%200.3232233%2C0.90961941%20z%22%0A%20%20%20%20%20id%3D%22rect3780%22%0A%20%20%20%20%20style%3D%22fill%3A%23ffffff%3Bfill-opacity%3A1%3Bstroke%3Anone%22%20%2F%3E%0A%3C%2Fsvg%3E'); }
 
@@ -3772,173 +3910,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
-.mdl-column-layout {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  box-sizing: border-box;
-  padding: 20px; }
-  @media screen and (min-width: 1600px) {
-    .mdl-column-layout {
-      padding-left: calc(50% - 600px);
-      padding-right: calc(50% - 600px); } }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .mdl-column-layout {
-      padding: 12px; } }
-  @media screen and (max-width: 767px) {
-    .mdl-column-layout {
-      padding: 8px; } }
-
-.mdl-column-layout__child {
-  min-width: 360px;
-  width: 360px;
-  margin: 20px;
-  box-sizing: border-box; }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .mdl-column-layout__child {
-      margin: 12px;
-      min-width: calc(50% - 24px);
-      width: calc(50% - 24px); } }
-  @media screen and (max-width: 767px) {
-    .mdl-column-layout__child {
-      margin: 8px;
-      width: calc(100% - 16px);
-      min-width: calc(100% - 16px); } }
-
-.mdl-column-layout__wrap-hack {
-  min-width: 360px;
-  width: 360px;
-  margin: 20px;
-  box-sizing: border-box;
-  height: 0;
-  min-height: 0;
-  max-height: 0;
-  border: none;
-  padding: 0;
-  margin-bottom: 0;
-  margin-top: 0;
-  opacity: 0; }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .mdl-column-layout__wrap-hack {
-      margin: 12px;
-      min-width: calc(50% - 24px);
-      width: calc(50% - 24px); } }
-  @media screen and (max-width: 767px) {
-    .mdl-column-layout__wrap-hack {
-      margin: 8px;
-      width: calc(100% - 16px);
-      min-width: calc(100% - 16px); } }
-
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-/* ==========  Color Palettes  ========== */
-/*
-Palettes (14 colors)  50 - 900 + A100 - A700 possible
-    palette-red
-    palette-pink
-    palette-purple
-    palette-deep-purple
-    palette-indigo
-    palette-blue
-    palette-light-blue
-    palette-cyan
-    palette-teal
-    palette-green
-    palette-light-green
-    palette-lime
-    palette-yellow
-    palette-amber
-    palette-orange
-    palette-deep-orange
-
-Palettes (10 colors) 50 - 900 possible
-    palette-brown
-    palette-grey
-    palette-blue-grey
-*/
-/* ==========  Color & Themes  ========== */
-/* ==========  Typography  ========== */
-/* ==========  Components  ========== */
-/* ==========  Standard Buttons  ========== */
-/* ==========  Icon Toggles  ========== */
-/* ==========  Radio Buttons  ========== */
-/* ==========  Ripple effect  ========== */
-/* ==========  Layout  ========== */
-/* ==========  Content Tabs  ========== */
-/* ==========  Checkboxes  ========== */
-/* ==========  Switches  ========== */
-/* ==========  Spinner  ========== */
-/* ==========  Text fields  ========== */
-/* ==========  Card  ========== */
-/* Heading back */
-/* ==========  Sliders ========== */
-/* ========== Progress ========== */
-/* ==========  List ========== */
-/* ==========  Item ========== */
-/* ==========  Dropdown menu ========== */
-/* ==========  Tooltips  ========== */
-/* ==========  Footer  ========== */
-/* TEXTFIELD */
-/* SWITCH */
-/* SPINNER */
-/* RADIO */
-/* MENU */
-/* LIST */
-/* ICONS */
-/* ICON TOGGLE */
-/* FOOTER */
-/*mega-footer*/
-/**************
- *
- * Sizes
- *
- *************/
-/*mini-footer*/
-/**************
- *
- * Sizes
- *
- *************/
-/* COLUMN LAYOUT */
-/* CHECKBOX */
-/* CARD */
-/* Card dimensions */
-/* Cover image */
-/* BUTTON */
-/**
- *
- * Dimensions
- *
- */
-/* ANIMATION */
-/* PROGRESS */
+/* BADGE */
 @font-face {
   font-family: 'Material-Design-Iconic-Font';
   src: url('../fonts/Material-Design-Iconic-Font.eot?v=1.1.1');
@@ -6348,6 +6320,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-icon-toggle {
   position: relative;
   z-index: 1;
@@ -6392,7 +6365,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
           transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1), color 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
   .mdl-icon-toggle.is-checked .mdl-icon-toggle__label {
-    color: #2196f3; }
+    color: #607d8b; }
   .mdl-icon-toggle.is-disabled .mdl-icon-toggle__label {
     color: rgba(0, 0, 0, 0.26);
     cursor: auto;
@@ -6401,7 +6374,7 @@ Palettes (10 colors) 50 - 900 possible
   .mdl-icon-toggle.is-focused .mdl-icon-toggle__label {
     background-color: rgba(0, 0, 0, 0.12); }
   .mdl-icon-toggle.is-focused.is-checked .mdl-icon-toggle__label {
-    background-color: rgba(33, 150, 243, 0.26); }
+    background-color: rgba(96, 125, 139, 0.26); }
 
 .mdl-icon-toggle__ripple-container {
   position: absolute;
@@ -6503,6 +6476,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-mega-footer {
   padding: 32px 16px;
   color: #9e9e9e;
@@ -6750,6 +6724,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-mini-footer {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7288,6 +7263,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-menu__container {
   display: block;
   margin: 0;
@@ -7384,7 +7360,7 @@ Palettes (10 colors) 50 - 900 possible
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
   text-decoration: none;
   cursor: pointer;
   height: 48px;
@@ -7526,6 +7502,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-js-progress {
   display: block;
   position: relative;
@@ -7541,13 +7518,13 @@ Palettes (10 colors) 50 - 900 possible
           transition: width 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
 
 .mdl-js-progress > .progressbar {
-  background-color: #2196f3;
+  background-color: #607d8b;
   z-index: 1;
   left: 0; }
 
 .mdl-js-progress > .bufferbar {
-  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #2196f3, #2196f3);
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #2196f3, #2196f3);
+  background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #607d8b, #607d8b);
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #607d8b, #607d8b);
   z-index: 0;
   left: 0; }
 
@@ -7556,8 +7533,8 @@ Palettes (10 colors) 50 - 900 possible
 
 @supports (-webkit-appearance: none) {
   .mdl-js-progress:not(.mdl-progress__indeterminate) > .auxbar {
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #2196f3, #2196f3);
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #2196f3, #2196f3);
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #607d8b, #607d8b);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #607d8b, #607d8b);
     -webkit-mask: url('/images/buffer.svg');
             mask: url('/images/buffer.svg'); } }
 
@@ -7565,7 +7542,7 @@ Palettes (10 colors) 50 - 900 possible
   background-color: rgba(0, 0, 0, 0.26); }
 
 .mdl-js-progress.mdl-progress__indeterminate > .bar1 {
-  background-color: #2196f3;
+  background-color: #607d8b;
   -webkit-animation-name: indeterminate1;
           animation-name: indeterminate1;
   -webkit-animation-duration: 2s;
@@ -7577,7 +7554,7 @@ Palettes (10 colors) 50 - 900 possible
 
 .mdl-js-progress.mdl-progress__indeterminate > .bar3 {
   background-image: none;
-  background-color: #2196f3;
+  background-color: #607d8b;
   -webkit-animation-name: indeterminate2;
           animation-name: indeterminate2;
   -webkit-animation-duration: 2s;
@@ -7644,8 +7621,8 @@ Palettes (10 colors) 50 - 900 possible
 
 @supports (-webkit-appearance: none) {
   .mdl-js-progress:not(.mdl-progress__indeterminate) > .auxbar {
-    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #2196f3, #2196f3);
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #2196f3, #2196f3);
+    background-image: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), -webkit-linear-gradient(left, #607d8b, #607d8b);
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), linear-gradient(to right, #607d8b, #607d8b);
     -webkit-mask: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2212%22%20height%3D%224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cellipse%20cx%3D%222%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%222%22%20to%3D%22-10%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2214%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%20class%3D%22loader%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%2214%22%20to%3D%222%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3C%2Fsvg%3E');
             mask: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2212%22%20height%3D%224%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cellipse%20cx%3D%222%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%222%22%20to%3D%22-10%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3Cellipse%20cx%3D%2214%22%20cy%3D%222%22%20rx%3D%222%22%20ry%3D%222%22%20class%3D%22loader%22%3E%3Canimate%20attributeName%3D%22cx%22%20from%3D%2214%22%20to%3D%222%22%20dur%3D%220.6s%22%20repeatCount%3D%22indefinite%22%2F%3E%3C%2Fellipse%3E%3C%2Fsvg%3E'); } }
 
@@ -7745,6 +7722,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-navigation {
   display: -webkit-box;
   display: -webkit-flex;
@@ -7936,7 +7914,7 @@ Palettes (10 colors) 50 - 900 possible
   border: none;
   height: 64px;
   min-height: 64px;
-  background-color: #2196f3;
+  background-color: #607d8b;
   color: white;
   z-index: 3;
   -webkit-transition-duration: 0.2s;
@@ -8166,7 +8144,7 @@ Palettes (10 colors) 50 - 900 possible
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  background-color: #2196f3;
+  background-color: #607d8b;
   overflow-y: hidden;
   overflow-x: scroll; }
   .mdl-layout__tab-bar::-webkit-scrollbar {
@@ -8212,7 +8190,7 @@ Palettes (10 colors) 50 - 900 possible
   width: 72px;
   z-index: 4;
   text-align: center;
-  background-color: #2196f3;
+  background-color: #607d8b;
   color: transparent;
   cursor: pointer;
   -webkit-user-select: none;
@@ -8289,7 +8267,7 @@ Palettes (10 colors) 50 - 900 possible
     bottom: 0;
     left: 0;
     position: absolute;
-    background: #69f0ae;
+    background: #ff4081;
     -webkit-animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0s alternate forwards;
     -moz-animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0s alternate forwards;
     -webkit-transition: all 1s cubic-bezier(0.4, 0, 1, 1);
@@ -8411,6 +8389,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-list {
   display: block;
   height: 500px;
@@ -8557,6 +8536,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-radio {
   position: relative;
   font-size: 16px;
@@ -8598,7 +8578,7 @@ Palettes (10 colors) 50 - 900 possible
   border-radius: 50%;
   z-index: 2; }
   .mdl-radio.is-checked .mdl-radio__outer-circle {
-    border: 2px solid #2196f3; }
+    border: 2px solid #607d8b; }
   .mdl-radio.is-disabled .mdl-radio__outer-circle {
     border: 2px solid rgba(0, 0, 0, 0.26);
     cursor: auto; }
@@ -8622,7 +8602,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-transform: scale3d(0, 0, 0);
           transform: scale3d(0, 0, 0);
   border-radius: 50%;
-  background: #2196f3; }
+  background: #607d8b; }
   .mdl-radio.is-checked .mdl-radio__inner-circle {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1); }
@@ -8651,7 +8631,7 @@ Palettes (10 colors) 50 - 900 possible
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black); }
   .mdl-radio__ripple-container .mdl-ripple {
-    background: #2196f3; }
+    background: #607d8b; }
   .mdl-radio.is-disabled .mdl-radio__ripple-container {
     cursor: auto; }
   .mdl-radio.is-disabled .mdl-radio__ripple-container .mdl-ripple {
@@ -8753,6 +8733,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   -ms-appearance: none;
   height: 32px;
@@ -8773,7 +8754,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
         user-select: none;
     outline: 0;
     padding: 0;
-    color: #2196f3;
+    color: #607d8b;
     -webkit-align-self: center;
         -ms-flex-item-align: center;
             align-self: center;
@@ -8798,7 +8779,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       border: none; }
     .mdl-slider.is-upgraded::-ms-fill-lower {
       padding: 0;
-      background: linear-gradient(to right, transparent, transparent 16px, #2196f3 16px, #2196f3 0); }
+      background: linear-gradient(to right, transparent, transparent 16px, #607d8b 16px, #607d8b 0); }
     .mdl-slider.is-upgraded::-ms-fill-upper {
       padding: 0;
       background: linear-gradient(to left, transparent, transparent 16px, rgba(0, 0, 0, 0.26) 16px, rgba(0, 0, 0, 0.26) 0); }
@@ -8808,7 +8789,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       height: 12px;
       box-sizing: border-box;
       border-radius: 50%;
-      background: #2196f3;
+      background: #607d8b;
       border: none;
       -webkit-transition: -webkit-transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1);
               transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), border 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -8819,36 +8800,36 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       box-sizing: border-box;
       border-radius: 50%;
       background-image: none;
-      background: #2196f3;
+      background: #607d8b;
       border: none; }
     .mdl-slider.is-upgraded:focus:not(:active)::-webkit-slider-thumb {
-      box-shadow: 0 0 0 10px rgba(33, 150, 243, 0.26); }
+      box-shadow: 0 0 0 10px rgba(96, 125, 139, 0.26); }
     .mdl-slider.is-upgraded:focus:not(:active)::-moz-range-thumb {
-      box-shadow: 0 0 0 10px rgba(33, 150, 243, 0.26); }
+      box-shadow: 0 0 0 10px rgba(96, 125, 139, 0.26); }
     .mdl-slider.is-upgraded:active::-webkit-slider-thumb {
       background-image: none;
-      background: #2196f3;
+      background: #607d8b;
       -webkit-transform: scale(1.5);
               transform: scale(1.5); }
     .mdl-slider.is-upgraded:active::-moz-range-thumb {
       background-image: none;
-      background: #2196f3;
+      background: #607d8b;
       transform: scale(1.5); }
     .mdl-slider.is-upgraded::-ms-thumb {
       width: 32px;
       height: 32px;
       border: none;
       border-radius: 50%;
-      background: #2196f3;
+      background: #607d8b;
       -ms-transform: scale(0.375);
           transform: scale(0.375);
       transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), background 0.28s cubic-bezier(0.4, 0, 0.2, 1); }
     .mdl-slider.is-upgraded:focus:not(:active)::-ms-thumb {
-      background: radial-gradient(circle closest-side, #2196f3 0%, #2196f3 37.5%, rgba(33, 150, 243, 0.26) 37.5%, rgba(33, 150, 243, 0.26) 100%);
+      background: radial-gradient(circle closest-side, #607d8b 0%, #607d8b 37.5%, rgba(96, 125, 139, 0.26) 37.5%, rgba(96, 125, 139, 0.26) 100%);
       -ms-transform: scale(1);
           transform: scale(1); }
     .mdl-slider.is-upgraded:active::-ms-thumb {
-      background: #2196f3;
+      background: #607d8b;
       -ms-transform: scale(0.5625);
           transform: scale(0.5625); }
     .mdl-slider.is-upgraded.is-lowest-value::-webkit-slider-thumb {
@@ -8978,7 +8959,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
           transform: translate(0, -1px); }
 
 .mdl-slider__background-lower {
-  background: #2196f3;
+  background: #607d8b;
   -webkit-box-flex: 0;
   -webkit-flex: 0;
       -ms-flex: 0;
@@ -9095,6 +9076,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-spinner {
   display: inline-block;
   position: relative;
@@ -9125,7 +9107,7 @@ Palettes (10 colors) 50 - 900 possible
 .mdl-spinner__layer-1 {
   border-color: #42a5f5; }
   .mdl-spinner--single-color .mdl-spinner__layer-1 {
-    border-color: #2196f3; }
+    border-color: #607d8b; }
   .mdl-spinner.is-active .mdl-spinner__layer-1 {
     -webkit-animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-1-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
             animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-1-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
@@ -9133,7 +9115,7 @@ Palettes (10 colors) 50 - 900 possible
 .mdl-spinner__layer-2 {
   border-color: #f44336; }
   .mdl-spinner--single-color .mdl-spinner__layer-2 {
-    border-color: #2196f3; }
+    border-color: #607d8b; }
   .mdl-spinner.is-active .mdl-spinner__layer-2 {
     -webkit-animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-2-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
             animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-2-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
@@ -9141,7 +9123,7 @@ Palettes (10 colors) 50 - 900 possible
 .mdl-spinner__layer-3 {
   border-color: #fdd835; }
   .mdl-spinner--single-color .mdl-spinner__layer-3 {
-    border-color: #2196f3; }
+    border-color: #607d8b; }
   .mdl-spinner.is-active .mdl-spinner__layer-3 {
     -webkit-animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-3-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
             animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-3-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
@@ -9149,7 +9131,7 @@ Palettes (10 colors) 50 - 900 possible
 .mdl-spinner__layer-4 {
   border-color: #4caf50; }
   .mdl-spinner--single-color .mdl-spinner__layer-4 {
-    border-color: #2196f3; }
+    border-color: #607d8b; }
   .mdl-spinner.is-active .mdl-spinner__layer-4 {
     -webkit-animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-4-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both;
             animation: mdl-spinner__fill-unfill-rotate 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both, mdl-spinner__layer-4-fade-in-out 5332ms cubic-bezier(0.4, 0, 0.2, 1) infinite both; }
@@ -9546,6 +9528,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-switch {
   position: relative;
   z-index: 1;
@@ -9590,7 +9573,7 @@ Palettes (10 colors) 50 - 900 possible
   border-radius: 14px;
   cursor: pointer; }
   .mdl-switch.is-checked .mdl-switch__track {
-    background: rgba(33, 150, 243, 0.5); }
+    background: rgba(96, 125, 139, 0.5); }
   .mdl-switch.is-disabled .mdl-switch__track {
     background: rgba(0, 0, 0, 0.12);
     cursor: auto; }
@@ -9612,7 +9595,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-transition-property: left;
           transition-property: left; }
   .mdl-switch.is-checked .mdl-switch__thumb {
-    background: #2196f3;
+    background: #607d8b;
     left: 16px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23); }
   .mdl-switch.is-disabled .mdl-switch__thumb {
@@ -9636,8 +9619,8 @@ Palettes (10 colors) 50 - 900 possible
     box-shadow: 0 0 0px 20px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.1); }
   .mdl-switch.is-focused.is-checked .mdl-switch__focus-helper {
-    box-shadow: 0 0 0px 20px rgba(33, 150, 243, 0.26);
-    background-color: rgba(33, 150, 243, 0.26); }
+    box-shadow: 0 0 0px 20px rgba(96, 125, 139, 0.26);
+    background-color: rgba(96, 125, 139, 0.26); }
 
 .mdl-switch__label {
   position: relative;
@@ -9669,7 +9652,7 @@ Palettes (10 colors) 50 - 900 possible
   -webkit-transition-property: left;
           transition-property: left; }
   .mdl-switch__ripple-container .mdl-ripple {
-    background: #2196f3; }
+    background: #607d8b; }
   .mdl-switch.is-disabled .mdl-switch__ripple-container {
     cursor: auto; }
   .mdl-switch.is-disabled .mdl-switch__ripple-container .mdl-ripple {
@@ -9774,6 +9757,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-tabs {
   display: block;
   width: 100%; }
@@ -9831,7 +9815,7 @@ Palettes (10 colors) 50 - 900 possible
     bottom: 0px;
     left: 0px;
     position: absolute;
-    background: #2196f3;
+    background: #607d8b;
     -webkit-animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0s alternate forwards;
     -moz-animation: border-expand 0.2s cubic-bezier(0.4, 0, 0.4, 1) 0s alternate forwards;
     -webkit-transition: all 1s cubic-bezier(0.4, 0, 1, 1);
@@ -9846,7 +9830,7 @@ Palettes (10 colors) 50 - 900 possible
     z-index: 1;
     overflow: hidden; }
     .mdl-tabs__tab .mdl-tabs__ripple-container .mdl-ripple {
-      background: #2196f3; }
+      background: #607d8b; }
 
 .mdl-tabs__panel {
   display: block; }
@@ -9960,6 +9944,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-textfield {
   position: relative;
   font-size: 16px;
@@ -10023,7 +10008,7 @@ Palettes (10 colors) 50 - 900 possible
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
   .mdl-textfield--floating-label.is-focused .mdl-textfield__label, .mdl-textfield--floating-label.is-dirty .mdl-textfield__label {
-    color: #2196f3;
+    color: #607d8b;
     font-size: 12px;
     top: -16px;
     visibility: visible; }
@@ -10031,7 +10016,7 @@ Palettes (10 colors) 50 - 900 possible
     color: #e53935;
     font-size: 12px; }
   .mdl-textfield__label:after {
-    background-color: #2196f3;
+    background-color: #607d8b;
     bottom: 0;
     content: '';
     height: 2px;
@@ -10168,6 +10153,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-tooltip {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -10293,6 +10279,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 /* Animation Variables */
 /* Accordion */
 mdl-accordion-group, mdl-accordion {
@@ -10360,7 +10347,7 @@ mdl-accordion-group mdl-accordion:first-of-type .mdl-accordion {
       z-index: 1;
       overflow: hidden; }
       .mdl-accordion-group .mdl-accordion label .mdl-accordion__ripple-container .mdl-ripple {
-        background: #2196f3; }
+        background: #607d8b; }
   .mdl-accordion-group .mdl-accordion input:checked + label {
     color: black; }
     .mdl-accordion-group .mdl-accordion input:checked + label .indicator {
@@ -10369,7 +10356,7 @@ mdl-accordion-group mdl-accordion:first-of-type .mdl-accordion {
               transform: rotate(90deg);
       -webkit-transition: 0.3s ease-in-out;
               transition: 0.3s ease-in-out;
-      color: rgb(#2196f3); }
+      color: rgb(#607d8b); }
       .debug .mdl-accordion-group .mdl-accordion input:checked + label .indicator {
         border: 1px solid red; }
   .mdl-accordion-group .mdl-accordion .mdl-accordion--content {
@@ -10474,6 +10461,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-badge {
   position: relative;
   white-space: nowrap;
@@ -10512,13 +10500,13 @@ Palettes (10 colors) 50 - 900 possible
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #69f0ae;
-    color: #fff; }
+    background: #ff4081;
+    color: white; }
     .mdl-button .mdl-badge[data-badge]:after {
       top: -10px;
       right: -5px; }
   .mdl-badge.mdl-badge--no-background[data-badge]:after {
-    color: #69f0ae;
+    color: #ff4081;
     background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 1px gray; }
 
@@ -10603,6 +10591,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-dialog-container {
   display: -webkit-box;
   display: -webkit-flex;
@@ -10787,6 +10776,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 form.wsk-basic-form {
   box-sizing: border-box;
   display: -webkit-box;
@@ -10839,7 +10829,7 @@ form.wsk-basic-form {
     form.wsk-basic-form input:last-child {
       margin-right: 0; }
     form.wsk-basic-form input:focus {
-      border-bottom: 1px solid #2196f3; }
+      border-bottom: 1px solid #607d8b; }
     form.wsk-basic-form input[type=submit] {
       border: none; }
   form.wsk-basic-form .wsk-basic-form__group {
@@ -10969,7 +10959,7 @@ form.wsk-basic-form {
           -ms-flex-item-align: end;
               align-self: flex-end; }
   form.wsk-basic-form input[type=submit], form.wsk-basic-form button[type=submit], form.wsk-basic-form button.submit, form.wsk-basic-form button.primary {
-    background-color: #2196f3;
+    background-color: #607d8b;
     color: white; }
   form.wsk-basic-form .wsk-basic-form__control--last-row {
     margin-top: 20px; }
@@ -11132,6 +11122,175 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
+.mdl-sticky-mini-footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: space-between;
+      -ms-flex-line-pack: justify;
+          align-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4px 8px;
+  min-height: 40px;
+  max-height: 40px;
+  z-index: 3; }
+  .mdl-sticky-mini-footer .mdl-mini-footer--left-section {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .mdl-sticky-mini-footer .mdl-mini-footer--left-section .mdl-logo {
+      margin: 0 8px 0 0; }
+      @media screen and (max-width: 850px) {
+        .mdl-sticky-mini-footer .mdl-mini-footer--left-section .mdl-logo {
+          display: none; } }
+  .mdl-sticky-mini-footer .mdl-mini-footer--right-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+/* ==========  Color Palettes  ========== */
+/*
+Palettes (14 colors)  50 - 900 + A100 - A700 possible
+    palette-red
+    palette-pink
+    palette-purple
+    palette-deep-purple
+    palette-indigo
+    palette-blue
+    palette-light-blue
+    palette-cyan
+    palette-teal
+    palette-green
+    palette-light-green
+    palette-lime
+    palette-yellow
+    palette-amber
+    palette-orange
+    palette-deep-orange
+
+Palettes (10 colors) 50 - 900 possible
+    palette-brown
+    palette-grey
+    palette-blue-grey
+*/
+/* ==========  Color & Themes  ========== */
+/* ==========  Typography  ========== */
+/* ==========  Components  ========== */
+/* ==========  Standard Buttons  ========== */
+/* ==========  Icon Toggles  ========== */
+/* ==========  Radio Buttons  ========== */
+/* ==========  Ripple effect  ========== */
+/* ==========  Layout  ========== */
+/* ==========  Content Tabs  ========== */
+/* ==========  Checkboxes  ========== */
+/* ==========  Switches  ========== */
+/* ==========  Spinner  ========== */
+/* ==========  Text fields  ========== */
+/* ==========  Card  ========== */
+/* Heading back */
+/* ==========  Sliders ========== */
+/* ========== Progress ========== */
+/* ==========  List ========== */
+/* ==========  Item ========== */
+/* ==========  Dropdown menu ========== */
+/* ==========  Tooltips  ========== */
+/* ==========  Footer  ========== */
+/* TEXTFIELD */
+/* SWITCH */
+/* SPINNER */
+/* RADIO */
+/* MENU */
+/* LIST */
+/* ICONS */
+/* ICON TOGGLE */
+/* FOOTER */
+/*mega-footer*/
+/**************
+ *
+ * Sizes
+ *
+ *************/
+/*mini-footer*/
+/**************
+ *
+ * Sizes
+ *
+ *************/
+/* COLUMN LAYOUT */
+/* CHECKBOX */
+/* CARD */
+/* Card dimensions */
+/* Cover image */
+/* BUTTON */
+/**
+ *
+ * Dimensions
+ *
+ */
+/* ANIMATION */
+/* PROGRESS */
+/* BADGE */
 .mdl-nav-pill, .mdl-nav-pills > * {
   padding: 4px 8px;
   margin: 0 0 8px 0;
@@ -11352,6 +11511,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-panel {
   padding: 8px 16px;
   color: rgba(0, 0, 0, 0.87);
@@ -11461,6 +11621,7 @@ Palettes (10 colors) 50 - 900 possible
  */
 /* ANIMATION */
 /* PROGRESS */
+/* BADGE */
 .mdl-toast-container.is-visible .mdl-toast {
   opacity: 1;
   -webkit-transition: all 0.2s cubic-bezier(0.55, 0, 0.55, 0.2);
