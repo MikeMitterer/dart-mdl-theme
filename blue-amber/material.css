@@ -50,6 +50,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -84,6 +86,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 /* Config - MaterialDesignLite
 ------------------------------------------------------------------------------------------------------------------------
@@ -204,6 +208,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 /*
  * What follows is the result of much research on cross-browser styling.
@@ -493,6 +499,8 @@ main {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-color-text--red {
   color: #f44336 !important; }
@@ -2476,6 +2484,8 @@ main {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 html, body {
   font-family: "Helvetica", "Arial", sans-serif;
@@ -2915,6 +2925,8 @@ ul, ol {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-shadow--2dp {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); }
@@ -2933,6 +2945,9 @@ ul, ol {
 
 .mdl-shadow--16dp {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+
+.mdl-shadow--24dp {
+  box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2); }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -2982,6 +2997,8 @@ ul, ol {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-ripple {
   background: black;
@@ -3052,6 +3069,8 @@ ul, ol {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-animation--default {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -3117,6 +3136,8 @@ ul, ol {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-button {
   background: transparent;
@@ -3292,7 +3313,7 @@ input.mdl-button[type="submit"] {
 .mdl-button[disabled][disabled],
 .mdl-button.mdl-button--disabled.mdl-button--disabled {
   color: rgba(0, 0, 0, 0.26);
-  cursor: auto;
+  cursor: default;
   background-color: transparent; }
 
 .mdl-button--fab[disabled][disabled],
@@ -3362,6 +3383,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-card {
   display: -webkit-box;
@@ -3524,6 +3547,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-checkbox {
   position: relative;
@@ -3715,6 +3740,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-data-table {
   position: relative;
@@ -3831,6 +3858,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-data-tableex {
   position: relative;
@@ -3923,10 +3952,6 @@ input.mdl-button[type="submit"] {
       background-color: inherit; }
       .mdl-data-tableex > *.mdl-div-data-tableex__head.is-selected, .mdl-data-tableex > *.mdl-div-data-tableex__head:hover {
         background-color: inherit; }
-      .mdl-data-tableex > *.mdl-div-data-tableex__head .mdl-data-tableex__select {
-        position: absolute;
-        bottom: 8px;
-        left: 24px; }
     .mdl-data-tableex > * > * {
       display: -webkit-box;
       display: -webkit-flex;
@@ -3965,10 +3990,14 @@ input.mdl-button[type="submit"] {
             -ms-flex-align: end;
                 align-items: flex-end; }
       .mdl-data-tableex > * > *.mdl-data-tableex__cell--grow {
+        width: initial;
         -webkit-box-flex: 1;
         -webkit-flex-grow: 1;
             -ms-flex-positive: 1;
                 flex-grow: 1; }
+      .mdl-data-tableex > * > *.mdl-data-tableex__cell--checkbox {
+        width: 17px !important;
+        padding-right: 0; }
   .mdl-data-tableex .mdl-data-tableex__select {
     width: 16px; }
 
@@ -4023,6 +4052,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-icon--spin {
   -webkit-animation: mdl-icon--spin 2s infinite linear;
@@ -4211,6 +4242,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-icon-toggle {
   position: relative;
@@ -4335,6 +4368,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-mega-footer {
   padding: 16px 40px;
@@ -4443,21 +4478,27 @@ input.mdl-button[type="submit"] {
   cursor: pointer;
   z-index: 1;
   opacity: 0; }
-  .mdl-mega-footer--heading-checkbox ~ .mdl-mega-footer--heading:after,
-  .mdl-mega-footer--heading-checkbox ~ .mdl-mega-footer__heading:after,
-  .mdl-mega-footer__heading-checkbox ~ .mdl-mega-footer--heading:after,
-  .mdl-mega-footer__heading-checkbox ~ .mdl-mega-footer__heading:after {
+  .mdl-mega-footer--heading-checkbox + .mdl-mega-footer--heading:after,
+  .mdl-mega-footer--heading-checkbox + .mdl-mega-footer__heading:after,
+  .mdl-mega-footer__heading-checkbox + .mdl-mega-footer--heading:after,
+  .mdl-mega-footer__heading-checkbox + .mdl-mega-footer__heading:after {
     font-family: 'Material Icons';
     content: '\E5CE'; }
 
-.mdl-mega-footer--heading-checkbox:checked ~ ul,
-.mdl-mega-footer__heading-checkbox:checked ~ ul {
+.mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer--link-list,
+.mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer__link-list,
+.mdl-mega-footer--heading-checkbox:checked + .mdl-mega-footer--heading + .mdl-mega-footer--link-list,
+.mdl-mega-footer--heading-checkbox:checked + .mdl-mega-footer__heading + .mdl-mega-footer__link-list,
+.mdl-mega-footer__heading-checkbox:checked ~ .mdl-mega-footer--link-list,
+.mdl-mega-footer__heading-checkbox:checked ~ .mdl-mega-footer__link-list,
+.mdl-mega-footer__heading-checkbox:checked + .mdl-mega-footer--heading + .mdl-mega-footer--link-list,
+.mdl-mega-footer__heading-checkbox:checked + .mdl-mega-footer__heading + .mdl-mega-footer__link-list {
   display: none; }
 
-.mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer--heading:after,
-.mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer__heading:after,
-.mdl-mega-footer__heading-checkbox:checked ~ .mdl-mega-footer--heading:after,
-.mdl-mega-footer__heading-checkbox:checked ~ .mdl-mega-footer__heading:after {
+.mdl-mega-footer--heading-checkbox:checked + .mdl-mega-footer--heading:after,
+.mdl-mega-footer--heading-checkbox:checked + .mdl-mega-footer__heading:after,
+.mdl-mega-footer__heading-checkbox:checked + .mdl-mega-footer--heading:after,
+.mdl-mega-footer__heading-checkbox:checked + .mdl-mega-footer__heading:after {
   font-family: 'Material Icons';
   content: '\E5CF'; }
 
@@ -4517,18 +4558,24 @@ input.mdl-button[type="submit"] {
   .mdl-mega-footer--heading-checkbox,
   .mdl-mega-footer__heading-checkbox {
     display: none; }
-    .mdl-mega-footer--heading-checkbox ~ .mdl-mega-footer--heading:after,
-    .mdl-mega-footer--heading-checkbox ~ .mdl-mega-footer__heading:after,
-    .mdl-mega-footer__heading-checkbox ~ .mdl-mega-footer--heading:after,
-    .mdl-mega-footer__heading-checkbox ~ .mdl-mega-footer__heading:after {
-      background-image: none; }
-  .mdl-mega-footer--heading-checkbox:checked ~ ul,
-  .mdl-mega-footer__heading-checkbox:checked ~ ul {
+    .mdl-mega-footer--heading-checkbox + .mdl-mega-footer--heading:after,
+    .mdl-mega-footer--heading-checkbox + .mdl-mega-footer__heading:after,
+    .mdl-mega-footer__heading-checkbox + .mdl-mega-footer--heading:after,
+    .mdl-mega-footer__heading-checkbox + .mdl-mega-footer__heading:after {
+      content: ''; }
+  .mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer--link-list,
+  .mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer__link-list,
+  .mdl-mega-footer--heading-checkbox:checked + .mdl-mega-footer__heading + .mdl-mega-footer__link-list,
+  .mdl-mega-footer--heading-checkbox:checked + .mdl-mega-footer--heading + .mdl-mega-footer--link-list,
+  .mdl-mega-footer__heading-checkbox:checked ~ .mdl-mega-footer--link-list,
+  .mdl-mega-footer__heading-checkbox:checked ~ .mdl-mega-footer__link-list,
+  .mdl-mega-footer__heading-checkbox:checked + .mdl-mega-footer__heading + .mdl-mega-footer__link-list,
+  .mdl-mega-footer__heading-checkbox:checked + .mdl-mega-footer--heading + .mdl-mega-footer--link-list {
     display: block; }
-  .mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer--heading:after,
-  .mdl-mega-footer--heading-checkbox:checked ~ .mdl-mega-footer__heading:after,
-  .mdl-mega-footer__heading-checkbox:checked ~ .mdl-mega-footer--heading:after,
-  .mdl-mega-footer__heading-checkbox:checked ~ .mdl-mega-footer__heading:after {
+  .mdl-mega-footer--heading-checkbox:checked + .mdl-mega-footer--heading:after,
+  .mdl-mega-footer--heading-checkbox:checked + .mdl-mega-footer__heading:after,
+  .mdl-mega-footer__heading-checkbox:checked + .mdl-mega-footer--heading:after,
+  .mdl-mega-footer__heading-checkbox:checked + .mdl-mega-footer__heading:after {
     content: ''; } }
 
 .mdl-mega-footer--bottom-section,
@@ -4600,6 +4647,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-mini-footer {
   display: -webkit-box;
@@ -4726,6 +4775,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-grid {
   display: -webkit-box;
@@ -4769,6 +4820,78 @@ input.mdl-button[type="submit"] {
 .mdl-grid.mdl-grid--no-spacing > .mdl-cell {
   margin: 0; }
 
+.mdl-cell--order-1 {
+  -webkit-box-ordinal-group: 2;
+  -webkit-order: 1;
+      -ms-flex-order: 1;
+          order: 1; }
+
+.mdl-cell--order-2 {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2; }
+
+.mdl-cell--order-3 {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+      -ms-flex-order: 3;
+          order: 3; }
+
+.mdl-cell--order-4 {
+  -webkit-box-ordinal-group: 5;
+  -webkit-order: 4;
+      -ms-flex-order: 4;
+          order: 4; }
+
+.mdl-cell--order-5 {
+  -webkit-box-ordinal-group: 6;
+  -webkit-order: 5;
+      -ms-flex-order: 5;
+          order: 5; }
+
+.mdl-cell--order-6 {
+  -webkit-box-ordinal-group: 7;
+  -webkit-order: 6;
+      -ms-flex-order: 6;
+          order: 6; }
+
+.mdl-cell--order-7 {
+  -webkit-box-ordinal-group: 8;
+  -webkit-order: 7;
+      -ms-flex-order: 7;
+          order: 7; }
+
+.mdl-cell--order-8 {
+  -webkit-box-ordinal-group: 9;
+  -webkit-order: 8;
+      -ms-flex-order: 8;
+          order: 8; }
+
+.mdl-cell--order-9 {
+  -webkit-box-ordinal-group: 10;
+  -webkit-order: 9;
+      -ms-flex-order: 9;
+          order: 9; }
+
+.mdl-cell--order-10 {
+  -webkit-box-ordinal-group: 11;
+  -webkit-order: 10;
+      -ms-flex-order: 10;
+          order: 10; }
+
+.mdl-cell--order-11 {
+  -webkit-box-ordinal-group: 12;
+  -webkit-order: 11;
+      -ms-flex-order: 11;
+          order: 11; }
+
+.mdl-cell--order-12 {
+  -webkit-box-ordinal-group: 13;
+  -webkit-order: 12;
+      -ms-flex-order: 12;
+          order: 12; }
+
 @media (max-width: 479px) {
   .mdl-grid {
     padding: 8px; }
@@ -4779,6 +4902,66 @@ input.mdl-button[type="submit"] {
       width: 100%; }
   .mdl-cell--hide-phone {
     display: none !important; }
+  .mdl-cell--order-1-phone.mdl-cell--order-1-phone {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .mdl-cell--order-2-phone.mdl-cell--order-2-phone {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .mdl-cell--order-3-phone.mdl-cell--order-3-phone {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  .mdl-cell--order-4-phone.mdl-cell--order-4-phone {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
+  .mdl-cell--order-5-phone.mdl-cell--order-5-phone {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
+  .mdl-cell--order-6-phone.mdl-cell--order-6-phone {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
+  .mdl-cell--order-7-phone.mdl-cell--order-7-phone {
+    -webkit-box-ordinal-group: 8;
+    -webkit-order: 7;
+        -ms-flex-order: 7;
+            order: 7; }
+  .mdl-cell--order-8-phone.mdl-cell--order-8-phone {
+    -webkit-box-ordinal-group: 9;
+    -webkit-order: 8;
+        -ms-flex-order: 8;
+            order: 8; }
+  .mdl-cell--order-9-phone.mdl-cell--order-9-phone {
+    -webkit-box-ordinal-group: 10;
+    -webkit-order: 9;
+        -ms-flex-order: 9;
+            order: 9; }
+  .mdl-cell--order-10-phone.mdl-cell--order-10-phone {
+    -webkit-box-ordinal-group: 11;
+    -webkit-order: 10;
+        -ms-flex-order: 10;
+            order: 10; }
+  .mdl-cell--order-11-phone.mdl-cell--order-11-phone {
+    -webkit-box-ordinal-group: 12;
+    -webkit-order: 11;
+        -ms-flex-order: 11;
+            order: 11; }
+  .mdl-cell--order-12-phone.mdl-cell--order-12-phone {
+    -webkit-box-ordinal-group: 13;
+    -webkit-order: 12;
+        -ms-flex-order: 12;
+            order: 12; }
   .mdl-cell--1-col,
   .mdl-cell--1-col-phone.mdl-cell--1-col-phone {
     width: calc(25% - 16px); }
@@ -4880,6 +5063,66 @@ input.mdl-button[type="submit"] {
       width: 50%; }
   .mdl-cell--hide-tablet {
     display: none !important; }
+  .mdl-cell--order-1-tablet.mdl-cell--order-1-tablet {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .mdl-cell--order-2-tablet.mdl-cell--order-2-tablet {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .mdl-cell--order-3-tablet.mdl-cell--order-3-tablet {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  .mdl-cell--order-4-tablet.mdl-cell--order-4-tablet {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
+  .mdl-cell--order-5-tablet.mdl-cell--order-5-tablet {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
+  .mdl-cell--order-6-tablet.mdl-cell--order-6-tablet {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
+  .mdl-cell--order-7-tablet.mdl-cell--order-7-tablet {
+    -webkit-box-ordinal-group: 8;
+    -webkit-order: 7;
+        -ms-flex-order: 7;
+            order: 7; }
+  .mdl-cell--order-8-tablet.mdl-cell--order-8-tablet {
+    -webkit-box-ordinal-group: 9;
+    -webkit-order: 8;
+        -ms-flex-order: 8;
+            order: 8; }
+  .mdl-cell--order-9-tablet.mdl-cell--order-9-tablet {
+    -webkit-box-ordinal-group: 10;
+    -webkit-order: 9;
+        -ms-flex-order: 9;
+            order: 9; }
+  .mdl-cell--order-10-tablet.mdl-cell--order-10-tablet {
+    -webkit-box-ordinal-group: 11;
+    -webkit-order: 10;
+        -ms-flex-order: 10;
+            order: 10; }
+  .mdl-cell--order-11-tablet.mdl-cell--order-11-tablet {
+    -webkit-box-ordinal-group: 12;
+    -webkit-order: 11;
+        -ms-flex-order: 11;
+            order: 11; }
+  .mdl-cell--order-12-tablet.mdl-cell--order-12-tablet {
+    -webkit-box-ordinal-group: 13;
+    -webkit-order: 12;
+        -ms-flex-order: 12;
+            order: 12; }
   .mdl-cell--1-col,
   .mdl-cell--1-col-tablet.mdl-cell--1-col-tablet {
     width: calc(12.5% - 16px); }
@@ -5005,6 +5248,66 @@ input.mdl-button[type="submit"] {
       width: 33.33333%; }
   .mdl-cell--hide-desktop {
     display: none !important; }
+  .mdl-cell--order-1-desktop.mdl-cell--order-1-desktop {
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1; }
+  .mdl-cell--order-2-desktop.mdl-cell--order-2-desktop {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  .mdl-cell--order-3-desktop.mdl-cell--order-3-desktop {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  .mdl-cell--order-4-desktop.mdl-cell--order-4-desktop {
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; }
+  .mdl-cell--order-5-desktop.mdl-cell--order-5-desktop {
+    -webkit-box-ordinal-group: 6;
+    -webkit-order: 5;
+        -ms-flex-order: 5;
+            order: 5; }
+  .mdl-cell--order-6-desktop.mdl-cell--order-6-desktop {
+    -webkit-box-ordinal-group: 7;
+    -webkit-order: 6;
+        -ms-flex-order: 6;
+            order: 6; }
+  .mdl-cell--order-7-desktop.mdl-cell--order-7-desktop {
+    -webkit-box-ordinal-group: 8;
+    -webkit-order: 7;
+        -ms-flex-order: 7;
+            order: 7; }
+  .mdl-cell--order-8-desktop.mdl-cell--order-8-desktop {
+    -webkit-box-ordinal-group: 9;
+    -webkit-order: 8;
+        -ms-flex-order: 8;
+            order: 8; }
+  .mdl-cell--order-9-desktop.mdl-cell--order-9-desktop {
+    -webkit-box-ordinal-group: 10;
+    -webkit-order: 9;
+        -ms-flex-order: 9;
+            order: 9; }
+  .mdl-cell--order-10-desktop.mdl-cell--order-10-desktop {
+    -webkit-box-ordinal-group: 11;
+    -webkit-order: 10;
+        -ms-flex-order: 10;
+            order: 10; }
+  .mdl-cell--order-11-desktop.mdl-cell--order-11-desktop {
+    -webkit-box-ordinal-group: 12;
+    -webkit-order: 11;
+        -ms-flex-order: 11;
+            order: 11; }
+  .mdl-cell--order-12-desktop.mdl-cell--order-12-desktop {
+    -webkit-box-ordinal-group: 13;
+    -webkit-order: 12;
+        -ms-flex-order: 12;
+            order: 12; }
   .mdl-cell--1-col,
   .mdl-cell--1-col-desktop.mdl-cell--1-col-desktop {
     width: calc(8.33333% - 16px); }
@@ -5192,6 +5495,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-menu__container {
   display: block;
@@ -5316,15 +5621,17 @@ input.mdl-button[type="submit"] {
     opacity: 1; }
   .mdl-menu__item::-moz-focus-inner {
     border: 0; }
-  .mdl-menu__item[disabled] {
+  .mdl-menu__item--full-bleed-divider {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  .mdl-menu__item[disabled], .mdl-menu__item[data-mdl-disabled] {
     color: #bdbdbd;
     background-color: transparent;
     cursor: auto; }
-    .mdl-menu__item[disabled]:hover {
+    .mdl-menu__item[disabled]:hover, .mdl-menu__item[data-mdl-disabled]:hover {
       background-color: transparent; }
-    .mdl-menu__item[disabled]:focus {
+    .mdl-menu__item[disabled]:focus, .mdl-menu__item[data-mdl-disabled]:focus {
       background-color: transparent; }
-    .mdl-menu__item[disabled] .mdl-ripple {
+    .mdl-menu__item[disabled] .mdl-ripple, .mdl-menu__item[data-mdl-disabled] .mdl-ripple {
       background: transparent; }
   .mdl-menu__item:hover {
     background-color: #eeeeee; }
@@ -5392,12 +5699,15 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-progress {
   display: block;
   position: relative;
   height: 4px;
-  width: 500px; }
+  width: 500px;
+  max-width: 100%; }
 
 .mdl-progress > .bar {
   display: block;
@@ -5561,6 +5871,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-navigation {
   display: -webkit-box;
@@ -5669,6 +5981,8 @@ input.mdl-button[type="submit"] {
     -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
             transform: translateX(0); }
+    .mdl-layout__drawer.is-visible ~ .mdl-layout__content {
+      overflow: hidden; }
   .mdl-layout__drawer > * {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
@@ -5792,10 +6106,10 @@ input.mdl-button[type="submit"] {
   @media screen and (max-width: 1024px) {
     .mdl-layout__header {
       min-height: 56px; } }
-  .mdl-layout--fixed-drawer:not(.is-small-screen) > .mdl-layout__header {
+  .mdl-layout--fixed-drawer.is-upgraded:not(.is-small-screen) > .mdl-layout__header {
     margin-left: 240px;
     width: calc(100% - 240px); }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1025px) {
     .mdl-layout--fixed-drawer > .mdl-layout__header .mdl-layout__header-row {
       padding-left: 40px; } }
   .mdl-layout__header > .mdl-layout-icon {
@@ -5933,12 +6247,13 @@ input.mdl-button[type="submit"] {
           transition-duration: 0.2s;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
-  .mdl-layout__drawer.is-visible ~ .mdl-layout__obfuscator {
+  .mdl-layout__obfuscator.is-visible {
     background-color: rgba(0, 0, 0, 0.5);
     visibility: visible; }
 
 .mdl-layout__content {
   -ms-flex: 0 1 auto;
+  position: relative;
   display: inline-block;
   overflow-y: auto;
   overflow-x: hidden;
@@ -6166,6 +6481,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-list {
   display: block;
@@ -6265,6 +6582,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-radio {
   position: relative;
@@ -6418,6 +6737,8 @@ input.mdl-button[type="submit"] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   -ms-appearance: none;
@@ -6525,7 +6846,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-slider.is-upgraded.is-lowest-value::-moz-range-thumb {
       border: 2px solid rgba(0, 0, 0, 0.26);
       background: transparent; }
-    .mdl-slider.is-upgraded.is-lowest-value ~
+    .mdl-slider.is-upgraded.is-lowest-value +
 .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded.is-lowest-value:focus:not(:active)::-webkit-slider-thumb {
@@ -6538,7 +6859,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       border: 1.6px solid rgba(0, 0, 0, 0.26);
       -webkit-transform: scale(1.5);
               transform: scale(1.5); }
-    .mdl-slider.is-upgraded.is-lowest-value:active ~
+    .mdl-slider.is-upgraded.is-lowest-value:active +
 .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 9px; }
     .mdl-slider.is-upgraded.is-lowest-value:active::-moz-range-thumb {
@@ -6571,11 +6892,11 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
     .mdl-slider.is-upgraded:disabled::-moz-range-thumb {
       transform: scale(0.667);
       background: rgba(0, 0, 0, 0.26); }
-    .mdl-slider.is-upgraded:disabled ~
+    .mdl-slider.is-upgraded:disabled +
 .mdl-slider__background-flex > .mdl-slider__background-lower {
       background-color: rgba(0, 0, 0, 0.26);
       left: -6px; }
-    .mdl-slider.is-upgraded:disabled ~
+    .mdl-slider.is-upgraded:disabled +
 .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded.is-lowest-value:disabled:focus::-webkit-slider-thumb,
@@ -6591,7 +6912,7 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
       border: 3px solid rgba(0, 0, 0, 0.26);
       background: transparent;
       transform: scale(0.667); }
-    .mdl-slider.is-upgraded.is-lowest-value:disabled:active ~
+    .mdl-slider.is-upgraded.is-lowest-value:disabled:active +
 .mdl-slider__background-flex > .mdl-slider__background-upper {
       left: 6px; }
     .mdl-slider.is-upgraded:disabled:focus::-ms-thumb,
@@ -6732,6 +7053,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-spinner {
   display: inline-block;
@@ -7108,6 +7431,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-switch {
   position: relative;
@@ -7243,7 +7568,6 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
   .mdl-switch.is-disabled .mdl-switch__ripple-container .mdl-ripple {
     background: transparent; }
   .mdl-switch.is-checked .mdl-switch__ripple-container {
-    cursor: auto;
     left: 2px; }
 
 /**
@@ -7294,6 +7618,8 @@ _:-ms-input-placeholder, :root .mdl-slider.mdl-slider.is-upgraded {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-tabs {
   display: block;
@@ -7443,6 +7769,8 @@ template, div[template] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-textfield {
   position: relative;
@@ -7628,6 +7956,8 @@ template, div[template] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-tooltip {
   -webkit-transform: scale(0);
@@ -7722,6 +8052,8 @@ template, div[template] {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 /* Animation Variables */
 /* Accordion */
@@ -7882,6 +8214,8 @@ input[name^='mdl-accordion']:checked ~ .mdl-accordion--content {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-badge {
   position: relative;
@@ -7923,15 +8257,17 @@ input[name^='mdl-accordion']:checked ~ .mdl-accordion--content {
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: rgb(#ffd740);
-    color: rgb(white); }
+    background: #ffd740;
+    color: white; }
     .mdl-button .mdl-badge[data-badge]:after {
       top: -10px;
       right: -5px; }
   .mdl-badge.mdl-badge--no-background[data-badge]:after {
-    color: rgb(#ffd740);
-    background: rgba(white,0.2);
+    color: #ffd740;
+    background: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 1px gray; }
+  .mdl-badge.mdl-badge--overlap:after {
+    right: -10px; }
 
 /**
  * Copyright 2015 Google Inc. All Rights Reserved.
@@ -7966,6 +8302,8 @@ input[name^='mdl-accordion']:checked ~ .mdl-accordion--content {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-dialog-container {
   display: -webkit-box;
@@ -8192,6 +8530,8 @@ mdl-draggable {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-basic-form {
   box-sizing: border-box;
@@ -8501,6 +8841,8 @@ mdl-draggable {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-sticky-mini-footer {
   display: -webkit-box;
@@ -8621,6 +8963,8 @@ mdl-draggable {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-nav-pill, .mdl-nav-pills > * {
   padding: 4px 8px;
@@ -8794,6 +9138,8 @@ mdl-draggable {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-notification-container {
   z-index: 3;
@@ -9066,6 +9412,8 @@ mdl-draggable {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-panel {
   padding: 8px 16px;
@@ -9131,6 +9479,8 @@ mdl-draggable {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+/* ==========  IMAGES  ========== */
+/* SNACKBAR */
 /* TOOLTIP */
 .mdl-snackbar-container.is-visible .mdl-snackbar {
   opacity: 1;
