@@ -5703,6 +5703,9 @@ input.mdl-button[type="submit"] {
 
 .mdl-list--no-bullets {
   list-style-type: none; }
+  .mdl-list--no-bullets__no-border {
+    padding: 0;
+    margin: 0; }
 
 .mdl-list__item-secondary-action > .mdl-radio {
   vertical-align: top; }
