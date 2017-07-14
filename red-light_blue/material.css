@@ -4132,12 +4132,21 @@ input.mdl-button[type="submit"] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  margin: 0 auto 0 auto;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 auto 0 auto; }
   .mdl-grid.mdl-grid--no-spacing {
     padding: 0; }
 
@@ -4902,7 +4911,6 @@ input.mdl-button[type="submit"] {
   display: block;
   position: absolute;
   bottom: 0;
-  height: 0;
   width: 100%;
   -webkit-transition: height 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   transition: height 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
@@ -4920,6 +4928,39 @@ input.mdl-button[type="submit"] {
 
 .mdl-vprogress > .auxbar {
   top: 0; }
+
+.mdl-vprogress > .indicatorbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  height: 100%;
+  top: 0;
+  opacity: 0.5; }
+  .mdl-vprogress > .indicatorbar .mdl-vprogress__section {
+    width: 100%;
+    border-top: 1px solid #ef9a9a;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+    .mdl-vprogress > .indicatorbar .mdl-vprogress__section:first-child {
+      border-top: none; }
 
 .mdl-vprogress:not(.mdl-vprogress--indeterminate) > .auxbar,
 .mdl-vprogress:not(.mdl-vprogress__indeterminate) > .auxbar {
@@ -7161,7 +7202,7 @@ input[name^='mdl-accordion']:checked ~ .mdl-accordion--content {
         opacity: 0.87;
         color: black; }
       .mdl-dialog-container .mdl-dialog .mdl-dialog__content::-webkit-scrollbar {
-        display: none;
+        visibility: hidden;
         -webkit-appearance: none;
         width: 0;
         height: 0;
